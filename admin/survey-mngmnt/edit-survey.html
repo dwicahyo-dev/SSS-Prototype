@@ -1,0 +1,2633 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+<meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+<meta name="author" content="PIXINVENT">
+
+<title>Survey Management - Edit | Admin - SSS</title>
+<link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
+<link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+<!-- BEGIN: Vendor CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/wizard/bs-stepper.min.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
+<!-- END: Vendor CSS-->
+<!-- BEGIN: Theme CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
+<!-- END: Theme CSS-->
+<!-- BEGIN: Page CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-validation.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-wizard.css">
+<!-- END: Page CSS-->
+<!-- BEGIN: Custom CSS-->
+<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+<!-- END: Custom CSS-->
+
+</head>
+
+<body class="vertical-layout vertical-menu-modern menu-expanded pace-done footer-static navbar-sticky" data-open="click" data-menu="vertical-menu-modern" data-col="">
+<!-- BEGIN: Header-->
+<nav class="header-navbar navbar navbar-expand-lg align-items-center navbar-light navbar-shadow fixed-top">
+  <div class="navbar-container d-flex content">
+    <div class="bookmark-wrapper d-flex align-items-center">
+      <ul class="nav navbar-nav d-xl-none">
+        <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+      </ul>
+      <ul class="nav navbar-nav bookmark-icons">
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link menu-toggle" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Menu">
+            <i class="ficon" data-feather="menu"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="nav navbar-nav align-items-center ml-auto">
+      <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+      <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
+              alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+          <a class="dropdown-item" href="admin-profile.html"><i class="mr-50" data-feather="user"></i> Profile</a>
+          <a class="dropdown-item" href="#"><i class="mr-50" data-feather="settings"></i> Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="../../index.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="main-search-list-defaultlist d-none">
+  <li class="d-flex align-items-center"><a href="javascript:void(0);">
+      <h6 class="section-label mt-75 mb-0">Files</h6>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/xls.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/doc.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+    </a></li>
+  <li class="d-flex align-items-center"><a href="javascript:void(0);">
+      <h6 class="section-label mt-75 mb-0">Members</h6>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+        </div>
+      </div>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+        </div>
+      </div>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+        </div>
+      </div>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+        </div>
+      </div>
+    </a></li>
+</ul>
+
+<ul class="main-search-list-defaultlist-other-list d-none">
+  <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+      <div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+    </a></li>
+</ul>
+<!-- END: Header-->
+
+<!-- BEGIN: Main Menu-->
+<!-- <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"> -->
+  <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+  <div class="navbar-header">
+    <ul class="nav navbar-nav flex-row">
+      <li class="nav-item mr-auto">
+        <a class="navbar-brand" href="#!">
+          <img class="brand-logo" src="../../app-assets/taylors-logo-white2.png" alt="SSS" width="155" height="58">
+        </a>
+      </li>
+      <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-danger toggle-icon font-medium-4" data-feather="x"></i><i
+            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-danger" data-feather="disc" data-ticon="disc"></i></a></li>
+    </ul>
+  </div>
+  <div class="shadow-bottom"></div>
+  <div class="main-menu-content">
+    <ul class="navigation navigation-main mt-2" id="main-menu-navigation" data-menu="menu-navigation">
+      <li class="nav-item active">
+        <a class="d-flex align-items-center" href="survey-mngmnt.html">
+          <i data-feather='clipboard'></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Survey Management</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="#!">
+          <i data-feather='list'></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Real-time Reporting</span>
+        </a>
+        <ul class="menu-content">
+          <li><a class="d-flex align-items-center" href="../survey-info-listing/complete-survey.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">Completed Survey</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../survey-info-listing/incomplete-survey.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name" data-toggle="tooltip" data-placement="right" title="Incomplete & Un-initiated Survey">Incomplete & Un-initiated Survey</span></a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="../leaderboard.html">
+          <i data-feather='award'></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Leaderboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="#!">
+          <i data-feather="book-open"></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Reporting</span>
+        </a>
+        <ul class="menu-content">
+          <li><a class="d-flex align-items-center" href="../reports/all-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">All Student</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../reports/all-data.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">All Data Download</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../reports/comp-survey-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">Completed Survey</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../reports/incomp-survey-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name" data-toggle="tooltip" data-placement="right" title="Incomplete & Un-initiated Survey">Incomplete & Un-initiated Survey</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../reports/incent-sch-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name" data-toggle="tooltip" data-placement="right" title="Incentive Scheme Summary">Incentive Scheme Summary</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">Charts & Graphs</span></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- END: Main Menu-->
+
+<!-- BEGIN: Content-->
+<div class="app-content content">
+  <div class="content-overlay"></div>
+  <div class="header-navbar-shadow"></div>
+  <div class="content-wrapper">
+    <div class="content-header row">
+      <div class="content-header-left col-12 mb-2">
+        <div class="row breadcrumbs-top">
+          <div class="col-12">
+            <h2 class="content-header-title float-left mb-0">Edit Survey</h2>
+            <div class="breadcrumb-wrapper">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="survey-mngmnt.html">Survey Management</a></li>
+                <li class="breadcrumb-item">Edit</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <section class="modern-horizontal-wizard">
+        <div class="bs-stepper wizard-modern survey-formWizEdit">
+          <!-- steps / survey parts-->
+          <div class="bs-stepper-header pt-0 pb-1">
+            <div class="step" data-target="#part-a">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">A</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Extra-curriculum / Talent <br>& Skills Development</span>
+                </span>
+              </button>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-b">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">B</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">E-Learning</span>
+                </span>
+              </button>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-c">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">C</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Student Support <br>& Services</span>
+                </span>
+              </button>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-d">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">D</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Campus <br>Facilities</span>
+                </span>
+              </button>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-e">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">E</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">International <br>Experience Support <br>& Services</span>
+                </span>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-f">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">F</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Education <br>Progression</span>
+                </span>
+              </button>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-g">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">G</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">International Student <br> Support <span class="text-danger">INTERNATIONAL <br>STUDENTS ONLY</span> </span>
+                </span>
+              </button>
+            </div>
+            <div class="line mb-75">
+              <i data-feather="chevron-right" class="font-medium-2"></i>
+            </div>
+            <div class="step" data-target="#part-h">
+              <button type="button" class="step-trigger">
+                <span class="bs-stepper-box">H</span>
+                <span class="bs-stepper-label">
+                  <span class="bs-stepper-title">Incentive <br> Scheme</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- end steps / survey parts-->
+          <!-- survey questions -->
+          <div class="bs-stepper-content">
+            <form id="editSurveyForm" novalidate action=""  method="post">
+            <!-- part a -->
+              <div id="part-a" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part A: Extra-curriculum / Talent & Skills Development</b></h4>
+                  </div>
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="form-group">
+                        <div class="table-responsive">
+                          <table class="table table-bordered fixed">
+                            <thead class="text-center">
+                              <tr class="pb-25">
+                                <th width="30%"></th>
+                                <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              </tr>
+                              <tr class="pb-50 pt-0">
+                                <th style="border-top: none;"></th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-1">1.<textarea rows="3" class="form-control">Your experience developing skills through a club or society.</textarea>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat1" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">2.<textarea class="form-control" rows="3">The variety of clubs and societies made available for you to join.</textarea>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat2" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">3.<textarea class="form-control" rows="3">The quality of the facilities for the Sports Complex.</textarea>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat3" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">4.<textarea class="form-control" rows="3">The overall facilities and services in UniGym.</textarea>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat4" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <!-- open ended qs -->
+                              <tr>
+                                <td colspan="7" class="px-75">
+                                  <p class="mb-50"><textarea class="form-control">Please state your reason / comments for dissatisfied rating</textarea></p>
+                                  <textarea rows="2" class="form-control" id="" placeholder="Open ended question"></textarea>
+                                </td>
+                              </tr>
+                              <!-- end open ended qs -->
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="px-3"></div>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part a -->
+              <!-- part b -->
+              <div id="part-b" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part B: E-Learning</b></h4>
+                  </div>
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="form-group">
+                        <div class="table-responsive">
+                          <table class="table table-bordered fixed">
+                            <thead class="text-center">
+                              <tr class="pb-25">
+                                <th width="30%"></th>
+                                <th class="px-50 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Strongly Disagree</th>
+                                <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Disagree</th>
+                                <th class="px-50 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Agree</th>
+                                <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Agree</th>
+                                <th class="px-50 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Strongly Agree</th>
+                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              </tr>
+                              <tr class="pb-50 pt-0">
+                                <th style="border-top: none;"></th>
+                                <th class="px-50 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                                <th class="px-50 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                                <th class="px-50 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-1 text-justify">1.<textarea class="form-control" rows="5">TIMeS learning management system has increased my opportunity to access and use module materials more effectively.</textarea>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="ag1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag1" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="ag1" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">2.<textarea class="form-control" rows="5">Live (Synchronous) Online Lecture using Zoom/Microsoft Teams increased my opportunity to connect with my lecturers and peers.</textarea>
+                                  </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="ag2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag2" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="ag2" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">3.<textarea class="form-control" rows="5">Online Examination conducted using TIMeS/ Zoom/ Microsoft Teams allowed me to take my exam confidently from my comfort place.</textarea>
+                                  </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="ag3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag3" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="ag3" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">4.<textarea class="form-control" rows="5">Pre-Recorded Lecture Videos encouraged me to take control of my own learning.</textarea>
+                                  </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="ag4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag4" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="ag4" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">5.<textarea class="form-control" rows="5">Online discussion tools helped me to collaborate with my friends.</textarea>
+                                  </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag5" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="ag5" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="ag5" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag5" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="ag5" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="ag5" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <!-- open ended qs -->
+                              <tr>
+                                <td colspan="7" class="px-75">
+                                  <p class="mb-50"><textarea class="form-control">Please state your reason / comments for dissatisfied rating</textarea></p>
+                                  <textarea rows="2" class="form-control" id="" placeholder="Open ended question"></textarea>
+                                </td>
+                              </tr>
+                              <!-- end open ended qs -->
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part b -->
+              <!-- part c -->
+              <div id="part-c" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part C: Student Support & Services</b></h4>
+                  </div>
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="table-responsive">
+                        <table class="table table-bordered fixed">
+                          <thead>
+                            <tr>
+                              <th colspan="8">a. Campus Central</th>
+                            </tr>
+                            <tr class="pb-25 text-center">
+                              <th colspan="2"></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                            </tr>
+                            <tr class="pb-50 pt-0 text-center">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1">1.<textarea class="form-control" rows="5">The response time of Campus Central.</textarea>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat5" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat5" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat5" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat5" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat5" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat5" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">The approachability and helpfulness of the staff at Campus Central.</textarea>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat6" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">Your experience navigating the Campus Central portal for information and online services.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat7" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td colspan="8" style="border: none;"></td></tr>
+                          </tbody>
+                          <thead>
+                            <tr>
+                              <th colspan="8">b. Centre for Counselling Services (CCS)</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2"></th>
+                              <th colspan="2" class="px-0 text-dark bg-danger bg-lighten-4 no-border">Not Aware at all</th>
+                              <th colspan="2" class="px-1 text-dark bg-info bg-soften-4 no-border">Somewhat Aware</th>
+                              <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Very Aware</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">1.<textarea class="form-control" rows="5">During emotionally distressed period, I know who and where should I go to for counselling support within the campus.</textarea></td>
+                              <td colspan="2">
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="aw1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2">
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="aw1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2">
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="aw1" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <tr>
+                              <th colspan="2"></th>
+                              <th class="px-0 pb-25 text-dark bg-danger bg-lighten-4 no-border">Strongly Disagree</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Disagree</th>
+                              <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Agree</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Agree</th>
+                              <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Strongly Agree</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr>
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-0 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">Attending a counselling session is not a shameful action but a helpful tool to get by difficult period as a student.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="ag6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag6" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="ag6" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <tr class="pb-25">
+                              <th colspan="2"></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                            </tr>
+                            <tr class="pb-50 pt-0">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">I am satisfied with the counselling services provided by CCS counsellor during my course of study.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat8" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td colspan="8" style="border: none;"></td></tr>
+                          </tbody>
+                          <thead>
+                            <tr>
+                              <th colspan="8">c. Career Service Centre</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2"></th>
+                              <th colspan="2" class="px-0 text-dark bg-danger bg-lighten-4 no-border">Not Aware at all</th>
+                              <th colspan="2" class="px-1 text-dark bg-info bg-soften-4 no-border">Somewhat Aware</th>
+                              <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Very Aware</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">1.<textarea class="form-control" rows="5">How aware are you of Career Services’ (CSC) range of support services and career events? (To name a few examples, Career Fair, SEEDS Portal, Internship Support, etc.)</textarea></td>
+                              <td colspan="2">
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="aw2" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2">
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="aw2" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2">
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="aw2" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <tr>
+                              <th colspan="2"></th>
+                              <th class="px-0 pb-25 text-dark bg-danger bg-lighten-4 no-border">Never use</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Used once</th>
+                              <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Rarely use</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Occasionally use</th>
+                              <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Frequently use</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr>
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-0 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">If you are aware of CSC’s events and services, how often/frequent do you use our services/participate in our events?</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="use1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="use1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="use1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="use1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="use1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="use1" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <tr class="pb-25">
+                              <th colspan="2"></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                            </tr>
+                            <tr class="pb-50 pt-0">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">If you have used our support services before/participated in our career events, how satisfied are you with the services/events rendered?</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat9" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td colspan="8" style="border: none;"></td></tr>
+                          </tbody>
+                          <thead>
+                            <tr>
+                              <th colspan="8">d. Student Finance, Timetabling & Venue Booking</th>
+                            </tr>
+                            <tr class="pb-25 text-center">
+                              <th colspan="2"></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                            </tr>
+                            <tr class="pb-50 pt-0 text-center">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">1.<textarea class="form-control" rows="5">How satisfied are you with Taylor’s Pay payment channel?</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat10" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat10" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat10" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat10" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat10" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat10" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <th colspan="2"></th>
+                            <th colspan="3" class="px-0 text-dark bg-success bg-lighten-4 no-border">Yes</th>
+                            <th colspan="3" class="px-1 text-dark bg-danger bg-lighten-4 no-border">No</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="3">Would you be open for a direct debit payment option for your convenience and time-saving?</textarea></td>
+                              <td colspan="3">
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="yesno1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="3">
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="yesno1" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <tr class="pb-25">
+                              <th colspan="2"></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                            </tr>
+                            <tr class="pb-50 pt-0">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">The time between issuance of invoice and fees payment deadline.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat11" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat11" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat11" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat11" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat11" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat11" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">4.<textarea class="form-control" rows="5">The invoice (in terms of data accuracy) that you receive before the semester commencement.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat12" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat12" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat12" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat12" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat12" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat12" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">5.<textarea class="form-control" rows="5">Your semester timetable and related services provided.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat13" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat13" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat13" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat13" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat13" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat13" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">6.<textarea class="form-control" rows="5">The services provided for venue booking.</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat14" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat14" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat14" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat14" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat14" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat14" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- open ended qs -->
+                            <tr>
+                              <td colspan="8" class="px-75">
+                                <p class="mb-50"><textarea class="form-control">Please state your reason / comments for dissatisfied rating</textarea></p>
+                                <textarea rows="2" class="form-control" id="" placeholder="Open ended question"></textarea>
+                              </td>
+                            </tr>
+                            <!-- end open ended qs -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part c -->
+              <!-- part d -->
+              <div id="part-d" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part D: Campus Facilities</b></h4>
+                  </div>
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="table-responsive">
+                        <table class="table table-bordered fixed">
+                          <thead>
+                            <tr>
+                              <th colspan="8">a. Library</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" ></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">1.<textarea class="form-control" rows="5">Overall satisfaction towards physical library (library facilities, library services)</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat15" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat15" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat15" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat15" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat15" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat15" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">Overall satisfaction towards library resources (online databases, e-books, e-journals, printed books, printed journals, printed magazines)</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat16" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat16" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat16" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat16" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat16" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat16" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">Overall satisfaction towards online library services (information literacy classes, online references services)</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat17" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat17" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat17" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat17" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat17" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat17" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td colspan="8" style="border: none;"></td></tr>
+                          </tbody>
+                          <thead>
+                            <tr>
+                              <th colspan="8">b. ICT</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" ></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1">1.<textarea class="form-control" rows="5">ICT Service Desk Support in the Campus</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat18" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat18" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat18" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat18" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat18" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat18" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1">2.<textarea class="form-control" rows="5">Internet Access in the Campus</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat19" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat19" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat19" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat19" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat19" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat19" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1">3.<textarea class="form-control" rows="5">Taylor's Mobile Application</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat20" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat20" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat20" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat20" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat20" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat20" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td colspan="8" style="border: none;"></td></tr>
+                          </tbody>
+                          <thead>
+                            <tr>
+                              <th colspan="8">c. Campus Facilities & Safety</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" ></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">1.<textarea class="form-control" rows="5">The upkeep & cleanliness of Campus</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat21" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat21" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat21" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat21" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat21" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat21" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">The availability of Campus common facilities</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat22" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat22" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat22" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat22" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat22" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat22" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">The safety and security within Campus ground</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat23" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat23" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat23" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat23" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat23" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat23" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- open ended qs -->
+                            <tr>
+                              <td colspan="8" class="px-75">
+                                <p class="mb-50"><textarea class="form-control">Please state your reason / comments for dissatisfied rating</textarea></p>
+                                <textarea rows="2" class="form-control" id="" placeholder="Open ended question"></textarea>
+                              </td>
+                            </tr>
+                            <!-- end open ended qs -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part d -->
+              <!-- part e -->
+              <div id="part-e" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part E: International Experience Support & Services</b></h4>
+                  </div>
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="table-responsive">
+                        <table class="table table-bordered fixed">
+                          <thead>
+                            <tr>
+                              <th colspan="8">a. Student Exchange & Mobility</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" ></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border">Strongly Disagree</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Disagree</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Agree</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Agree</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Strongly Agree</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">1.<textarea class="form-control" rows="5">Smooth application process through Global Mobility</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="ag7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag7" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="ag7" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">Student Exchange and Mobility information available are useful and informative</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="ag8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag8" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="ag8" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">Student Exchange and Mobility enquiries are attended to within reasonable time frame</textarea></td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="ag9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="ag9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="ag9" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="ag9" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td colspan="8" style="border: none;"></td></tr>
+                          </tbody>
+                          <thead>
+                            <tr>
+                              <th colspan="8">b. University Placement Services - to assist graduates to be placed in a university of their choice globally.</th>
+                            </tr>
+                            <tr class="text-center">
+                              <th colspan="2" ></th>
+                              <th class="px-0 text-dark bg-warning bg-lighten-4 no-border" style="border-right: none !important;">0 time</th>
+                              <th class="px-1 text-dark bg-danger bg-lighten-4 no-border">1-2 times</th>
+                              <th colspan="2" class="px-0 text-dark bg-info bg-soften-4 no-border">3-5 times</th>
+                              <th colspan="2" class="px-1 text-dark bg-success bg-lighten-4 no-border">More than 5 times</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2"  class="px-1 text-justify">1.<textarea class="form-control" rows="5">How many times have you contacted/used University Placement Services (emails / calls / visits / talks / fairs / virtual platforms, etc)?</textarea></td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="time1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="time1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2" >
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="time1" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2" >
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="time1" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <tr>
+                              <th colspan="2" ></th>
+                              <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border">Very Dissatisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border">Dissatisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
+                              <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
+                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            </tr>
+                            <tr>
+                              <th colspan="2" style="border-top: none;"></th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                              <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">2.<textarea class="form-control" rows="5">On average, how satisfied are you with the advice and assistance provided at University Placement Services (UPS)?</textarea> </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat24" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="sat24" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-info table-form-check">
+                                  <input type="radio" name="sat24" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat24" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="sat24" class="form-check-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="sat24" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <thead class="text-center">
+                            <th colspan="2" ></th>
+                            <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Yes</th>
+                            <th colspan="2" class="px-1 text-dark bg-danger bg-lighten-4 no-border">No</th>
+                            <th colspan="2" class="px-0 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2" class="px-1 text-justify">3.<textarea class="form-control" rows="5">If you have utilised UPS services, will you recommend UPS to others?</textarea></td>
+                              <td colspan="2">
+                                <div class="form-check form-check-success table-form-check">
+                                  <input type="radio" name="yesno2" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2">
+                                <div class="form-check form-check-danger table-form-check">
+                                  <input type="radio" name="yesno2" class="form-check-input">
+                                </div>
+                              </td>
+                              <td colspan="2">
+                                <div class="form-check form-check-warning table-form-check">
+                                  <input type="radio" name="yesno2" class="form-check-input">
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- open ended qs -->
+                            <tr>
+                              <td colspan="8" class="px-75">
+                                <p class="mb-50"><textarea class="form-control">Please state your reason / comments for dissatisfied rating</textarea></p>
+                                <textarea rows="2" class="form-control" id="" placeholder="Open ended question"></textarea>
+                              </td>
+                            </tr>
+                            <!-- end open ended qs -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part e -->
+              <!-- part f -->
+              <div id="part-f" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part F: Education Progression</b></h4>
+                  </div>
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-6">
+                            1.<textarea class="form-control mb-2" rows="5">From a scale of 0-10, how would you rate your experience with our Education counsellor(s)? The counsellor(s) was courteous, professional and able to satisfactorily answer my questions.
+(Education counsellor is the personnel who provides assistance and guidance to student before enrolment, in making the right choices of programme/ course, after completing  high school.)
+                            </textarea>
+                          </div>
+                          <div class="col-6">
+                            <div class="row text-center" style="line-height: 2rem;">
+                              <div class="col-6 pr-0">
+                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Strongly Disagree</b></span></div>
+                              </div>
+                              <div class="col-6 pl-0">
+                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Strongly Agree</b></span></div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-danger round">0</button>
+                                <button type="button" class="btn btn-outline-danger round">1</button>
+                                <button type="button" class="btn btn-outline-danger round">2</button>
+                                <button type="button" class="btn btn-outline-danger round">3</button>
+                                <button type="button" class="btn btn-outline-danger round">4</button>
+                                <button type="button" class="btn btn-outline-danger round">5</button>
+                                <button type="button" class="btn btn-outline-danger round">6</button>
+                                <button type="button" class="btn btn-outline-danger round">7</button>
+                                <button type="button" class="btn btn-outline-danger round">8</button>
+                                <button type="button" class="btn btn-outline-danger round">9</button>
+                                <button type="button" class="btn btn-outline-danger round">10</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                        <div class="row pb-25">
+                          <div class="col-6">
+                            2.<textarea class="form-control mb-2 text-justify" rows="5">On a scale from 0 to 10, how likely are you to recommend Taylor's to your friends and family? What is the primary reason for your score?</textarea>
+                          </div>
+                          <div class="col-6">
+                            <div class="row text-center" style="line-height: 2rem;">
+                              <div class="col-6 pr-0">
+                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
+                              </div>
+                              <div class="col-6 pl-0">
+                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-danger round">0</button>
+                                <button type="button" class="btn btn-outline-danger round">1</button>
+                                <button type="button" class="btn btn-outline-danger round">2</button>
+                                <button type="button" class="btn btn-outline-danger round">3</button>
+                                <button type="button" class="btn btn-outline-danger round">4</button>
+                                <button type="button" class="btn btn-outline-danger round">5</button>
+                                <button type="button" class="btn btn-outline-danger round">6</button>
+                                <button type="button" class="btn btn-outline-danger round">7</button>
+                                <button type="button" class="btn btn-outline-danger round">8</button>
+                                <button type="button" class="btn btn-outline-danger round">9</button>
+                                <button type="button" class="btn btn-outline-danger round">10</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 px-0 pb-2">
+                          <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
+                        </div>
+
+                        <div class="row pb-25">
+                          <div class="col-6">
+                            3.<textarea class="form-control mb-1 text-justify" rows="5">On a scale of 0 to 10, how likely are you to continue studying at Taylor's for your tertiary education (e.g. from Foundation to Degree, from Degree to Master, from Master to PhD)? What is the primary reason for your score?</textarea>
+                          </div>
+                          <div class="col-6">
+                            <div class="row text-center" style="line-height: 2rem;">
+                              <div class="col-6 pr-0">
+                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
+                              </div>
+                              <div class="col-6 pl-0">
+                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
+                              </div>
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center">
+                              <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-danger round">0</button>
+                                <button type="button" class="btn btn-outline-danger round">1</button>
+                                <button type="button" class="btn btn-outline-danger round">2</button>
+                                <button type="button" class="btn btn-outline-danger round">3</button>
+                                <button type="button" class="btn btn-outline-danger round">4</button>
+                                <button type="button" class="btn btn-outline-danger round">5</button>
+                                <button type="button" class="btn btn-outline-danger round">6</button>
+                                <button type="button" class="btn btn-outline-danger round">7</button>
+                                <button type="button" class="btn btn-outline-danger round">8</button>
+                                <button type="button" class="btn btn-outline-danger round">9</button>
+                                <button type="button" class="btn btn-outline-danger round">10</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 px-0 pb-25">
+                          <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part f -->
+              <!-- part g -->
+              <div id="part-g" class="content">
+                <fieldset>
+                  <div class="content-header mb-2">
+                    <h5>Part G: International Experience Support & Services</h5>
+                  </div>
+                  <!-- alert -->
+                  <div class="alert alert-danger" role="alert">
+                    <div class="alert-body"><i data-feather='alert-circle' class="mr-75"></i>This part is only for International Students to answer. You may proceed to the next page.</div>
+                  </div>
+                  <!-- end alert -->
+                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="form-group col-md-12">
+                      <div class="form-group">
+                        <div class="table-responsive">
+                          <table class="table table-bordered fixed">
+                            <thead class="text-center">
+                              <tr class="pb-25">
+                                <th width="30%"></th>
+                                <th class="px-25 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Dissatisfied</th>
+                                <th class="px-1 pb-25 text-dark bg-danger bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Dissatisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
+                                <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
+                                <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
+                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              </tr>
+                              <tr class="pb-50 pt-0">
+                                <th style="border-top: none;"></th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">1</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-danger bg-lighten-4 no-border">2</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
+                                <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-1">1.<textarea class="form-control mb-2 text-justify" rows="3">International Student insurance support</textarea></td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat25" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat25" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat25" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat25" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat25" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat25" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">2.<textarea class="form-control mb-2 text-justify" rows="3 ">The airport pick-up services or quarantine stations' pick-up service.</textarea></td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat26" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat26" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat26" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat26" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat26" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat26" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">3.<textarea class="form-control mb-2 text-justify" rows="3 ">The activities organised by Student Welfare.</textarea></td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat27" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat27" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat27" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat27" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat27" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat27" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">4.<textarea class="form-control mb-2 text-justify" rows="3 ">The counter services / passport collection services at International Office.</textarea></td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat28" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat28" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat28" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat28" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat28" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat28" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">5.<textarea class="form-control mb-2 text-justify" rows="3 ">The visa advisory (cancellation, deferment, transfer endorsement) at International Office.</textarea></td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat29" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat29" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat29" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat29" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat29" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat29" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-1 text-justify">6.<textarea class="form-control mb-2 text-justify" rows="3 ">Your visa renewal process.</textarea></td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat30" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-danger table-form-check">
+                                    <input type="radio" name="sat30" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-info table-form-check">
+                                    <input type="radio" name="sat30" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat30" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-success table-form-check">
+                                    <input type="radio" name="sat30" class="form-check-input">
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="form-check form-check-warning table-form-check">
+                                    <input type="radio" name="sat30" class="form-check-input">
+                                  </div>
+                                </td>
+                              </tr>
+                              <!-- open ended qs -->
+                              <tr>
+                                <td colspan="7" class="px-75">
+                                  <p class="mb-50"><textarea class="form-control">Please state your reason / comments for dissatisfied rating</textarea></p>
+                                  <textarea rows="2" class="form-control" id="" placeholder="Open ended question"></textarea>
+                                </td>
+                              </tr>
+                              <!-- end open ended qs -->
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part g -->
+              <!-- part h -->
+              <div id="part-h" class="content">
+                <fieldset>
+                  <div class="content-header">
+                    <h4 class="mb-2"><b>Part H: Referral / Incentive Scheme</b></h4>
+                  </div>
+                  <div class="row my-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="col-12 text-justify">
+                      <textarea class="form-control text-justify" rows="8">Incentive Scheme is a process of student informing other students to answer the survey, and in return, the other students will be able to select the one informing under a “Referral” below.
+
+Each time a student name is selected under referral, it will contribute as point which will be accumulated within a survey timeframe. Winners will be selected at the end of the survey timeframe and Taylor's will distribute gifts to winners. All points will be refreshed each survey year.
+
+If you do not wish to participate on the Incentive Scheme, you may choose "Not Applicable" from the dropdown.</textarea>
+                      <div class="my-50">
+                        <small><i data-feather='alert-triangle' class="text-danger mr-50"></i>You only can select <b>ONE referral name</b>. Once this survey is submitted, it <b>cannot be changed</b> in the future.</small>
+                      </div>
+
+                      <!-- name dropdown -->
+                      <!-- <div class="d-flex justify-content-start">
+                        <div class="col-9 pb-2"> -->
+                          <select class="select2 form-control" data-placeholder="Select ONE referral">
+                            <option selected>Not Applicable</option>
+                            <option value="01">E000114 - Kylie Zheng</option>
+                            <option value="02">E000257 - Melissa</option>
+                            <option value="03">S000197 - Ravi Durand</option>
+                            <option value="04">W000214 - John Brian</option>
+                            <option value="05">W000261 - Gertrud Mohammad</option>
+                          </select>
+                        <!-- </div>
+                      </div> -->
+                      <!-- end name dropdown -->
+                      <!-- t&c checkbox -->
+                      <!-- <div class="d-flex justify-content-center mb-2"> -->
+                      <div class="my-1">
+                        <div class="custom-control custom-control-danger custom-checkbox">
+                          <input type="checkbox" class="form-check-input" id="confirm-tc"/>
+                          <label class="custom-control-label" for="confirm-tc"> I understand about the Incentive Scheme Terms and Condition.</label>
+                        </div>
+                      </div>
+                      <!-- </div> -->
+                      <!-- end t&c checkbox -->
+                      <!-- confirm submit checkbox -->
+                      <!-- <div class="d-flex justify-content-center mb-2"> -->
+                      <div class="mb-2">
+                        <div class="custom-control custom-control-danger custom-checkbox">
+                          <input type="checkbox" class="form-check-input" id="confirm-submit"/>
+                          <label class="custom-control-label" for="confirm-submit">I am ready to submit the form.</label>
+                        </div>
+                      </div>
+                      <!-- </div> -->
+                      <!-- end confirm submit checkbox -->
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
+                    <div>
+                      <a href="#!" class="btn btn-outline-dark waves-effect waves-float waves-light mr-50"><i data-feather='slash' class="mr-50"></i>Cancel</a>
+                      <a href="#!" class="btn btn-success waves-effect waves-float waves-light mr-50"><i data-feather='save' class="mr-50"></i>Save</a>
+                    </div>
+                    <button type="button" name="next" class="btn btn-danger btn-next waves-effect waves-float waves-light">Next <i data-feather="arrow-right"></i></button>
+                  </div>
+                </fieldset>
+              </div>
+              <!-- end part h -->
+            </form>
+          </div>
+          <!-- end survey questions -->
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- END: Content-->
+
+<div class="sidenav-overlay"></div>
+<div class="drag-target"></div>
+
+<!-- BEGIN: Footer-->
+<footer class="footer footer-static footer-light text-center">
+  <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020<a class="ml-25" href="" target="_blank">GRTECH SDN BHD</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+</footer>
+<button class="btn btn-danger btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+<!-- END: Footer-->
+<style>
+  .feather-18 {
+    width: 18px;
+    height: 18px;
+  }
+  .btn-outline-danger:active, .btn-outline-danger:focus {
+    border-color: #ea5455 !important;
+    background-color: #ea5455 !important;
+    color: #fff !important;
+  }
+  .btn-group .btn {
+    padding: 0.8rem 1.3rem;
+  }
+  .table thead th {
+    vertical-align: middle;
+  }
+  .step {
+    padding-bottom: 0.6rem;
+  }
+  .bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-label {
+    margin-top: 0;
+  }
+  .bs-stepper .bs-stepper-header .step .step-trigger {
+    padding: 0 !important;
+  }
+  .bs-stepper .bs-stepper-header .line {
+    padding: 0 0.3rem !important;
+  }
+</style>
+<!-- BEGIN: Vendor JS-->
+<script src="../../app-assets/vendors/js/vendors.min.js"></script>
+<!-- BEGIN Vendor JS-->
+<!-- BEGIN: Page Vendor JS-->
+<script src="../../app-assets/vendors/js/forms/wizard/bs-stepper.min.js"></script>
+<script src="../../app-assets/js/scripts/forms/form-wizard.min.js"></script>
+<script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+<script src="../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src="../../app-assets/js/core/app-menu.js"></script>
+<script src="../../app-assets/js/core/app.js"></script>
+<!-- END: Theme JS-->
+<!-- BEGIN: Page JS-->
+<script src="../../app-assets/js/scripts/forms/form-wizard.js"></script>
+<script src="../../app-assets/js/scripts/forms/form-select2.js"></script>
+<script src="../../assets/js/scripts.js"></script>
+<!-- END: Page JS-->
+</body>
+<!-- END: Body-->
+
+</html>

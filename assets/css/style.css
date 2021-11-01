@@ -1,0 +1,281 @@
+/* ================================================================================
+        Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+        Version: 2.0
+        Author: PIXINVENT
+        Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/* in leaderboards (admin/leaderbord.html & student/leaderboard.html) */
+h11 {
+    font-size: 2.7rem;
+}
+/* end in leaderboards (admin/leaderbord.html & student/leaderboard.html) */
+/* border-radius for the cards component */
+.card {
+    border-radius: 13px;
+}
+.bs-stepper.wizard-modern .bs-stepper-content {
+    border-radius: 13px;
+}
+/* end border-radius for the cards component */
+
+/* .active {
+  color: #ea5455 !important;
+} */
+/* sidenav */
+.main-menu.menu-light .navigation > li.active > a, .main-menu.menu-light .navigation > li ul .active{
+    background: linear-gradient(118deg, #ea5455, rgba(236, 64, 64, 0.7));
+    box-shadow: 0px 0px 6px 1px rgb(236 64 64 / 60%);
+}
+.main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+    background: linear-gradient(118deg, #d63333 15%, #c20000 93%);
+    box-shadow: 0px 0px 6px 1px rgb(236 64 64 / 60%);
+}
+
+.main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a, .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+    background: #d63333;
+    color: #f2f2f2;
+}
+.main-menu.menu-light .navigation > li.open {
+    background: #F8F8F8;
+}
+.main-menu.menu-dark, .main-menu.menu-dark .navigation {
+    background: #0f161c; /* very dark cyan */
+}
+/* end sidenav */
+
+a {
+    color: #ea5455;
+}
+
+@media screen and (min-width: 1000px) {
+    .card-survey {
+        width: 70%;
+    }
+}
+
+/* stepper label in (admin/survey-mngmnt/edit-survey.html & student/survey.html) */
+/* .bs-stepper .bs-stepper-header .step.active .step-trigger .bs-stepper-box {
+    background-color: #eb6060;
+    color: #fff;
+    box-shadow: 0 3px 6px 0 rgb(236 64 64 / 40%);
+}
+.bs-stepper .bs-stepper-header .step.active .step-trigger .bs-stepper-label .bs-stepper-title {
+    color: #eb6060;
+} */
+.bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-box {
+    background-color: rgba(241, 30, 30, 0.12);
+    color: #f08182;
+}
+.bs-stepper .bs-stepper-header .step.crossed .step-trigger .bs-stepper-box {
+    background-color: rgba(36, 197, 21, 0.12);
+    color: #28c76f !important;
+}
+/* end stepper label in (admin/survey-mngmnt/edit-survey.html & student/survey.html) */
+
+.page-item.active .page-link {
+    background-color: #ea5455;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #ea5455;
+}
+
+.nav-pills .nav-link.active {
+    border-color: #ea5455;
+    box-shadow: 0 4px 18px -4px rgb(236 64 64 / 65%);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #ea5455;
+}
+
+.dropzone {
+    border: 2px dashed #ea5455;
+}
+
+.dropzone .dz-message:before {
+    width: 0;
+    color: #ea5455;
+}
+
+.dropzone .dz-message {
+    color: #ea5455;
+}
+
+.horizontal-menu .header-navbar.navbar-horizontal ul#main-menu-navigation > li.active > a {
+    background: linear-gradient(118deg, #ea5455, rgba(236, 64, 64, 0.7));
+    box-shadow: 0px 0px 6px 1px rgb(236 64 64 / 60%);
+}
+
+#regiration_form fieldset:not(:first-of-type) {
+    display: none;
+}
+
+.swal2-header, .swal2-content {
+    padding: 0 !important;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice, .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #ea5455 !important;
+    border-color: #ea5455 !important;
+}
+
+.table thead th {
+    border-bottom: none;
+}
+table.fixed {
+  table-layout: fixed;
+  min-width: 100%;
+}
+.bg-soften-4.no-border, .bg-lighten-4.no-border {
+    border: none;
+}
+.bg-warning.bg-lighten-4.no-border {
+    border-right: 1px solid #ebe9f1 !important;
+}
+
+/* custom color */
+.bg-info.bg-soften-4 {
+    background-color: rgba(39, 212, 235, 0.52) !important;
+}
+.bg-soften-p {
+    border-radius: 0.358rem;
+    background-color: rgba(255, 88, 88, 0.19) !important;
+}
+.p-outline {
+    border: 1px solid #bfbfbf;
+    border-radius: 0.358rem;
+}
+/* end custom color */
+
+/* center the dot for the legends in chartSurvey */
+#chartSurvey .apexcharts-legend-marker {
+    margin-right: 6px !important;
+    top: 0.7rem !important;
+}
+/* end center the dot for the legends in chartSurvey */
+
+.form-check {
+    display: block;
+    min-height: 1.45rem;
+    padding-left: 1.785rem;
+    margin-bottom: 0; }
+
+.form-check .form-check-input {
+    float: left;
+    margin-left: -1.785rem; }
+
+.form-check-input {
+    width: 1.285rem;
+    height: 1.285rem;
+    margin-top: 0.0825rem;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #d8d6de;
+    appearance: none;
+    color-adjust: exact; }
+
+.form-check-input[type="checkbox"] {
+    border-radius: 3px; }
+
+.form-check-input[type="radio"] {
+    border-radius: 50%; }
+
+.form-check-input:active {
+    filter: brightness(90%); }
+
+.form-check-input:focus {
+    border-color: #7367f0;
+    outline: 0;
+    box-shadow: 0 2px 4px 0 rgba(115, 103, 240, 0.4); }
+
+.form-check-input:checked {
+    background-color: #7367f0;
+    border-color: #7367f0; }
+
+.form-check-input:checked[type="checkbox"] {
+    background-image: url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.5 7.5'%3e%3cpolyline points='0.75 4.35 4.18 6.75 8.75 0.75' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px'/%3e%3c/svg%3e"); }
+
+.form-check-input:checked[type="radio"] {
+    background-image: none; }
+
+.form-check-input[type="checkbox"]:indeterminate {
+    background-color: #7367f0;
+    border-color: #7367f0;
+    background-image: url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-minus'%3e%3cline x1='5' y1='12' x2='19' y2='12'%3e%3c/line%3e%3c/svg%3e"); }
+
+.form-check-input:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: 0.65; }
+
+.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
+    opacity: 0.65; }
+
+.form-check-label {
+    cursor: pointer; }
+
+.form-check:not(.form-switch) .form-check-input[type='checkbox']:checked {
+    background-size: 65%; }
+
+.form-check:not(.form-switch) .form-check-input:disabled:not(:checked) {
+    background-color: #efefef;
+    border-color: #efefef;
+    opacity: 1; }
+
+.form-check-input:not(:disabled):checked {
+    box-shadow: 0 2px 4px 0 rgba(115, 103, 240, 0.4); }
+
+.form-check-input:not(:disabled):indeterminate {
+    background-size: 85%; }
+
+.table-form-check{
+    padding: 0;
+    text-align: center;
+}
+.table-form-check .form-check-input[type="radio"]{
+    float: none;
+    margin: 0;
+    position: initial;
+}
+.form-check-success .form-check-input:checked {
+    border-color: #28c76f;
+    background-color: #28c76f; }
+
+.form-check-success .form-check-input:not(:disabled):checked, .form-check-success .form-check-input:not(:disabled):focus {
+    border-color: #28c76f;
+    box-shadow: 0 2px 4px 0 rgba(40, 199, 111, 0.4); }
+
+.form-check-danger .form-check-input:checked {
+    border-color: #ea5455;
+    background-color: #ea5455; }
+
+.form-check-danger .form-check-input:not(:disabled):checked, .form-check-danger .form-check-input:not(:disabled):focus {
+    border-color: #ea5455;
+    box-shadow: 0 2px 4px 0 rgba(234, 84, 85, 0.4); }
+
+.form-check-warning .form-check-input:checked {
+    border-color: #ff9f43;
+    background-color: #ff9f43; }
+
+.form-check-warning .form-check-input:not(:disabled):checked, .form-check-warning .form-check-input:not(:disabled):focus {
+    border-color: #ff9f43;
+    box-shadow: 0 2px 4px 0 rgba(255, 159, 67, 0.4); }
+
+.form-check-info .form-check-input:checked {
+    border-color: #00cfe8;
+    background-color: #00cfe8; }
+
+.form-check-info .form-check-input:not(:disabled):checked, .form-check-info .form-check-input:not(:disabled):focus {
+    border-color: #00cfe8;
+    box-shadow: 0 2px 4px 0 rgba(0, 207, 232, 0.4); }

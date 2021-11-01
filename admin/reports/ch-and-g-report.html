@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+<meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+<meta name="author" content="PIXINVENT">
+
+<title>Charts and Graphs - Report | Admin - SSS</title>
+<link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
+<link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+<!-- BEGIN: Vendor CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/forms/select/select2.min.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-pickadate.css">
+<!-- END: Vendor CSS-->
+<!-- BEGIN: Theme CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.css">
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
+<!-- END: Theme CSS-->
+<!-- BEGIN: Page CSS-->
+<link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+<!-- END: Page CSS-->
+<!-- BEGIN: Custom CSS-->
+<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+<!-- END: Custom CSS-->
+
+</head>
+
+<body class="vertical-layout vertical-menu-modern menu-expanded pace-done footer-static navbar-sticky" data-open="click" data-menu="vertical-menu-modern" data-col="">
+<!-- BEGIN: Header-->
+<nav class="header-navbar navbar navbar-expand-lg align-items-center navbar-light navbar-shadow fixed-top">
+  <div class="navbar-container d-flex content">
+    <div class="bookmark-wrapper d-flex align-items-center">
+      <ul class="nav navbar-nav d-xl-none">
+        <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+      </ul>
+      <ul class="nav navbar-nav bookmark-icons">
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link menu-toggle" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Menu">
+            <i class="ficon" data-feather="menu"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="nav navbar-nav align-items-center ml-auto">
+      <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
+              alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+          <a class="dropdown-item" href="admin-profile.html"><i class="mr-50" data-feather="user"></i> Profile</a>
+          <a class="dropdown-item" href="#"><i class="mr-50" data-feather="settings"></i> Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="../../index.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<ul class="main-search-list-defaultlist d-none">
+  <li class="d-flex align-items-center"><a href="javascript:void(0);">
+      <h6 class="section-label mt-75 mb-0">Files</h6>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/xls.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+      <div class="d-flex">
+        <div class="mr-75"><img src="../../app-assets/images/icons/doc.png" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+        </div>
+      </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+    </a></li>
+  <li class="d-flex align-items-center"><a href="javascript:void(0);">
+      <h6 class="section-label mt-75 mb-0">Members</h6>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+        </div>
+      </div>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+        </div>
+      </div>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+        </div>
+      </div>
+    </a></li>
+  <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+      <div class="d-flex align-items-center">
+        <div class="avatar mr-75"><img src="../../app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+        <div class="search-data">
+          <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+        </div>
+      </div>
+    </a></li>
+</ul>
+<ul class="main-search-list-defaultlist-other-list d-none">
+  <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+      <div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+    </a></li>
+</ul>
+<!-- END: Header-->
+
+<!-- BEGIN: Main Menu-->
+<div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+<!-- <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true"> -->
+  <div class="navbar-header">
+    <ul class="nav navbar-nav flex-row">
+      <li class="nav-item mr-auto">
+        <a class="navbar-brand" href="#!">
+          <img class="brand-logo" src="../../app-assets/taylors-logo-white2.png" alt="SSS" width="155" height="58">
+        </a>
+      </li>
+      <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-danger toggle-icon font-medium-4" data-feather="x"></i><i
+            class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-danger" data-feather="disc" data-ticon="disc"></i></a></li>
+    </ul>
+  </div>
+  <div class="shadow-bottom"></div>
+  <div class="main-menu-content">
+    <ul class="navigation navigation-main mt-2" id="main-menu-navigation" data-menu="menu-navigation">
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="../survey-mngmnt/survey-mngmnt.html">
+          <i data-feather='clipboard'></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Survey Management</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="#!">
+          <i data-feather='list'></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Real-time Reporting</span>
+        </a>
+        <ul class="menu-content">
+          <li><a class="d-flex align-items-center" href="../survey-info-listing/complete-survey.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">Completed Survey</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="../survey-info-listing/incomplete-survey.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name" data-toggle="tooltip" data-placement="right" title="Incomplete & Un-initiated Survey">Incomplete & Un-initiated Survey</span></a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="../leaderboard.html">
+          <i data-feather='award'></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Leaderboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="d-flex align-items-center" href="#!">
+          <i data-feather="book-open"></i>
+          <span class="menu-title text-truncate" data-i18n="Menu Name">Reporting</span>
+        </a>
+        <ul class="menu-content">
+          <li><a class="d-flex align-items-center" href="all-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">All Student</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="all-data.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">All Data Download</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="comp-survey-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">Completed Survey</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="incomp-survey-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name" data-toggle="tooltip" data-placement="right" title="Incomplete & Un-initiated Survey">Incomplete & Un-initiated Survey</span></a>
+          </li>
+          <li><a class="d-flex align-items-center" href="incent-sch-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name" data-toggle="tooltip" data-placement="right" title="Incentive Scheme Summary">Incentive Scheme Summary</span></a>
+          </li>
+          <li class="active"><a class="d-flex align-items-center" href="ch-and-g-report.html"><span class="menu-item text-truncate ml-2 pl-75" data-i18n="Menu Name">Charts & Graphs</span></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- END: Main Menu-->
+
+<!-- BEGIN: Content-->
+<div class="app-content content">
+  <div class="content-overlay"></div>
+  <div class="header-navbar-shadow"></div>
+  <div class="content-wrapper">
+    <div class="content-header row">
+      <div class="content-header-left col-12 mb-2">
+        <div class="row breadcrumbs-top">
+          <div class="col-12">
+            <h2 class="content-header-title float-left mb-0">Charts and Graphs</h2>
+            <div class="breadcrumb-wrapper">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Report</a></li>
+                <li class="breadcrumb-item">Charts and Graphs</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="row">
+        <div class="col-12">
+          <!-- per year -->
+          <div class="card">
+            <div class="card-header border-bottom p-2">
+              <div class="card-title">
+                <h4 class="mb-0">Survey Response Rate per Year</h4>
+              </div>
+              <div class="text-right">
+                <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Export to PDF"><i data-feather='upload' class="mr-50"></i>PDF</button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div id="chartperYear"></div>
+            </div>
+          </div>
+          <!-- end per year -->
+
+          <!-- by date -->
+          <div class="card">
+            <div class="card-header border-bottom p-2">
+              <div class="card-title">
+                <h4 class="mb-0">Survey Response Rate by Date</h4>
+              </div>
+                <button type="button" class="btn btn-outline-secondary ml-auto mr-75" data-toggle="tooltip" data-placement="top" title="Export to PDF"><i data-feather='upload' class="mr-50"></i>PDF</button>
+                <div class="btn-group">
+                  <ul class="nav nav-pills card-header-pills ml-0 mb-0 mr-25 border-danger" style="border-radius: 0.36rem;" id="pills-tab" role="tablist">
+                    <li class="nav-item border-right-danger">
+                      <a class="nav-link active text-danger" id="daily-tab" data-toggle="pill" href="#daily" role="tab" aria-controls="daily" aria-selected="true" style="border-bottom-right-radius: 0px; border-top-right-radius: 0px;">Daily</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-danger" id="weekly-tab" data-toggle="pill" href="#weekly" role="tab" aria-controls="weekly" aria-selected="false" style="border-radius: 0px;">Weekly</a>
+                    </li>
+                    <li class="nav-item border-left-danger">
+                      <a class="nav-link text-danger" id="monthly-tab" data-toggle="pill" href="#monthly" role="tab" aria-controls="monthly" aria-selected="false" style="border-bottom-left-radius: 0px; border-top-left-radius: 0px;">Monthly</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="daily" role="tabpanel" aria-labelledby="daily-tab">
+                    <!-- filter daily -->
+                    <div class="card-header px-0 py-1">
+                      <div class="card-title pt-50">
+                        <h5 class="mb-0">Filter</h5>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-10 pl-2 pr-0 text-right">
+                        <div class="input-group input-group-merge">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="dailyF"><i class="text-dark" data-feather="calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control flat-picker flatpickr-range bg-transparent" placeholder="YYYY-MM-DD to YYYY-MM-DD" aria-describedby="dailyF"/>
+                        </div>
+                      </div>
+                      <div class="col-2 pr-1 pl-0 text-center">
+                        <button href="#" type="button" class="btn btn-danger"><i data-feather='filter' class="mr-50"></i><span>Filter</span></button>
+                      </div>
+                    </div>
+                    <!-- end filter daily -->
+                    <hr class="mb-0 mx-1 mt-2">
+                    <div class="card-header px-0 py-1">
+                      <div class="card-title pt-50">
+                        <h5 class="mb-0">Chart</h5>
+                      </div>
+                    </div>
+                    <div id="chartdaily"></div>
+                  </div>
+
+                  <div class="tab-pane fade" id="weekly" role="tabpanel" aria-labelledby="weekly-tab">
+                    <!-- filter weekly -->
+                    <div class="card-header px-0 py-1">
+                      <div class="card-title pt-50">
+                        <h5 class="mb-0">Filter</h5>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-10 pl-2 pr-0 text-right">
+                        <div class="input-group input-group-merge">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="dailyF"><i class="text-dark" data-feather="calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control flat-picker flatpickr-range bg-transparent" placeholder="YYYY-MM-DD to YYYY-MM-DD" aria-describedby="dailyF"/>
+                        </div>
+                      </div>
+                      <div class="col-2 pr-1 pl-0 text-center">
+                        <button href="#" type="button" class="btn btn-danger"><i data-feather='filter' class="mr-50"></i><span>Filter</span></button>
+                      </div>
+                    </div>
+                    <!-- end filter weekly -->
+                    <hr class="mb-0 mx-1 mt-2">
+                    <div class="card-header px-0 py-1">
+                      <div class="card-title pt-50">
+                        <h5 class="mb-0">Chart</h5>
+                      </div>
+                    </div>
+                    <div id="chartweekly"></div>
+                  </div>
+
+                  <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                    <!-- filter monthly -->
+                    <div class="card-header px-0 py-1">
+                      <div class="card-title pt-50">
+                        <h5 class="mb-0">Filter</h5>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-10 pl-2 pr-0 text-right">
+                        <div class="input-group input-group-merge">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="dailyF"><i class="text-dark" data-feather="calendar"></i></span>
+                          </div>
+                          <input type="text" class="form-control flat-picker flatpickr-range bg-transparent" placeholder="MM" aria-describedby="dailyF"/>
+                        </div>
+                      </div>
+                      <div class="col-2 pr-1 pl-0 text-center">
+                        <button href="#" type="button" class="btn btn-danger"><i data-feather='filter' class="mr-50"></i><span>Filter</span></button>
+                      </div>
+                    </div>
+                    <!-- end filter monthly -->
+                    <hr class="mb-0 mx-1 mt-2">
+                    <div class="card-header px-0 py-1">
+                      <div class="card-title pt-50">
+                        <h5 class="mb-0">Chart</h5>
+                      </div>
+                    </div>
+                    <div id="chartmonthly"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- end by date -->
+
+              <!-- by school -->
+              <div class="card">
+                <div class="card-header border-bottom p-2">
+                  <div class="card-title">
+                    <h4 class="mb-0">Survey Response Rate by School</h4>
+                  </div>
+                  <div class="text-right">
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Export to PDF"><i data-feather='upload' class="mr-50"></i>PDF</button>
+                  </div>
+                </div>
+                <!-- filter by school -->
+                <div class="card-header p-1">
+                  <div class="card-title pt-50">
+                    <h5 class="ml-75 mb-0">Filter</h5>
+                  </div>
+                </div>
+                <div class="card-body pb-0">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="yrSchool">Year</label>
+                        <select class="select2 form-control" id="yrSchool">
+                          <option selected>2021</option>
+                          <option value="17">2017</option>
+                          <option value="18">2018</option>
+                          <option value="19">2019</option>
+                          <option value="20">2020</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="form-group">
+                          <label for="school">School</label>
+                          <select class="select2 form-control" id="school" data-placeholder=" All Schools" multiple>
+                            <optgroup label="Faculty of Innovation and Technology">
+                              <option value="InT1">School of Architecture, Building and Design</option>
+                              <option value="InT2">School of Computer Science and Engineering</option>
+                              <option value="InT3">The Design School at Taylor's</option>
+                            </optgroup>
+                            <optgroup label="Faculty of Business and Law">
+                              <option value="BuL1">Taylor's Business School</option>
+                              <option value="BuL2">Taylor's Law School</option>
+                            </optgroup>
+                            <optgroup label="Faculty of Health & Medical Sciences">
+                              <option value="HMS1">School of Medicine</option>
+                              <option value="HMS2">School of Pharmacy</option>
+                              <option value="HMS3">School of Biosciences</option>
+                            </optgroup>
+                            <optgroup label="Faculty of Social Sciences & Leisure Management">
+                              <option value="SSLM1">School of Hospitality, Tourism & Events</option>
+                              <option value="SSLM2">School of Food Studies & Gastronomy</option>
+                              <option value="SSLM3">School of Media and Communciation</option>
+                              <option value="SSLM4">School of Liberal Arts and Sciences</option>
+                              <option value="SSLM5">School of Education</option>
+                              <option value="SSLM6">Taylor's Culinary Institute</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end pr-1">
+                      <button href="#" type="button" class="btn btn-danger mr-1"><i data-feather='filter' class="mr-75"></i><span>Filter</span></button>
+                      <button href="#" type="button" class="btn btn-outline-secondary">Reset</button>
+                  </div>
+                </div>
+                <hr class="mb-0 mx-1 mt-2">
+                <!-- end filter by school -->
+                <div class="card-header px-1 pt-1 pb-0">
+                  <div class="card-title pt-50">
+                    <h5 class="ml-75 mb-0">Chart</h5>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <div id="chartbySchool"></div>
+                </div>
+              </div>
+              <!-- end by school -->
+
+              <!-- by programme -->
+              <div class="card">
+                <div class="card-header border-bottom p-2">
+                  <div class="card-title">
+                    <h4 class="mb-0">Survey Response Rate by Programme</h4>
+                  </div>
+                  <div class="text-right">
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Export to PDF"><i data-feather='upload' class="mr-50"></i>PDF</button>
+                  </div>
+                </div>
+                <!-- filter by programme -->
+                <div class="card-header p-1">
+                  <div class="card-title pt-50">
+                    <h5 class="ml-75 mb-0">Filter</h5>
+                  </div>
+                </div>
+                <div class="card-body pb-0">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="yrProg">Year</label>
+                        <select class="select2 form-control" id="yrProg">
+                          <option selected>2021</option>
+                          <option value="17">2017</option>
+                          <option value="18">2018</option>
+                          <option value="19">2019</option>
+                          <option value="20">2020</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="form-group">
+                        <label for="prog">Programme</label>
+                        <select class="select2 form-control" id="prog" data-placeholder=" All Programmes" multiple>
+                          <optgroup label="School of Architecture, Building and Design">
+                            <option value="ABD1">Bachelor of Science (HONS) in Architecture</option>
+                            <option value="ABD2">Bachelor of Quantity Surveying (HONS)</option>
+                            <option value="ABD3">Bachelor of Arts (HONS) in Interior Architecture</option>
+                            <option value="ABD4">Master of Architecture (Coursework)</option>
+                            <option value="ABD5">Doctor of Philosophy (Architevture)</option>
+                          </optgroup>
+                          <optgroup label="School of Computer Science and Engineering">
+                            <option value="CSE1">Foundation in Computing</option>
+                            <option value="CSE2">Foundation in Engineering</option>
+                            <option value="CSE3">Diploma in Information Technology (DIT)</option>
+                            <option value="CSE4">Bachelor of Computer Science (HONS)</option>
+                            <option value="CSE5">Bachelor of Software Engineering (HONS)</option>
+                            <option value="CSE6">Bachelor of Information Technology (HONS)</option>
+                            <option value="CSE7">Bachelor of Science (Honours) in Robotic Design and Development</option>
+                            <option value="CSE8">Bachelor of Chemical Engineering with Honours</option>
+                            <option value="CSE9">Bachelor of Electrical and Electronic Engineering with Honours</option>
+                            <option value="CSE10">Bachelor of Mechanical Engineering with Honours</option>
+                            <option value="CSE11">Master of Applied Computing (Coursework)</option>
+                            <option value="CSE12">Master of Computer Science</option>
+                            <option value="CSE13">Master of Science in Engineering</option>
+                            <option value="CSE14">Doctor of Philosophy in Computer Science</option>
+                            <option value="CSE15">Doctor of Philosophy in Engineering</option>
+                          </optgroup>
+                          <optgroup label="The Design School at Taylor's">
+                            <option value="DST1">Foundation in Design</option>
+                            <option value="DST2">Diploma in Interior Design</option>
+                            <option value="DST3">Bachelor of Arts (HONS) in Interior Architecture</option>
+                            <option value="DST4">Bachelor of Design (HONS) in Creative Media</option>
+                            <option value="DST5">Bachelor of Fashion Design Technology (HONS)</option>
+                            <option value="DST6">Master of Design</option>
+                            <option value="DST7">Doctor of Philosophy in Design Management</option>
+                            <option value="DST8">Microcreds: Design</option>
+                          </optgroup>
+                          <optgroup label="Taylor's Business School">
+                            <option value="TBS1">Foundation in Business</option>
+                            <option value="TBS2">Foundation in Arts (FIA)</option>
+                            <option value="TBS3">Diploma in Business</option>
+                            <option value="TBS4">Bachelor of Business (HONS)</option>
+                            <option value="TBS5">Bachelor of Business (HONS) International Business & Marketing</option>
+                            <option value="TBS6">Bachelor of Arts (HONS) Accounting & Finance</option>
+                            <option value="TBS7">Bachelor of Business (HONS) Banking & Finance</option>
+                            <option value="TBS8">Bachelor of Business (HONS) Finance & Economics</option>
+                            <option value="TBS9">Bachelor of (HONS) Actuarial Studies</option>
+                            <option value="TBS10">Bachelor of Team Entrepreneurship (Entrepreneurship) (Honours)</option>
+                            <option value="TBS11">Bachelor of Accounting (Fintech) (Honours)</option>
+                            <option value="TBS12">Taylor's Master of Business Administration (MBA) (Coursework)</option>
+                            <option value="TBS13">Master in Management (Coursework)</option>
+                            <option value="TBS14">Doctor of Philosophy (Business) (Research)</option>
+                            <option value="TBS15">Microcreds: Business</option>
+                          </optgroup>
+                          <optgroup label="Taylor's Law School">
+                            <option value="TLS1">Foundation in Business</option>
+                            <option value="TLS2">Foundation in Arts (FIA)</option>
+                            <option value="TLS3">Diploma in Business</option>
+                            <option value="TLS4">Bachelor of Laws (LL.B)</option>
+                            <option value="TLS5">Master of Laws (International Business and Trade Law) (Mixed Mode)</option>
+                            <option value="TLS6">Master of Laws (Healthcare and Medical Law) (Mixed Mode)</option>
+                            <option value="TLS7">Doctor of Philosophy (Law)</option>
+                          </optgroup>
+                          <optgroup label="School of Medicine">
+                            <option value="MED1">Foundation in Science</option>
+                            <option value="MED2">Bachelor of Medicine, Bachelor of Surgery (MBBS)</option>
+                            <option value="MED3">Master of Science in Medical Science</option>
+                            <option value="MED4">Doctor of Philosophy (Medical Science)</option>
+                          </optgroup>
+                          <optgroup label="School of Pharmacy">
+                            <option value="PHAR1">Foundation in Science</option>
+                            <option value="PHAR2">Bachelor of Pharmacy (HONS)</option>
+                            <option value="PHAR3">Master of Philosophy (Pharmacy)</option>
+                            <option value="PHAR4">Master of Philosophy (Pharmaceutical Sciences) (Research)</option>
+                            <option value="PHAR5">Doctor of Philosophy (Pharmaceutical Sciences) (Research)</option>
+                          </optgroup>
+                          <optgroup label="School of Biosciences">
+                            <option value="BIO1">Foundation in Science</option>
+                            <option value="BIO2">Bachelor of Science (HONS) (Food Science)</option>
+                            <option value="BIO3">Bachelor of Biomedical Science (HONS)</option>
+                            <option value="BIO4">Bachelor of Biotechnology (HONS)</option>
+                            <option value="BIO5">Master of Science</option>
+                            <option value="BIO6">Doctor of Philosophy (Science)</option>
+                          </optgroup>
+                          <optgroup label="School of Hospitality, Tourism & Events">
+                            <option value="HTE1">Foundation in Arts (FIA)</option>
+                            <option value="HTE2">Bachelor of International Hospitality Management (HONS)</option>
+                            <option value="HTE3">Bachelor of International Tourism Management (HONS)</option>
+                            <option value="HTE4">Bachelor of International Tourism Management (HONS) (Events Management)</option>
+                            <option value="HTE5">Master in International Hospitality Management (Coursework)</option>
+                            <option value="HTE6">Master of Science (Tourism) (Research)</option>
+                            <option value="HTE7">Doctor of Philosophy (Hospitality & Tourism) (Research)</option>
+                            <option value="HTE8">Microcreds: Hospitality Management</option>
+                          </optgroup>
+                          <optgroup label="School of Food Studies & Gastronomy">
+                            <option value="FSG1">Foundation in Science (FIS)</option>
+                            <option value="FSG2">Bachelor of Culinary Management (HONS)</option>
+                            <option value="FSG3">Bachelor of Science (HONS)</option>
+                            <option value="FSG4">Bachelor of Patisserie Arts (HONS)</option>
+                            <option value="FSG5">Doctor of Philosophy in Food Studies</option>
+                            <option value="FSG6">Master of Food Studies</option>
+                            <option value="FSG7">Microcreds: Food Studies & Gastronomies</option>
+                          </optgroup>
+                          <optgroup label="School of Media and Communication">
+                            <option value="MC1">Foundation in Communication (FICM)</option>
+                            <option value="MC2">Diploma in Communication (DICM)</option>
+                            <option value="MC3">Bachelor of Mass Communication (HONS) (Advertising & Brand Management)</option>
+                            <option value="MC4">Bachelor of Mass Communication (HONS) (Digital Media Production)</option>
+                            <option value="MC5">Bachelor of Mass Communication (HONS)</option>
+                            <option value="MC6">Bachelor of Mass Communication (HONS) (Public Relations & Event Management)</option>
+                            <option value="MC7">Bachelor of Mass Communication (HONS) (Public Relations & Marketing)</option>
+                            <option value="MC8">Master in Communication (Coursework)</option>
+                            <option value="MC9">Doctor of Philosophy (Media and Communication Studies) (Research)</option>
+                            <option value="MC10">Microcreds: Communication Management</option>
+                          </optgroup>
+                          <optgroup label="School of Liberal Arts and Sciences">
+                            <option value="LAS1">American Degree Transfer Program (ADP)</option>
+                            <option value="LAS2">Bachelor of Psychology (HONS)</option>
+                            <option value="LAS3">Bachelor of Performing Arts (HONS)</option>
+                            <option value="LAS4">Bachelor of Social Science with Honours (International Relations)</option>
+                            <option value="LAS5">Bachelor of Social Science with Honours (Social Innovation & Change)</option>
+                            <option value="LAS6">Mobility Programmes</option>
+                            <option value="LAS7">International Languages</option>
+                            <option value="LAS8">IELTS</option>
+                            <option value="LAS9">Online Speaking Programme</option>
+                            <option value="LAS10">Intensive English</option>
+                            <option value="LAS11">Master of Clinical Psychology</option>
+                            <option value="LAS12">Microcreds: Performing Arts</option>
+                          </optgroup>
+                          <optgroup label="School of Education">
+                            <option value="EDU1">Bachelor of Education (HONS)</option>
+                            <option value="EDU2">Post-graduate Certificate in Teaching & Learning (Coursework)</option>
+                            <option value="EDU3">Master in Teaching & Learning (Coursework)</option>
+                            <option value="EDU4">Doctor of Philosophy (Education) (Research)</option>
+                            <option value="EDU5">Master of Education</option>
+                            <option value="EDU6">Microcreds: Education Technology</option>
+                          </optgroup>
+                          <optgroup label="Taylor's Culinary Institute">
+                            <option value="TCI1">Foundation in Science (FIS)</option>
+                            <option value="TCI2">Diploma in Hotel Management</option>
+                            <option value="TCI3">Diploma in Culinary Arts</option>
+                            <option value="TCI4">Advanced Diploma in Patisserie & Gastronomic Cuisine</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-end pr-1">
+                      <button href="#" type="button" class="btn btn-danger mr-1"><i data-feather='filter' class="mr-75"></i><span>Filter</span></button>
+                      <button href="#" type="button" class="btn btn-outline-secondary">Reset</button>
+                  </div>
+                </div>
+                <hr class="mb-0 mx-1 mt-2">
+                <!-- end filter by programme -->
+                <div class="card-header px-1 pt-1 pb-0">
+                  <div class="card-title pt-50">
+                    <h5 class="ml-75 mb-0">Chart</h5>
+                  </div>
+                </div>
+                <div class="card-body pt-0">
+                  <div id="chartbyProg"></div>
+                </div>
+              </div>
+              <!-- end by programme -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END: Content-->
+
+<div class="sidenav-overlay"></div>
+<div class="drag-target"></div>
+
+<!-- BEGIN: Footer-->
+<footer class="footer footer-static footer-light text-center">
+  <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020<a class="ml-25" href="" target="_blank">GRTECH SDN BHD</a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+</footer>
+<button class="btn btn-danger btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+<!-- END: Footer-->
+
+<!-- BEGIN: Vendor JS-->
+<script src="../../app-assets/vendors/js/vendors.min.js"></script>
+<!-- BEGIN Vendor JS-->
+<!-- BEGIN: Page Vendor JS-->
+<script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+<script src="../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+<script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+<script src="../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+<script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+<script src="../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src="../../app-assets/js/core/app-menu.js"></script>
+<script src="../../app-assets/js/core/app.js"></script>
+<!-- END: Theme JS-->
+<!-- BEGIN: Page JS-->
+<script src="../../app-assets/js/scripts/components/components-dropdowns.js"></script>
+<script src="../../app-assets/js/scripts/forms/form-select2.js"></script>
+<script src="../../assets/js/scripts.js"></script>
+<!-- END: Page JS-->
+</body>
+<!-- END: Body-->
+
+</html>
