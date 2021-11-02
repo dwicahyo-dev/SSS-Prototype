@@ -17,7 +17,7 @@
     />
     <meta name="author" content="PIXINVENT" />
 
-    <title>Charts and Graphs - Report | Admin - SSS</title>
+    <title>Charts and Graphs - Responses - Real-time Reporting | Admin - SSS</title>
     <link
       rel="apple-touch-icon"
       href="../../../app-assets/images/ico/apple-icon-120.png"
@@ -535,7 +535,7 @@
               </li>
 
               <!-- Charts & Graphs - Responses -->
-              <li>
+              <li class="active">
                 <a
                   class="d-flex align-items-center"
                   href="../realtime-reporting/chart-and-graphs-responses.html"
@@ -584,7 +584,7 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a class="d-flex align-items-center" href="all-report.html"
+                <a class="d-flex align-items-center" href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -593,7 +593,7 @@
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="all-data.html"
+                <a class="d-flex align-items-center" href="../reports/all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -604,7 +604,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="comp-survey-report.html"
+                  href="../reports/comp-survey-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -615,7 +615,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="incomp-survey-report.html"
+                  href="../reports/incomp-survey-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -629,7 +629,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="incent-sch-report.html"
+                  href="../reports/incent-sch-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -640,8 +640,8 @@
                   ></a
                 >
               </li>
-              <li class="active">
-                <a class="d-flex align-items-center" href="ch-and-g-report.html"
+              <li>
+                <a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -675,12 +675,12 @@
             <div class="row breadcrumbs-top">
               <div class="col-12">
                 <h2 class="content-header-title float-left mb-0">
-                  Charts and Graphs
+                  Charts and Graphs- Responses
                 </h2>
                 <div class="breadcrumb-wrapper">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Report</a></li>
-                    <li class="breadcrumb-item">Charts and Graphs</li>
+                    <li class="breadcrumb-item"><a href="#">Real-time Reporting</a></li>
+                    <li class="breadcrumb-item">Charts and Graphs- Responses</li>
                   </ol>
                 </div>
               </div>
@@ -691,7 +691,7 @@
         <div class="content-body">
           <div class="row">
             <div class="col-12">
-              <!-- per year -->
+
               <div class="card">
                 <div class="card-header border-bottom p-2">
                   <div class="card-title">
@@ -713,7 +713,7 @@
                   <div id="chartperYear"></div>
                 </div>
               </div>
-              <!-- end per year -->
+
 
               <!-- by date -->
               <div class="card">
@@ -961,7 +961,7 @@
               <div class="card">
                 <div class="card-header border-bottom p-2">
                   <div class="card-title">
-                    <h4 class="mb-0">Survey Response Rate by School</h4>
+                    <h4 class="mb-0">Response Rate by School</h4>
                   </div>
                   <div class="text-right">
                     <button
@@ -983,19 +983,7 @@
                 </div>
                 <div class="card-body pb-0">
                   <div class="row">
-                    <div class="col-3">
-                      <div class="form-group">
-                        <label for="yrSchool">Year</label>
-                        <select class="select2 form-control" id="yrSchool">
-                          <option selected>2021</option>
-                          <option value="17">2017</option>
-                          <option value="18">2018</option>
-                          <option value="19">2019</option>
-                          <option value="20">2020</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-9">
+                    <div class="col-12">
                       <div class="form-group">
                         <label for="school">School</label>
                         <select
@@ -1085,7 +1073,7 @@
               <div class="card">
                 <div class="card-header border-bottom p-2">
                   <div class="card-title">
-                    <h4 class="mb-0">Survey Response Rate by Programme</h4>
+                    <h4 class="mb-0">Response Rate by Programme</h4>
                   </div>
                   <div class="text-right">
                     <button
@@ -1107,18 +1095,6 @@
                 </div>
                 <div class="card-body pb-0">
                   <div class="row">
-                    <div class="col-3">
-                      <div class="form-group">
-                        <label for="yrProg">Year</label>
-                        <select class="select2 form-control" id="yrProg">
-                          <option selected>2021</option>
-                          <option value="17">2017</option>
-                          <option value="18">2018</option>
-                          <option value="19">2019</option>
-                          <option value="20">2020</option>
-                        </select>
-                      </div>
-                    </div>
                     <div class="col-9">
                       <div class="form-group">
                         <label for="prog">Programme</label>

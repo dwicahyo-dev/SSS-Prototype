@@ -62,7 +62,8 @@
         // series1: '#3939ac',
         // series2: '#7979d2'
         series1: '#6600cc',
-        series2: '#a64dff'
+        series2: '#a64dff',
+        series3: '#2bdac7'
       },
       area: {
         series3: '#ff0066',
@@ -101,13 +102,17 @@
       dataLabels: {
         style: {
           fontSize: '1.1rem'
-        }
+        },
+        formatter: function (val, opts) {
+          return opts.w.globals.series[opts.seriesIndex];
+        },
       },
-      labels: ['Completed Survey', 'Incomplete & Un-initiated Survey'],
-      series: [116, 74],
+      labels: ['Answered', 'Answering', 'Not Answered'],
+      series: [116, 74, 30],
       colors: [
         chartColors.donut.series1,
-        chartColors.donut.series2
+        chartColors.donut.series2,
+        chartColors.donut.series3,
       ],
       plotOptions: {
         pie: {
@@ -124,7 +129,7 @@
                 fontSize: '1.5rem',
                 label: 'Total Survey',
                 formatter: function(w) {
-                  return '190';
+                  return '220';
                 }
               }
             }
@@ -247,7 +252,7 @@
 				}
 			},
 			dataLabels: {
-				enabled: false
+				enabled: true
 			},
 			stroke: {
 				show: true,
@@ -298,7 +303,7 @@
 				}
 			},
 			dataLabels: {
-				enabled: false
+				enabled: true
 			},
 			stroke: {
 				show: true,
@@ -350,7 +355,7 @@
 				}
 			},
 			dataLabels: {
-				enabled: false
+				enabled: true
 			},
 			stroke: {
 				show: true,

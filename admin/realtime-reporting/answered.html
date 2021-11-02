@@ -17,15 +17,15 @@
     />
     <meta name="author" content="PIXINVENT" />
 
-    <title>All Data Download | Admin - SSS</title>
+    <title>Answered - Real-time Reporting | Admin - SSS</title>
     <link
       rel="apple-touch-icon"
-      href="../../../../app-assets/images/ico/apple-icon-120.png"
+      href="../../../app-assets/images/ico/apple-icon-120.png"
     />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="../../../../app-assets/images/ico/favicon.ico"
+      href="../../../app-assets/images/ico/favicon.ico"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
@@ -36,11 +36,6 @@
       rel="stylesheet"
       type="text/css"
       href="../../app-assets/vendors/css/vendors.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../app-assets/vendors/css/forms/select/select2.min.css"
     />
     <link
       rel="stylesheet"
@@ -56,6 +51,16 @@
       rel="stylesheet"
       type="text/css"
       href="../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../app-assets/vendors/css/charts/apexcharts.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../app-assets/vendors/css/forms/select/select2.min.css"
     />
     <!-- END: Vendor CSS-->
     <!-- BEGIN: Theme CSS-->
@@ -194,7 +199,6 @@
         </ul>
       </div>
     </nav>
-
     <ul class="main-search-list-defaultlist d-none">
       <li class="d-flex align-items-center">
         <a href="javascript:void(0);">
@@ -371,7 +375,6 @@
         </a>
       </li>
     </ul>
-
     <ul class="main-search-list-defaultlist-other-list d-none">
       <li class="auto-suggestion justify-content-between">
         <a
@@ -453,9 +456,7 @@
             <ul class="menu-content">
               <!-- All Students -->
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../realtime-reporting/all-report.html"
+                <a class="d-flex align-items-center" href="all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -468,10 +469,8 @@
               </li>
 
               <!-- Answered -->
-              <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../realtime-reporting/answered.html"
+              <li class="active">
+                <a class="d-flex align-items-center" href="answered.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -487,7 +486,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="../realtime-reporting/answering-and-not-answered.html"
+                  href="answering-and-not-answered.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -503,7 +502,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="../realtime-reporting/incentive-scheme.html"
+                  href="incentive-scheme.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -517,9 +516,7 @@
 
               <!-- Tables -->
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../realtime-reporting/tables.html"
+                <a class="d-flex align-items-center" href="tables.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -535,7 +532,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="../realtime-reporting/chart-and-graphs-responses.html"
+                  href="chart-and-graphs-responses.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -551,7 +548,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="../realtime-reporting/chart-and-graphs-satisfaction.html"
+                  href="chart-and-graphs-satisfaction.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -581,7 +578,9 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a class="d-flex align-items-center" href="all-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -589,8 +588,10 @@
                   ></a
                 >
               </li>
-              <li class="active">
-                <a class="d-flex align-items-center" href="all-data.html"
+              <li>
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -601,7 +602,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="comp-survey-report.html"
+                  href="../reports/comp-survey-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -612,7 +613,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="incomp-survey-report.html"
+                  href="../reports/incomp-survey-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -626,7 +627,7 @@
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="incent-sch-report.html"
+                  href="../reports/incent-sch-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -638,7 +639,9 @@
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="ch-and-g-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -647,9 +650,16 @@
                 >
               </li>
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/yearly-closing-reports.html"
+                <a class="d-flex align-items-center" href="../reports/yearly-closing-reports.html"
+                  ><span
+                    class="menu-item text-truncate ml-2 pl-75"
+                    data-i18n="Menu Name"
+                    >Yearly Closing Reports</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="../reports/yearly-closing-reports.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -674,8 +684,16 @@
             <div class="row breadcrumbs-top">
               <div class="col-12">
                 <h2 class="content-header-title float-left mb-0">
-                  All Data Download
+                  Answered Survey
                 </h2>
+                <div class="breadcrumb-wrapper">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="#">Real-time Reporting</a>
+                    </li>
+                    <li class="breadcrumb-item">Answered Survey</li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
@@ -685,85 +703,59 @@
           <section id="basic-datatable">
             <div class="row">
               <div class="col-12">
-                <!-- filter -->
+                <!-- chart -->
                 <div class="card">
-                  <div class="card-header border-bottom py-1">
-                    <div class="card-title">
-                      <h5 class="mb-0">Filter</h5>
+                  <div class="card-header pb-0">
+                    <div class="flex-column align-items-start">
+                      <h4 class="card-title mb-50">Survey Status</h4>
+                      <p>Updated at &nbsp;<b>09 / 10 / 2021 15:43</b></p>
+                    </div>
+                    <div class="heading-elements">
+                      <ul class="list-inline mr-75 mb-2">
+                        <li>
+                          <a data-action="reload"
+                            ><i data-feather="rotate-cw"></i
+                          ></a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="card-body pt-2">
-                    <form>
-                      <div class="d-flex">
-                        <div class="col-sm-12 col-md-8 mr-auto">
-                          <div class="form-group row mb-0">
-                            <label for="year" class="col-form-label col-sm-3"
-                              >Year</label
-                            >
-                            <div class="col-sm-9">
-                              <select class="select2 form-control" id="year">
-                                <option selected>2021</option>
-                                <option value="17">2017</option>
-                                <option value="18">2018</option>
-                                <option value="19">2019</option>
-                                <option value="20">2020</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <button href="#" type="button" class="btn btn-danger">
-                            <i data-feather="filter" class="mr-50"></i
-                            ><span>Filter</span>
-                          </button>
-                          <button
-                            href="#"
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            Reset
-                          </button>
-                        </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                      <div class="col-xs-12 col-md-10 col-lg-10">
+                        <!-- <div id="chartSurvey-all-students"></div> -->
+                        <div id="chartSurvey"></div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
-                <!-- end filter -->
+              </div>
+            </div>
 
-                <!-- table list -->
+            <div class="row">
+              <div class="col-12">
                 <div class="card">
                   <div class="card-header border-bottom p-1">
                     <div class="head-label">
-                      <h4 class="card-title ml-75">Survey List</h4>
+                      <h4 class="card-title ml-75">Answered Survey</h4>
                     </div>
                     <div class="dt-action-buttons text-right">
                       <div class="dt-buttons d-inline-flex">
                         <div class="btn-group">
-                          <button
-                            class="
-                              dt-button
-                              buttons-collection
-                              btn btn-outline-secondary
-                              dropdown-toggle
-                              mr-1
-                            "
-                            data-toggle="dropdown"
-                            type="button"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <i data-feather="upload" class="mr-50"></i>Export
-                          </button>
+                          <button class="dt-button buttons-collection btn btn-outline-secondary dropdown-toggle mr-1" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false"><i data-feather='upload' class="mr-50"></i>Export</button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              >PDF</a
-                            >
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              >Excel</a
-                            >
+                            <a class="dropdown-item" href="javascript:void(0);">PDF</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Excel</a>
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <!-- filter -->
+                  <!-- end filter -->
+                  <div class="card-header pt-2 pb-0 px-1">
+                    <div class="card-title">
+                      <h5 class="ml-75 mb-0">List</h5>
                     </div>
                   </div>
                   <div class="card-body">
@@ -771,50 +763,49 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Survey Name</th>
-                          <th class="text-center">Survey Year</th>
-                          <th class="text-center">Action</th>
+                          <th>Survey ID</th>
+                          <th>Student ID</th>
+                          <th>Student Name</th>
+                          <th>Survey Year</th>
+                          <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>Survey for 2021</td>
-                          <td class="text-center">2021</td>
+                          <td>SSS_2021_00011</td>
+                          <td>W00022</td>
+                          <td>Ahmad Ilyas</td>
+                          <td>2021</td>
                           <td class="text-center">
-                            <a href="" type="button" class="btn btn-success"
-                              ><i data-feather="download" class="mr-50"></i
-                              >Download</a
-                            >
+                            <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
                           </td>
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>Survey for 2020</td>
-                          <td class="text-center">2020</td>
+                          <td>SSS_2020_00013</td>
+                          <td>W000119</td>
+                          <td>Mary Ann</td>
+                          <td>2020</td>
                           <td class="text-center">
-                            <a href="" type="button" class="btn btn-success"
-                              ><i data-feather="download" class="mr-50"></i
-                              >Download</a
-                            >
+                            <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
                           </td>
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td>Survey for 2019</td>
-                          <td class="text-center">2019</td>
+                          <td>SSS_2019_00015</td>
+                          <td>W00091</td>
+                          <td>Asad Taufiq</td>
+                          <td>2019</td>
                           <td class="text-center">
-                            <a href="" type="button" class="btn btn-success"
-                              ><i data-feather="download" class="mr-50"></i
-                              >Download</a
-                            >
+                            <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
-                <!-- end table list -->
+
               </div>
             </div>
           </section>
@@ -847,14 +838,25 @@
     <script src="../../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
     <script src="../../app-assets/vendors/js/tables/datatable/buttons.bootstrap4.min.js"></script>
-    <script src="../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+
+    <script src="../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+
     <!-- END: Page Vendor JS-->
     <!-- BEGIN: Theme JS-->
     <script src="../../app-assets/js/core/app-menu.js"></script>
@@ -864,7 +866,7 @@
     <script src="../../app-assets/js/scripts/components/components-dropdowns.js"></script>
     <script src="../../app-assets/js/scripts/forms/form-select2.js"></script>
     <script src="../../assets/js/scripts.js"></script>
-    <!-- END: Page JS-->
+
   </body>
   <!-- END: Body-->
 </html>
