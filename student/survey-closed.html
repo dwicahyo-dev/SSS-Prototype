@@ -17,7 +17,7 @@
     />
     <meta name="author" content="PIXINVENT" />
 
-    <title>Leaderboard | SSS</title>
+    <title>Survey Closed | SSS</title>
     <link
       rel="apple-touch-icon"
       href="../app-assets/images/ico/apple-icon-120.png"
@@ -451,7 +451,7 @@
               >
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a
               class="d-flex align-items-center"
               href="../student/leaderboard.html"
@@ -459,6 +459,14 @@
               <i data-feather="award"></i>
               <span class="menu-title text-truncate" data-i18n="Menu Name"
                 >Leaderboard</span
+              >
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="d-flex align-items-center" href="../student/survey-closed.html">
+              <i data-feather="eye-off"></i>
+              <span class="menu-title text-truncate" data-i18n="Menu Name"
+                >Survey Closed</span
               >
             </a>
           </li>
@@ -477,7 +485,7 @@
             <div class="row breadcrumbs-top">
               <div class="col-12">
                 <h2 class="content-header-title float-left mb-0">
-                  Leaderboard
+                  Survey (Closed)
                 </h2>
                 <div class="breadcrumb-wrapper"></div>
               </div>
@@ -486,186 +494,27 @@
         </div>
 
         <div class="content-body">
-          <section id="basic-datatable">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex justify-content-center">
-                  <div class="col-xs-12 col-md-8 col-lg-7 p-0">
-                    <!-- alert -->
-                    <div class="alert alert-warning" role="alert">
-                      <div class="alert-body">
-                        <i data-feather="alert-circle" class="mr-75"></i>Only
-                        Completed Surveys are listed
-                      </div>
-                    </div>
-                    <!-- end alert -->
-                    <!-- first place -->
-                    <div class="card mb-1">
-                      <div class="card-body">
-                        <div class="media">
-                          <div class="media-left mr-1">
-                            <img
-                              src="../app-assets/images/leaderboard/gold-medal.svg"
-                              alt="first_place"
-                              height="70"
-                              width="70"
-                            />
-                          </div>
-                          <div class="media-body mr-1">
-                            <h4 class="media-heading">Melissa | E000257</h4>
-                            <h6>School of Hospitality, Tourism & Events</h6>
-                            <h6 class="mb-0">Submitted on <b>15/07/2021</b></h6>
-                          </div>
-                          <div class="align-self-center text-right media-right">
-                            <h5 class="mb-0">Points:</h5>
-                            <h11 class="text-success"><b>231</b></h11>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end first place -->
-                    <!-- second place -->
-                    <div class="card mb-1">
-                      <div class="card-body">
-                        <div class="media">
-                          <div class="media-left mr-1">
-                            <img
-                              src="../app-assets/images/leaderboard/silver-medal.svg"
-                              alt="2nd_place"
-                              height="70"
-                              width="70"
-                            />
-                          </div>
-                          <div class="media-body mr-1">
-                            <h4 class="media-heading">John Brian | W000214</h4>
-                            <h6>School of Education</h6>
-                            <h6 class="mb-0">Submitted on <b>15/07/2021</b></h6>
-                          </div>
-                          <div class="align-self-center text-right media-right">
-                            <h5 class="mb-0">Points:</h5>
-                            <h11 class="text-success"><b>215</b></h11>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end second place -->
-                    <!-- third -->
-                    <div class="card mb-1">
-                      <div class="card-body">
-                        <div class="media">
-                          <div class="media-left mr-1">
-                            <img
-                              src="../app-assets/images/leaderboard/bronze-medal.svg"
-                              alt="3rd_place"
-                              height="70"
-                              width="70"
-                            />
-                          </div>
-                          <div class="media-body mr-1">
-                            <h4 class="media-heading">Kylie Zheng | E000114</h4>
-                            <h6>School of Liberal Arts and Sciences</h6>
-                            <h6 class="mb-0">Submitted on <b>15/07/2021</b></h6>
-                          </div>
-                          <div class="align-self-center text-right media-right">
-                            <h5 class="mb-0">Points:</h5>
-                            <h11 class="text-success"><b>207</b></h11>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end third -->
-                    <!-- fourth -->
-                    <div class="card mb-1">
-                      <div class="card-body">
-                        <div class="media">
-                          <div class="media-left mr-1">
-                            <img
-                              src="../app-assets/images/leaderboard/4.svg"
-                              alt="fourth_place"
-                              height="70"
-                              width="70"
-                            />
-                          </div>
-                          <div class="media-body mr-1">
-                            <h4 class="media-heading">Ravi Durand | S000197</h4>
-                            <h6>School of Media and Communication</h6>
-                            <h6 class="mb-0">Submitted on <b>15/07/2021</b></h6>
-                          </div>
-                          <div class="align-self-center text-right media-right">
-                            <h5 class="mb-0">Points:</h5>
-                            <h11 class="text-warning"><b>187</b></h11>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end fourth -->
-                    <!-- fifth -->
-                    <div class="card mb-1">
-                      <div class="card-body">
-                        <div class="media">
-                          <div class="media-left mr-1">
-                            <img
-                              src="../app-assets/images/leaderboard/5.svg"
-                              alt="fifth_place"
-                              height="70"
-                              width="70"
-                            />
-                          </div>
-                          <div class="media-body mr-1">
-                            <h4 class="media-heading">
-                              Gertrud Mohammad | W000261
-                            </h4>
-                            <h6>School of Media and Communication</h6>
-                            <h6 class="mb-0">Submitted on <b>15/07/2021</b></h6>
-                          </div>
-                          <div class="align-self-center text-right media-right">
-                            <h5 class="mb-0">Points:</h5>
-                            <h11 class="text-warning"><b>167</b></h11>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end fifth -->
-                    <!-- student's -->
-                    <div class="divider my-2">
-                      <div class="divider-text"><h4>My Ranking</h4></div>
-                    </div>
-                    <div class="card mb-1" style="background-color: #9966ff">
-                      <div class="card-body">
-                        <div class="media text-white">
-                          <div class="align-self-center media-left">
-                            <h11 class="ml-50 mr-2"><b>119</b></h11>
-                          </div>
-                          <div class="media-body mr-1">
-                            <h4 class="text-white media-heading">
-                              Mary Ann | W000119
-                            </h4>
-                            <h6 class="text-white">
-                              School of Computer Science and Engineering
-                            </h6>
-                            <h6 class="text-white mb-0">
-                              Submitted on <b>04/07/2021</b>
-                            </h6>
-                          </div>
-                          <div
-                            class="
-                              align-self-center
-                              text-right text-white
-                              media-right
-                            "
-                          >
-                            <h5 class="text-white mb-0">Points:</h5>
-                            <h11><b>79</b></h11>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end student's -->
+          <div class="d-flex justify-content-center">
+            <div class="col-12">
+              <div class="card pb-1">
+                <div class="card-title border-bottom p-2">
+                  <h4 class="mb-0">Survey for 2021</h4>
+                </div>
+                <div
+                  class="card bg-danger mx-5 mt-1"
+                  style="vertical-align: center"
+                >
+                  <div class="card-body text-center">
+                    <h3 class="mb-0 text-white">
+                      Thank you for attempting the survey. <br /><br />
+                      However, Taylor's Survey for 2021 is now
+                      <span class="font-weight-bolder">closed</span>.
+                    </h3>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </div>
