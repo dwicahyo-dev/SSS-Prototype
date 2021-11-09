@@ -441,19 +441,19 @@
           id="main-menu-navigation"
           data-menu="menu-navigation"
         >
+        <li class="nav-item">
+          <a class="d-flex align-items-center" href="../student/survey2.html">
+            <i data-feather="clipboard"></i>
+            <span class="menu-title text-truncate" data-i18n="Menu Name"
+              >Survey</span
+            >
+          </a>
+        </li>
           <li class="nav-item active">
             <a class="d-flex align-items-center" href="../student/profile.html">
               <i data-feather="user"></i>
               <span class="menu-title text-truncate" data-i18n="Menu Name"
                 >Profile</span
-              >
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="d-flex align-items-center" href="../student/survey2.html">
-              <i data-feather="clipboard"></i>
-              <span class="menu-title text-truncate" data-i18n="Menu Name"
-                >Survey</span
               >
             </a>
           </li>
@@ -554,7 +554,9 @@
                         <div class="col-12">
                           <div class="form-group row">
                             <div class="col-sm-3 col-form-label">
-                              <h5 for="contact-icon">Mobile Number</h5>
+                              <h5 for="contact-icon">Mobile Number
+                                <i data-feather="alert-circle" color="red"></i>
+                              </h5>
                             </div>
                             <div class="col-sm-9">
                               <div class="input-group is-invalid">
@@ -585,7 +587,10 @@
                         <div class="col-12">
                           <div class="form-group row mb-0">
                             <div class="col-sm-3 col-form-label">
-                              <h5 for="personal_email">Personal Email</h5>
+                                <h5 for="personal_email">Personal Email 
+                                  <i data-feather="alert-circle" color="red"></i>
+
+                                </h5>
                             </div>
                             <div class="col-sm-9">
                               <div class="input-group is-invalid">
@@ -710,126 +715,6 @@
     <script src="../app-assets/js/scripts/forms/form-select2.js"></script>
     <script src="../assets/js/scripts.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        let surveyInfoChartEl = document.querySelector(
-          "#chartSurvey-all-students"
-        );
-
-        var surveyInfoChartConfig = {
-          chart: {
-            height: 300,
-            type: "donut",
-          },
-          legend: {
-            show: true,
-            position: "right",
-            offsetY: 90,
-            fontSize: "16px",
-            // to make it appear 2 times, top is value, bottom is percentage
-            // the 190 is from the total, *100 to make it percentage cuz brain dead, think kenot
-            formatter: function (seriesName, opts) {
-              return [
-                " " + seriesName,
-                " - ",
-                opts.w.globals.series[opts.seriesIndex] +
-                  "<br>" +
-                  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
-                  seriesName,
-                " - ",
-                parseFloat(
-                  (opts.w.globals.series[opts.seriesIndex] / 190) * 100
-                ).toFixed(1),
-                "%",
-              ];
-            },
-          },
-          dataLabels: {
-            enabled: true,
-            formatter: function (val, opts) {
-              return `${opts.w.globals.series[opts.seriesIndex]} (${parseFloat(
-                (opts.w.globals.series[opts.seriesIndex] / 190) * 100
-              ).toFixed(1)}%)`;
-            },
-            style: {
-              fontSize: "1.1rem",
-            },
-          },
-          labels: ["Answered", "Answering & Not Answered"],
-          series: [116, 74],
-          colors: ["#6600cc", "#ff0066"],
-          plotOptions: {
-            pie: {
-              donut: {
-                size: "55%",
-                labels: {
-                  show: true,
-                  name: {
-                    fontSize: "2rem",
-                    fontFamily: "Montserrat",
-                  },
-                  total: {
-                    show: true,
-                    fontSize: "1.5rem",
-                    label: "Total Survey",
-                    formatter: function (w) {
-                      return "190";
-                    },
-                  },
-                },
-              },
-            },
-          },
-          responsive: [
-            {
-              breakpoint: 992,
-              options: {
-                chart: {
-                  height: 380,
-                },
-              },
-            },
-            {
-              breakpoint: 576,
-              options: {
-                chart: {
-                  height: 320,
-                },
-                plotOptions: {
-                  pie: {
-                    donut: {
-                      labels: {
-                        show: true,
-                        name: {
-                          fontSize: "1.5rem",
-                        },
-                        value: {
-                          fontSize: "1rem",
-                        },
-                        total: {
-                          fontSize: "1.5rem",
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          ],
-        };
-
-        if (
-          typeof surveyInfoChartEl !== undefined &&
-          surveyInfoChartEl !== null
-        ) {
-          var compDonutChart = new ApexCharts(
-            surveyInfoChartEl,
-            surveyInfoChartConfig
-          );
-          compDonutChart.render();
-        }
-      });
-    </script>
     <!-- END: Page JS-->
   </body>
   <!-- END: Body-->
