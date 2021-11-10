@@ -61,9 +61,9 @@
       donut: {
         // series1: '#3939ac',
         // series2: '#7979d2'
-        series1: '#6600cc',
-        series2: '#a64dff',
-        series3: '#2bdac7'
+        series1: '#007500',
+        series2: '#0000FF',
+        series3: '#FF0000'
       },
       area: {
         series3: '#ff0066',
@@ -210,8 +210,11 @@
 			colors: window.colors.solid.primary,
       dataLabels: {
 				enabled: true,
-        formatter: function(val, opt) {
-          return parseInt(val) + ' %';
+        formatter: function(value, { seriesIndex, dataPointIndex, w }) {
+          return `
+            ${parseFloat(value) / 100.0 * 16700.0}
+            (${w.globals.series[seriesIndex][dataPointIndex]}%)
+          `;
         }
 			},
 			series: [{
@@ -426,14 +429,21 @@
 				}
 			},
 			dataLabels: {
-				enabled: true
+				enabled: true,
+        formatter: function(value, { seriesIndex, dataPointIndex, w }) {
+          return `${w.globals.series[seriesIndex][dataPointIndex]} (${value.toFixed(0)}%)`
+        }
 			},
 			legend: {
 				show: true,
 				position: 'bottom',
-				horizontalAlign: 'center'
+				horizontalAlign: 'center',
 			},
-			colors: [chartColors.column.series1, chartColors.column.series2],
+			colors: [
+        chartColors.donut.series1,
+        chartColors.donut.series2,
+        chartColors.donut.series3,
+      ],
 			stroke: {
 				show: true,
 				colors: ['transparent']
@@ -445,15 +455,24 @@
 					}
 				}
 			},
-			series: [{
-				name: 'Completed',
-				data: [627, 1122, 1245, 837, 1023, 1181, 581, 778, 1129, 1095, 866, 504, 1271, 1114]
-			}, {
-				name: 'Incomplete & Un-initiated',
-				data: [1171, 623, 1202, 677, 1153, 1211, 820, 1223, 1455, 1038, 1301, 1384, 1029, 1335]
-			}],
+			series: [
+        {
+          name: 'Answered',
+          data: [627, 1122, 1245, 837, 1023, 1181, 581, 778, 1129, 1095, 866, 504, 1271, 1114]
+        },
+        {
+          name: 'Answering',
+          data: [1222, 307, 1755, 1552, 1545, 442, 1121, 676, 1346, 1220, 221, 733, 724, 755]
+        },
+        {
+          name: 'Not Answered',
+          data: [1171, 623, 1202, 677, 1153, 1211, 820, 1223, 1455, 1038, 1301, 1384, 1029, 1335]
+        }
+      ],
 			xaxis: {
-				categories: ['Architecture', 'Computer Science & Engineering', 'Design', 'Business', 'Law', 'Medicine', 'Pharmacy', 'Biosciences', 'Hospitality', 'Food Studies & Gastronomy', 'Media and Communication', 'Liberal Arts & Sciences', 'Education', 'Culinary Institute']
+				categories: [
+          'Architecture', 'Computer Science & Engineering', 'Design', 'Business', 'Law', 'Medicine', 'Pharmacy', 'Biosciences', 'Hospitality', 'Food Studies & Gastronomy', 'Media and Communication', 'Liberal Arts & Sciences', 'Education', 'Culinary Institute'
+        ]
 			},
 			fill: {
 				opacity: 1
@@ -488,14 +507,22 @@
 				}
 			},
 			dataLabels: {
-				enabled: true
+				enabled: true,
+        formatter: function(value, { seriesIndex, dataPointIndex, w }) {
+          return `${w.globals.series[seriesIndex][dataPointIndex]} (${value.toFixed(0)}%)`
+          // return `${w.globals.labels[dataPointIndex]} : ${w.globals.series[seriesIndex][dataPointIndex]} (${value.toFixed(0)}%)`;
+        }
 			},
 			legend: {
 				show: true,
 				position: 'bottom',
 				horizontalAlign: 'center'
 			},
-			colors: [chartColors.column.series3, chartColors.column.series4],
+			colors: [
+        chartColors.donut.series1,
+        chartColors.donut.series2,
+        chartColors.donut.series3
+      ],
 			stroke: {
 				show: true,
 				colors: ['transparent']
@@ -507,15 +534,24 @@
 					}
 				}
 			},
-			series: [{
-				name: 'Completed',
-				data: [1181, 581, 1223, 1129, 1095]
-			}, {
-				name: 'Incomplete & Un-initiated',
-				data: [1211, 820, 778, 1455, 1038]
-			}],
+			series: [
+        {
+          name: 'Answered',
+          data: [1181, 581, 1223, 1129, 1095]
+        },
+        {
+          name: 'Answering',
+          data: [1211, 820, 778, 1455, 1038]
+        },
+        {
+          name: 'Not Answered',
+          data: [2311, 1820, 578, 495, 1138]
+        }
+      ],
 			xaxis: {
-				categories: ['Bachelor of Science in Architecture', 'Bachelor of IT (HONS)', 'Master of Design', 'Master in Management', 'Diploma in Business']
+				categories: [
+          'Bachelor of Science in Architecture', 'Bachelor of IT (HONS)', 'Master of Design', 'Master in Management', 'Diploma in Business'
+        ]
 			},
 			fill: {
 				opacity: 1

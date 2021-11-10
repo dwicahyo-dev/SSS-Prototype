@@ -588,16 +588,7 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >All Student</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a class="d-flex align-items-center" href="../reports/all-data.html"
-                  ><span
-                    class="menu-item text-truncate ml-2 pl-75"
-                    data-i18n="Menu Name"
-                    >All Data Download</span
+                    >All Students</span
                   ></a
                 >
               </li>
@@ -608,7 +599,7 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Completed Survey</span
+                    >Answered</span
                   ></a
                 >
               </li>
@@ -621,8 +612,8 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incomplete & Un-initiated Survey"
-                    >Incomplete & Un-initiated Survey</span
+                    title="Answering & Not Answered"
+                    >Answering & Not Answered</span
                   ></a
                 >
               </li>
@@ -635,8 +626,8 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incentive Scheme Summary"
-                    >Incentive Scheme Summary</span
+                    title="Incentive Scheme"
+                    >Incentive Scheme</span
                   ></a
                 >
               </li>
@@ -645,16 +636,33 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Charts & Graphs</span
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Charts & Graphs - Responses"
+                    >Charts & Graphs - Responses</span
                   ></a
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="../reports/yearly-closing-reports.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/yearly-closing-reports.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Yearly Closing Reports"
                     >Yearly Closing Reports</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="../reports/all-data.html"
+                  ><span
+                    class="menu-item text-truncate ml-2 pl-75"
+                    data-i18n="Menu Name"
+                    >All Data Download</span
                   ></a
                 >
               </li>
@@ -982,79 +990,39 @@
                   </div>
                 </div>
                 <div class="card-body pb-0">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label for="school">School</label>
-                        <select
-                          class="select2 form-control"
-                          id="school"
-                          data-placeholder=" All Schools"
-                          multiple
+                  <form>
+                    <div class="d-flex">
+                      <div class="col-sm-12 col-md-8 mr-auto">
+                        <div class="form-group row mb-1">
+                          <label for="faculty" class="col-form-label col-sm-3"
+                            >Faculty</label
+                          >
+                          <div class="col-sm-9">
+                            <select class="select2 form-control" id="faculty-10" multiple>
+                              <option disabled>Show All</option>
+                              <option>
+                                Faculty of Innovation and Technology
+                              </option>
+                              <option>Faculty of Business and Law</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button href="#" type="button" class="btn btn-danger">
+                          <i data-feather="filter" class="mr-50"></i
+                          ><span>Filter</span>
+                        </button>
+                        <button
+                          href="#"
+                          type="button"
+                          class="btn btn-outline-secondary"
                         >
-                          <optgroup
-                            label="Faculty of Innovation and Technology"
-                          >
-                            <option value="InT1">
-                              School of Architecture, Building and Design
-                            </option>
-                            <option value="InT2">
-                              School of Computer Science and Engineering
-                            </option>
-                            <option value="InT3">
-                              The Design School at Taylor's
-                            </option>
-                          </optgroup>
-                          <optgroup label="Faculty of Business and Law">
-                            <option value="BuL1">
-                              Taylor's Business School
-                            </option>
-                            <option value="BuL2">Taylor's Law School</option>
-                          </optgroup>
-                          <optgroup
-                            label="Faculty of Health & Medical Sciences"
-                          >
-                            <option value="HMS1">School of Medicine</option>
-                            <option value="HMS2">School of Pharmacy</option>
-                            <option value="HMS3">School of Biosciences</option>
-                          </optgroup>
-                          <optgroup
-                            label="Faculty of Social Sciences & Leisure Management"
-                          >
-                            <option value="SSLM1">
-                              School of Hospitality, Tourism & Events
-                            </option>
-                            <option value="SSLM2">
-                              School of Food Studies & Gastronomy
-                            </option>
-                            <option value="SSLM3">
-                              School of Media and Communciation
-                            </option>
-                            <option value="SSLM4">
-                              School of Liberal Arts and Sciences
-                            </option>
-                            <option value="SSLM5">School of Education</option>
-                            <option value="SSLM6">
-                              Taylor's Culinary Institute
-                            </option>
-                          </optgroup>
-                        </select>
+                          Reset
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="row justify-content-end pr-1">
-                    <button href="#" type="button" class="btn btn-danger mr-1">
-                      <i data-feather="filter" class="mr-75"></i
-                      ><span>Filter</span>
-                    </button>
-                    <button
-                      href="#"
-                      type="button"
-                      class="btn btn-outline-secondary"
-                    >
-                      Reset
-                    </button>
-                  </div>
+                  </form>
                 </div>
                 <hr class="mb-0 mx-1 mt-2" />
                 <!-- end filter by school -->
@@ -1094,392 +1062,54 @@
                   </div>
                 </div>
                 <div class="card-body pb-0">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="form-group">
-                        <label for="prog">Programme</label>
-                        <select
-                          class="select2 form-control"
-                          id="prog"
-                          data-placeholder=" All Programmes"
-                          multiple
+                  <form>
+                    <div class="d-flex">
+                      <div class="col-sm-12 col-md-8 mr-auto">
+                        <div class="form-group row mb-1">
+                          <label for="faculty" class="col-form-label col-sm-3"
+                            >Faculty</label
+                          >
+                          <div class="col-sm-9">
+                            <select class="select2 form-control" id="faculty" multiple>
+                              <option disabled>Show All</option>
+                              <option>
+                                Faculty of Innovation and Technology
+                              </option>
+                              <option>Faculty of Business and Law</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                          <label for="year" class="col-form-label col-sm-3"
+                            >School</label
+                          >
+                          <div class="col-sm-9">
+                            <select class="select2 form-control" id="year" multiple>
+                              <option disabled>Show All</option>
+                              <option>
+                                Computer Science and Engineering
+                              </option>
+                              <option>Education</option>
+                              <option>Liberal Arts and Sciences</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button href="#" type="button" class="btn btn-danger">
+                          <i data-feather="filter" class="mr-50"></i
+                          ><span>Filter</span>
+                        </button>
+                        <button
+                          href="#"
+                          type="button"
+                          class="btn btn-outline-secondary"
                         >
-                          <optgroup
-                            label="School of Architecture, Building and Design"
-                          >
-                            <option value="ABD1">
-                              Bachelor of Science (HONS) in Architecture
-                            </option>
-                            <option value="ABD2">
-                              Bachelor of Quantity Surveying (HONS)
-                            </option>
-                            <option value="ABD3">
-                              Bachelor of Arts (HONS) in Interior Architecture
-                            </option>
-                            <option value="ABD4">
-                              Master of Architecture (Coursework)
-                            </option>
-                            <option value="ABD5">
-                              Doctor of Philosophy (Architevture)
-                            </option>
-                          </optgroup>
-                          <optgroup
-                            label="School of Computer Science and Engineering"
-                          >
-                            <option value="CSE1">
-                              Foundation in Computing
-                            </option>
-                            <option value="CSE2">
-                              Foundation in Engineering
-                            </option>
-                            <option value="CSE3">
-                              Diploma in Information Technology (DIT)
-                            </option>
-                            <option value="CSE4">
-                              Bachelor of Computer Science (HONS)
-                            </option>
-                            <option value="CSE5">
-                              Bachelor of Software Engineering (HONS)
-                            </option>
-                            <option value="CSE6">
-                              Bachelor of Information Technology (HONS)
-                            </option>
-                            <option value="CSE7">
-                              Bachelor of Science (Honours) in Robotic Design
-                              and Development
-                            </option>
-                            <option value="CSE8">
-                              Bachelor of Chemical Engineering with Honours
-                            </option>
-                            <option value="CSE9">
-                              Bachelor of Electrical and Electronic Engineering
-                              with Honours
-                            </option>
-                            <option value="CSE10">
-                              Bachelor of Mechanical Engineering with Honours
-                            </option>
-                            <option value="CSE11">
-                              Master of Applied Computing (Coursework)
-                            </option>
-                            <option value="CSE12">
-                              Master of Computer Science
-                            </option>
-                            <option value="CSE13">
-                              Master of Science in Engineering
-                            </option>
-                            <option value="CSE14">
-                              Doctor of Philosophy in Computer Science
-                            </option>
-                            <option value="CSE15">
-                              Doctor of Philosophy in Engineering
-                            </option>
-                          </optgroup>
-                          <optgroup label="The Design School at Taylor's">
-                            <option value="DST1">Foundation in Design</option>
-                            <option value="DST2">
-                              Diploma in Interior Design
-                            </option>
-                            <option value="DST3">
-                              Bachelor of Arts (HONS) in Interior Architecture
-                            </option>
-                            <option value="DST4">
-                              Bachelor of Design (HONS) in Creative Media
-                            </option>
-                            <option value="DST5">
-                              Bachelor of Fashion Design Technology (HONS)
-                            </option>
-                            <option value="DST6">Master of Design</option>
-                            <option value="DST7">
-                              Doctor of Philosophy in Design Management
-                            </option>
-                            <option value="DST8">Microcreds: Design</option>
-                          </optgroup>
-                          <optgroup label="Taylor's Business School">
-                            <option value="TBS1">Foundation in Business</option>
-                            <option value="TBS2">
-                              Foundation in Arts (FIA)
-                            </option>
-                            <option value="TBS3">Diploma in Business</option>
-                            <option value="TBS4">
-                              Bachelor of Business (HONS)
-                            </option>
-                            <option value="TBS5">
-                              Bachelor of Business (HONS) International Business
-                              & Marketing
-                            </option>
-                            <option value="TBS6">
-                              Bachelor of Arts (HONS) Accounting & Finance
-                            </option>
-                            <option value="TBS7">
-                              Bachelor of Business (HONS) Banking & Finance
-                            </option>
-                            <option value="TBS8">
-                              Bachelor of Business (HONS) Finance & Economics
-                            </option>
-                            <option value="TBS9">
-                              Bachelor of (HONS) Actuarial Studies
-                            </option>
-                            <option value="TBS10">
-                              Bachelor of Team Entrepreneurship
-                              (Entrepreneurship) (Honours)
-                            </option>
-                            <option value="TBS11">
-                              Bachelor of Accounting (Fintech) (Honours)
-                            </option>
-                            <option value="TBS12">
-                              Taylor's Master of Business Administration (MBA)
-                              (Coursework)
-                            </option>
-                            <option value="TBS13">
-                              Master in Management (Coursework)
-                            </option>
-                            <option value="TBS14">
-                              Doctor of Philosophy (Business) (Research)
-                            </option>
-                            <option value="TBS15">Microcreds: Business</option>
-                          </optgroup>
-                          <optgroup label="Taylor's Law School">
-                            <option value="TLS1">Foundation in Business</option>
-                            <option value="TLS2">
-                              Foundation in Arts (FIA)
-                            </option>
-                            <option value="TLS3">Diploma in Business</option>
-                            <option value="TLS4">
-                              Bachelor of Laws (LL.B)
-                            </option>
-                            <option value="TLS5">
-                              Master of Laws (International Business and Trade
-                              Law) (Mixed Mode)
-                            </option>
-                            <option value="TLS6">
-                              Master of Laws (Healthcare and Medical Law) (Mixed
-                              Mode)
-                            </option>
-                            <option value="TLS7">
-                              Doctor of Philosophy (Law)
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Medicine">
-                            <option value="MED1">Foundation in Science</option>
-                            <option value="MED2">
-                              Bachelor of Medicine, Bachelor of Surgery (MBBS)
-                            </option>
-                            <option value="MED3">
-                              Master of Science in Medical Science
-                            </option>
-                            <option value="MED4">
-                              Doctor of Philosophy (Medical Science)
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Pharmacy">
-                            <option value="PHAR1">Foundation in Science</option>
-                            <option value="PHAR2">
-                              Bachelor of Pharmacy (HONS)
-                            </option>
-                            <option value="PHAR3">
-                              Master of Philosophy (Pharmacy)
-                            </option>
-                            <option value="PHAR4">
-                              Master of Philosophy (Pharmaceutical Sciences)
-                              (Research)
-                            </option>
-                            <option value="PHAR5">
-                              Doctor of Philosophy (Pharmaceutical Sciences)
-                              (Research)
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Biosciences">
-                            <option value="BIO1">Foundation in Science</option>
-                            <option value="BIO2">
-                              Bachelor of Science (HONS) (Food Science)
-                            </option>
-                            <option value="BIO3">
-                              Bachelor of Biomedical Science (HONS)
-                            </option>
-                            <option value="BIO4">
-                              Bachelor of Biotechnology (HONS)
-                            </option>
-                            <option value="BIO5">Master of Science</option>
-                            <option value="BIO6">
-                              Doctor of Philosophy (Science)
-                            </option>
-                          </optgroup>
-                          <optgroup
-                            label="School of Hospitality, Tourism & Events"
-                          >
-                            <option value="HTE1">
-                              Foundation in Arts (FIA)
-                            </option>
-                            <option value="HTE2">
-                              Bachelor of International Hospitality Management
-                              (HONS)
-                            </option>
-                            <option value="HTE3">
-                              Bachelor of International Tourism Management
-                              (HONS)
-                            </option>
-                            <option value="HTE4">
-                              Bachelor of International Tourism Management
-                              (HONS) (Events Management)
-                            </option>
-                            <option value="HTE5">
-                              Master in International Hospitality Management
-                              (Coursework)
-                            </option>
-                            <option value="HTE6">
-                              Master of Science (Tourism) (Research)
-                            </option>
-                            <option value="HTE7">
-                              Doctor of Philosophy (Hospitality & Tourism)
-                              (Research)
-                            </option>
-                            <option value="HTE8">
-                              Microcreds: Hospitality Management
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Food Studies & Gastronomy">
-                            <option value="FSG1">
-                              Foundation in Science (FIS)
-                            </option>
-                            <option value="FSG2">
-                              Bachelor of Culinary Management (HONS)
-                            </option>
-                            <option value="FSG3">
-                              Bachelor of Science (HONS)
-                            </option>
-                            <option value="FSG4">
-                              Bachelor of Patisserie Arts (HONS)
-                            </option>
-                            <option value="FSG5">
-                              Doctor of Philosophy in Food Studies
-                            </option>
-                            <option value="FSG6">Master of Food Studies</option>
-                            <option value="FSG7">
-                              Microcreds: Food Studies & Gastronomies
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Media and Communication">
-                            <option value="MC1">
-                              Foundation in Communication (FICM)
-                            </option>
-                            <option value="MC2">
-                              Diploma in Communication (DICM)
-                            </option>
-                            <option value="MC3">
-                              Bachelor of Mass Communication (HONS) (Advertising
-                              & Brand Management)
-                            </option>
-                            <option value="MC4">
-                              Bachelor of Mass Communication (HONS) (Digital
-                              Media Production)
-                            </option>
-                            <option value="MC5">
-                              Bachelor of Mass Communication (HONS)
-                            </option>
-                            <option value="MC6">
-                              Bachelor of Mass Communication (HONS) (Public
-                              Relations & Event Management)
-                            </option>
-                            <option value="MC7">
-                              Bachelor of Mass Communication (HONS) (Public
-                              Relations & Marketing)
-                            </option>
-                            <option value="MC8">
-                              Master in Communication (Coursework)
-                            </option>
-                            <option value="MC9">
-                              Doctor of Philosophy (Media and Communication
-                              Studies) (Research)
-                            </option>
-                            <option value="MC10">
-                              Microcreds: Communication Management
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Liberal Arts and Sciences">
-                            <option value="LAS1">
-                              American Degree Transfer Program (ADP)
-                            </option>
-                            <option value="LAS2">
-                              Bachelor of Psychology (HONS)
-                            </option>
-                            <option value="LAS3">
-                              Bachelor of Performing Arts (HONS)
-                            </option>
-                            <option value="LAS4">
-                              Bachelor of Social Science with Honours
-                              (International Relations)
-                            </option>
-                            <option value="LAS5">
-                              Bachelor of Social Science with Honours (Social
-                              Innovation & Change)
-                            </option>
-                            <option value="LAS6">Mobility Programmes</option>
-                            <option value="LAS7">
-                              International Languages
-                            </option>
-                            <option value="LAS8">IELTS</option>
-                            <option value="LAS9">
-                              Online Speaking Programme
-                            </option>
-                            <option value="LAS10">Intensive English</option>
-                            <option value="LAS11">
-                              Master of Clinical Psychology
-                            </option>
-                            <option value="LAS12">
-                              Microcreds: Performing Arts
-                            </option>
-                          </optgroup>
-                          <optgroup label="School of Education">
-                            <option value="EDU1">
-                              Bachelor of Education (HONS)
-                            </option>
-                            <option value="EDU2">
-                              Post-graduate Certificate in Teaching & Learning
-                              (Coursework)
-                            </option>
-                            <option value="EDU3">
-                              Master in Teaching & Learning (Coursework)
-                            </option>
-                            <option value="EDU4">
-                              Doctor of Philosophy (Education) (Research)
-                            </option>
-                            <option value="EDU5">Master of Education</option>
-                            <option value="EDU6">
-                              Microcreds: Education Technology
-                            </option>
-                          </optgroup>
-                          <optgroup label="Taylor's Culinary Institute">
-                            <option value="TCI1">
-                              Foundation in Science (FIS)
-                            </option>
-                            <option value="TCI2">
-                              Diploma in Hotel Management
-                            </option>
-                            <option value="TCI3">
-                              Diploma in Culinary Arts
-                            </option>
-                            <option value="TCI4">
-                              Advanced Diploma in Patisserie & Gastronomic
-                              Cuisine
-                            </option>
-                          </optgroup>
-                        </select>
+                          Reset
+                        </button>
                       </div>
                     </div>
-                  </div>
-                  <div class="row justify-content-end pr-1">
-                    <button href="#" type="button" class="btn btn-danger mr-1">
-                      <i data-feather="filter" class="mr-75"></i
-                      ><span>Filter</span>
-                    </button>
-                    <button
-                      href="#"
-                      type="button"
-                      class="btn btn-outline-secondary"
-                    >
-                      Reset
-                    </button>
-                  </div>
+                  </form>
                 </div>
                 <hr class="mb-0 mx-1 mt-2" />
                 <!-- end filter by programme -->

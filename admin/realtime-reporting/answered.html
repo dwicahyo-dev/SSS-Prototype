@@ -578,24 +578,11 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/all-report.html"
+                <a class="d-flex align-items-center" href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >All Student</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/all-data.html"
-                  ><span
-                    class="menu-item text-truncate ml-2 pl-75"
-                    data-i18n="Menu Name"
-                    >All Data Download</span
+                    >All Students</span
                   ></a
                 >
               </li>
@@ -606,7 +593,7 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Completed Survey</span
+                    >Answered</span
                   ></a
                 >
               </li>
@@ -619,8 +606,8 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incomplete & Un-initiated Survey"
-                    >Incomplete & Un-initiated Survey</span
+                    title="Answering & Not Answered"
+                    >Answering & Not Answered</span
                   ></a
                 >
               </li>
@@ -633,37 +620,43 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incentive Scheme Summary"
-                    >Incentive Scheme Summary</span
+                    title="Incentive Scheme"
+                    >Incentive Scheme</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"
+                  ><span
+                    class="menu-item text-truncate ml-2 pl-75"
+                    data-i18n="Menu Name"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Charts & Graphs - Responses"
+                    >Charts & Graphs - Responses</span
                   ></a
                 >
               </li>
               <li>
                 <a
                   class="d-flex align-items-center"
-                  href="../reports/ch-and-g-report.html"
+                  href="../reports/yearly-closing-reports.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Charts & Graphs</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a class="d-flex align-items-center" href="../reports/yearly-closing-reports.html"
-                  ><span
-                    class="menu-item text-truncate ml-2 pl-75"
-                    data-i18n="Menu Name"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Yearly Closing Reports"
                     >Yearly Closing Reports</span
                   ></a
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="../reports/yearly-closing-reports.html"
+                <a class="d-flex align-items-center" href="../reports/all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Yearly Closing Reports</span
+                    >All Data Download</span
                   ></a
                 >
               </li>
@@ -735,6 +728,64 @@
             <div class="row">
               <div class="col-12">
                 <div class="card">
+                  <div class="card-header border-bottom py-1">
+                    <div class="card-title">
+                      <h5 class="mb-0">Filter</h5>
+                    </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <form>
+                      <div class="d-flex">
+                        <div class="col-sm-12 col-md-8 mr-auto">
+                          <div class="form-group row mb-1">
+                            <label for="faculty" class="col-form-label col-sm-3"
+                              >Faculty</label
+                            >
+                            <div class="col-sm-9">
+                              <select class="select2 form-control" id="faculty">
+                                <option selected>Show All</option>
+                                <option>
+                                  Faculty of Innovation and Technology
+                                </option>
+                                <option>Faculty of Business and Law</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row mb-0">
+                            <label for="year" class="col-form-label col-sm-3"
+                              >School</label
+                            >
+                            <div class="col-sm-9">
+                              <select class="select2 form-control" id="year">
+                                <option selected>Show All</option>
+                                <option>
+                                  Computer Science and Engineering
+                                </option>
+                                <option>Education</option>
+                                <option>Liberal Arts and Sciences</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <button href="#" type="button" class="btn btn-danger">
+                            <i data-feather="filter" class="mr-50"></i
+                            ><span>Filter</span>
+                          </button>
+                          <button
+                            href="#"
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            Reset
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="card">
                   <div class="card-header border-bottom p-1">
                     <div class="head-label">
                       <h4 class="card-title ml-75">Answered Survey</h4>
@@ -742,10 +793,28 @@
                     <div class="dt-action-buttons text-right">
                       <div class="dt-buttons d-inline-flex">
                         <div class="btn-group">
-                          <button class="dt-button buttons-collection btn btn-outline-secondary dropdown-toggle mr-1" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false"><i data-feather='upload' class="mr-50"></i>Export</button>
+                          <button
+                            class="
+                              dt-button
+                              buttons-collection
+                              btn btn-outline-secondary
+                              dropdown-toggle
+                              mr-1
+                            "
+                            data-toggle="dropdown"
+                            type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i data-feather="upload" class="mr-50"></i>Export
+                          </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" href="javascript:void(0);">PDF</a>
-                            <a class="dropdown-item" href="javascript:void(0);">Excel</a>
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              >PDF</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              >Excel</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -766,7 +835,8 @@
                           <th>Survey ID</th>
                           <th>Student ID</th>
                           <th>Student Name</th>
-                          <th>Survey Year</th>
+                          <th>IC / Passport Number</th>
+                          <th>Taylor's Email</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -774,29 +844,32 @@
                         <tr>
                           <td>1</td>
                           <td>SSS_2021_00011</td>
-                          <td>W00022</td>
+                          <td>W000119</td>
                           <td>Ahmad Ilyas</td>
-                          <td>2021</td>
+                          <td>T9748761</td>
+                          <td>ahmadilyas@sd.taylors.edu.my</td>
                           <td class="text-center">
                             <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
                           </td>
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>SSS_2020_00013</td>
-                          <td>W000119</td>
+                          <td>SSS_2021_00012</td>
+                          <td>W000214</td>
                           <td>Mary Ann</td>
-                          <td>2020</td>
+                          <td>000111-10-0000</td>
+                          <td>maryann@sd.taylors.edu.my</td>
                           <td class="text-center">
                             <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
                           </td>
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td>SSS_2019_00015</td>
-                          <td>W00091</td>
+                          <td>SSS_2021_00013</td>
+                          <td>W000300</td>
                           <td>Asad Taufiq</td>
-                          <td>2019</td>
+                          <td>402895465</td>
+                          <td>asadtaufiq@sd.taylors.edu.my</td>
                           <td class="text-center">
                             <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
                           </td>
@@ -805,7 +878,6 @@
                     </table>
                   </div>
                 </div>
-
               </div>
             </div>
           </section>
@@ -866,7 +938,6 @@
     <script src="../../app-assets/js/scripts/components/components-dropdowns.js"></script>
     <script src="../../app-assets/js/scripts/forms/form-select2.js"></script>
     <script src="../../assets/js/scripts.js"></script>
-
   </body>
   <!-- END: Body-->
 </html>

@@ -578,24 +578,11 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/all-report.html"
+                <a class="d-flex align-items-center" href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >All Student</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/all-data.html"
-                  ><span
-                    class="menu-item text-truncate ml-2 pl-75"
-                    data-i18n="Menu Name"
-                    >All Data Download</span
+                    >All Students</span
                   ></a
                 >
               </li>
@@ -606,7 +593,7 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Completed Survey</span
+                    >Answered</span
                   ></a
                 >
               </li>
@@ -619,8 +606,8 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incomplete & Un-initiated Survey"
-                    >Incomplete & Un-initiated Survey</span
+                    title="Answering & Not Answered"
+                    >Answering & Not Answered</span
                   ></a
                 >
               </li>
@@ -633,19 +620,20 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incentive Scheme Summary"
-                    >Incentive Scheme Summary</span
+                    title="Incentive Scheme"
+                    >Incentive Scheme</span
                   ></a
                 >
               </li>
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/ch-and-g-report.html"
+                <a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Charts & Graphs</span
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Charts & Graphs - Responses"
+                    >Charts & Graphs - Responses</span
                   ></a
                 >
               </li>
@@ -656,7 +644,19 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Yearly Closing Reports"
                     >Yearly Closing Reports</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="../reports/all-data.html"
+                  ><span
+                    class="menu-item text-truncate ml-2 pl-75"
+                    data-i18n="Menu Name"
+                    >All Data Download</span
                   ></a
                 >
               </li>
@@ -727,6 +727,50 @@
               <div class="col-12">
                 <!-- filter -->
 
+                <div class="card">
+                  <div class="card-header border-bottom py-1">
+                    <div class="card-title">
+                      <h5 class="mb-0">Filter</h5>
+                    </div>
+                  </div>
+                  <div class="card-body pt-2">
+                    <form>
+                      <div class="d-flex">
+                        <div class="col-sm-12 col-md-8 mr-auto">
+                          <div class="form-group row mb-0">
+                            <label for="year" class="col-form-label col-sm-3"
+                              >Survey Status</label
+                            >
+                            <div class="col-sm-9">
+                              <select class="select2 form-control" id="year">
+                                <option selected>Show All</option>
+                                <option value="Answered">Answered</option>
+                                <option value="Answering">Answering</option>
+                                <option value="Not Answered">
+                                  Not Answered
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <button href="#" type="button" class="btn btn-danger">
+                            <i data-feather="filter" class="mr-50"></i
+                            ><span>Filter</span>
+                          </button>
+                          <button
+                            href="#"
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            Reset
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
                 <!-- table list -->
                 <div class="card">
                   <div class="card-header border-bottom p-1">
@@ -769,161 +813,98 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>Last Updated</th>
                             <th>Student ID</th>
                             <th>Name</th>
                             <th>IC / Passport Number</th>
-                            <th>Date of Birth</th>
-                            <th>Gender</th>
-                            <th>Country</th>
                             <th>Nationality</th>
                             <th>Level of Study</th>
                             <th>Faculty Name</th>
                             <th>School Code</th>
-                            <th>Course Code</th>
                             <th>Course Description</th>
-                            <th>Course Status</th>
-                            <th>Intake Number</th>
                             <th>Current Semester</th>
-                            <th>Study Mode</th>
+                            <th>Taylor's Email</th>
+                            <th>CMS Email</th>
                             <th>Local / International</th>
-                            <th>Agent Name</th>
                             <th>TU / TC</th>
-                            <th>Survey Status</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>28 / 09 / 2021</td>
                             <td>W000119</td>
                             <td>Mary Ann</td>
                             <td>000111-14-0000</td>
-                            <td>11 / 01 / 1998</td>
-                            <td>Female</td>
-                            <td>Malaysia</td>
                             <td>Malaysian</td>
                             <td class="text-center">2</td>
                             <td>Computer Science and Engineering</td>
                             <td>TAF0002</td>
-                            <td>WOC1003</td>
                             <td>
                               Moveth from from winged for, image fifth. Winged
                               whales, shall.
                             </td>
-                            <td class="text-center">
-                              <div class="badge badge-success">Active</div>
-                            </td>
-                            <td class="text-center">2</td>
                             <td class="text-center">3</td>
-                            <td>Online</td>
-                            <td>Local</td>
-                            <td>Top UniTalk Services</td>
+                            <td>maryann@sd.taylors.edu.my</td>
+                            <td>maryann@sd.cms.edu.my</td>
+                            <td>International</td>
                             <td>University</td>
-                            <td class="text-center">
-                              <div class="badge badge-light-success">
-                                Completed
-                              </div>
-                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>28 / 09 / 2021</td>
                             <td>W000214</td>
                             <td>John Brian</td>
                             <td>402895465</td>
-                            <td>02 / 12 / 1998</td>
-                            <td>Male</td>
-                            <td>United States of America</td>
                             <td>Non-Malaysian</td>
                             <td class="text-center">2</td>
                             <td>Education</td>
                             <td>TAE0002</td>
-                            <td>PKA4003</td>
                             <td>
                               Moveth from from winged for, image fifth. Winged
                               whales, shall.
                             </td>
-                            <td class="text-center">
-                              <div class="badge badge-success">Active</div>
-                            </td>
-                            <td class="text-center">3</td>
                             <td class="text-center">4</td>
-                            <td>Online</td>
+                            <td>johnbrian@sd.taylors.edu.my</td>
+                            <td>johnbrian@sd.cms.edu.my</td>
                             <td>International</td>
-                            <td>Top UniTalk Services</td>
                             <td>University</td>
-                            <td class="text-center">
-                              <div class="badge badge-light-warning">
-                                Uninitiated
-                              </div>
-                            </td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td>28 / 09 / 2021</td>
                             <td>E000114</td>
                             <td>Kylie Zheng</td>
                             <td>000111-10-0000</td>
-                            <td>15 / 05 / 1999</td>
-                            <td>Female</td>
-                            <td>Malaysia</td>
                             <td>Malaysian</td>
                             <td class="text-center">2</td>
                             <td>Liberal Arts and Sciences</td>
-                            <td>TAS0002</td>
                             <td>LAR3003</td>
                             <td>
                               Moveth from from winged for, image fifth. Winged
                               whales, shall.
                             </td>
-                            <td class="text-center">
-                              <div class="badge badge-success">Active</div>
-                            </td>
-                            <td class="text-center">2</td>
-                            <td class="text-center">2</td>
-                            <td>Online</td>
-                            <td>Local</td>
-                            <td>Top UniTalk Services</td>
-                            <td class="text-center">University</td>
-                            <td class="text-center">
-                              <div class="badge badge-light-warning">
-                                Uninitiated
-                              </div>
-                            </td>
+                            <td class="text-center">4</td>
+                            <td>kyliezheng@sd.taylors.edu.my</td>
+                            <td>kyliezheng@sd.cms.edu.my</td>
+                            <td>International</td>
+                            <td>University</td>
                           </tr>
                           <tr>
                             <td>4</td>
-                            <td>28 / 09 / 2021</td>
                             <td>S000197</td>
                             <td>Ravi Durand</td>
                             <td>T9748761</td>
-                            <td>09 / 10 / 1997</td>
-                            <td>Male</td>
-                            <td>Singapore</td>
                             <td>Non-Malaysian</td>
                             <td class="text-center">3</td>
                             <td>Media and Communication</td>
-                            <td>TAO0002</td>
                             <td>MOS1003</td>
                             <td>
                               Moveth from from winged for, image fifth. Winged
                               whales, shall.
                             </td>
-                            <td class="text-center">
-                              <div class="badge badge-success">Active</div>
-                            </td>
                             <td class="text-center">3</td>
-                            <td class="text-center">4</td>
-                            <td>Online</td>
+                            
+                            <td>ravidurand@sd.taylors.edu.my</td>
+                            <td>ravidurand@sd.cms.edu.my</td>
                             <td>International</td>
-                            <td>Top UniTalk Services</td>
                             <td>University</td>
-                            <td class="text-center">
-                              <div class="badge badge-light-danger">
-                                Incomplete
-                              </div>
-                            </td>
                           </tr>
                         </tbody>
                       </table>

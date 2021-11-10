@@ -578,24 +578,11 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/all-report.html"
+                <a class="d-flex align-items-center" href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >All Student</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/all-data.html"
-                  ><span
-                    class="menu-item text-truncate ml-2 pl-75"
-                    data-i18n="Menu Name"
-                    >All Data Download</span
+                    >All Students</span
                   ></a
                 >
               </li>
@@ -606,7 +593,7 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Completed Survey</span
+                    >Answered</span
                   ></a
                 >
               </li>
@@ -619,8 +606,8 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incomplete & Un-initiated Survey"
-                    >Incomplete & Un-initiated Survey</span
+                    title="Answering & Not Answered"
+                    >Answering & Not Answered</span
                   ></a
                 >
               </li>
@@ -633,19 +620,20 @@
                     data-i18n="Menu Name"
                     data-toggle="tooltip"
                     data-placement="right"
-                    title="Incentive Scheme Summary"
-                    >Incentive Scheme Summary</span
+                    title="Incentive Scheme"
+                    >Incentive Scheme</span
                   ></a
                 >
               </li>
               <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="../reports/ch-and-g-report.html"
+                <a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
-                    >Charts & Graphs</span
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Charts & Graphs - Responses"
+                    >Charts & Graphs - Responses</span
                   ></a
                 >
               </li>
@@ -656,7 +644,19 @@
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Yearly Closing Reports"
                     >Yearly Closing Reports</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a class="d-flex align-items-center" href="../reports/all-data.html"
+                  ><span
+                    class="menu-item text-truncate ml-2 pl-75"
+                    data-i18n="Menu Name"
+                    >All Data Download</span
                   ></a
                 >
               </li>
@@ -1117,10 +1117,68 @@
                     </div>
                   </div>
                   <!-- filter -->
+                  <div class="card-header p-1">
+                    <div class="card-title pt-50">
+                      <h5 class="ml-75 mb-0">Filter</h5>
+                    </div>
+                  </div>
+
+                  <div class="card-body py-0">
+                    <form>
+                      <div class="d-flex">
+                        <div class="col-sm-12 col-md-8 mr-auto">
+                          <div class="form-group row mb-1">
+                            <label for="response-rate-faculty" class="col-form-label col-sm-3"
+                              >Faculty</label
+                            >
+                            <div class="col-sm-9">
+                              <select class="select2 form-control" id="response-rate-faculty">
+                                <option selected>Show All</option>
+                                <option>
+                                  Faculty of Innovation and Technology
+                                </option>
+                                <option>Faculty of Business and Law</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row mb-0">
+                            <label for="response-rate-school" class="col-form-label col-sm-3"
+                              >School</label
+                            >
+                            <div class="col-sm-9">
+                              <select class="select2 form-control" id="response-rate-school">
+                                <option selected>Show All</option>
+                                <option>
+                                  Computer Science and Engineering
+                                </option>
+                                <option>Education</option>
+                                <option>Liberal Arts and Sciences</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <button href="#" type="button" class="btn btn-danger">
+                            <i data-feather="filter" class="mr-50"></i
+                            ><span>Filter</span>
+                          </button>
+                          <button
+                            href="#"
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            Reset
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <hr class="mb-0 mx-1 mt-2" />
+
                   <!-- end filter -->
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table nowrap table-bordered">
+                      <table class="datatable2 table nowrap table-bordered">
                         <thead>
                           <tr>
                             <th>Faculty/ School/ Program</th>
@@ -1154,11 +1212,11 @@
                             <td style="padding-left: 4.5em">
                               Bachelor of Arts (Honours) Accounting and Finance
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">33</td>
+                            <td class="text-center">98</td>
+                            <td class="text-center">13</td>
+                            <td class="text-center">44</td>
+                            <td class="text-center">100</td>
                           </tr>
 
                           <tr>
@@ -1166,11 +1224,11 @@
                               Bachelor of Business (Honours) Accounting and
                               Finance
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">131</td>
+                            <td class="text-center">524</td>
+                            <td class="text-center">153</td>
+                            <td class="text-center">562</td>
+                            <td class="text-center">31</td>
                           </tr>
 
                           <tr>
@@ -1178,22 +1236,22 @@
                               Bachelor of Business (Honours) Finance and
                               Economics
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">311</td>
+                            <td class="text-center">28</td>
+                            <td class="text-center">215</td>
+                            <td class="text-center">61</td>
+                            <td class="text-center">362</td>
                           </tr>
 
                           <tr>
                             <td style="padding-left: 4.5em">
                               Bachelor of Science (Honours) Actuarial Studies
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">34</td>
+                            <td class="text-center">135</td>
+                            <td class="text-center">416</td>
+                            <td class="text-center">426</td>
+                            <td class="text-center">314</td>
                           </tr>
 
                           <tr>
@@ -1209,54 +1267,54 @@
                             <td style="padding-left: 4.5em">
                               Bachelor of Business (Honours)
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">391</td>
+                            <td class="text-center">315</td>
+                            <td class="text-center">542</td>
+                            <td class="text-center">461</td>
+                            <td class="text-center">642</td>
                           </tr>
                           <tr>
                             <td style="padding-left: 4.5em">
                               Bachelor of Business (Honours) (Business
                               Administration)
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">425</td>
+                            <td class="text-center">331</td>
+                            <td class="text-center">146</td>
+                            <td class="text-center">561</td>
+                            <td class="text-center">622</td>
                           </tr>
                           <tr>
                             <td style="padding-left: 4.5em">
                               Bachelor of Business (Honours) (International
                               Business and Marketing)
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">315</td>
+                            <td class="text-center">757</td>
+                            <td class="text-center">674</td>
+                            <td class="text-center">357</td>
+                            <td class="text-center">573</td>
                           </tr>
                           <tr>
                             <td style="padding-left: 4.5em">
                               Bachelor of Business (Honours) (International
                               Business)
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">426</td>
+                            <td class="text-center">642</td>
+                            <td class="text-center">612</td>
+                            <td class="text-center">246</td>
+                            <td class="text-center">616</td>
                           </tr>
                           <tr>
                             <td style="padding-left: 4.5em">
                               Bachelor of Business (Honours) Marketing
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">315</td>
+                            <td class="text-center">571</td>
+                            <td class="text-center">572</td>
+                            <td class="text-center">752</td>
+                            <td class="text-center">361</td>
                           </tr>
 
                           <tr>
@@ -1271,11 +1329,11 @@
                             <td style="padding-left: 4.5em">
                               Bachelor of Laws
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">341</td>
+                            <td class="text-center">221</td>
+                            <td class="text-center">331</td>
+                            <td class="text-center">442</td>
+                            <td class="text-center">613</td>
                           </tr>
                         </tbody>
                       </table>
@@ -1334,20 +1392,32 @@
                     <form>
                       <div class="d-flex">
                         <div class="col-sm-12 col-md-8 mr-auto">
-                          <div class="form-group row mb-0">
-                            <label
-                              for="year"
-                              class="pl-0 ml-25 col-form-label col-sm-2"
+                          <div class="form-group row mb-1">
+                            <label for="faculty" class="col-form-label col-sm-3"
+                              >Faculty</label
                             >
-                              Faculty & School
-                            </label>
                             <div class="col-sm-9">
-                              <select class="select2 form-control" id="year">
-                                <option selected>2021</option>
-                                <option value="17">2017</option>
-                                <option value="18">2018</option>
-                                <option value="19">2019</option>
-                                <option value="20">2020</option>
+                              <select class="select2 form-control" id="faculty">
+                                <option selected>Show All</option>
+                                <option>
+                                  Faculty of Innovation and Technology
+                                </option>
+                                <option>Faculty of Business and Law</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group row mb-0">
+                            <label for="school" class="col-form-label col-sm-3"
+                              >School</label
+                            >
+                            <div class="col-sm-9">
+                              <select class="select2 form-control" id="school">
+                                <option selected>Show All</option>
+                                <option>
+                                  Computer Science and Engineering
+                                </option>
+                                <option>Education</option>
+                                <option>Liberal Arts and Sciences</option>
                               </select>
                             </div>
                           </div>
@@ -1372,7 +1442,7 @@
                   <!-- end filter -->
                   <div class="card-body">
                     <div class="table-responsive">
-                      <table class="table nowrap">
+                      <table class="table nowrap datatable2">
                         <thead>
                           <tr>
                             <th style="background-color: chocolate"></th>
@@ -1467,8 +1537,9 @@
                             <td>50</td>
                             <td>3</td>
                             <td>
-                              1=Very Dissatisfied2=Dissatisfied3=Moderately
-                              Satisfied4=Satisfied5=Very SatisfiedN/A = Not
+                              1=Very Dissatisfied <br>
+                              2=Dissatisfied <br> 3=Moderately
+                              Satisfied <br> 4=Satisfied <br> 5=Very Satisfied <br> N/A = Not
                               Applicable, as I have never used/participated
                             </td>
                           </tr>
@@ -1487,8 +1558,8 @@
                             <td>50</td>
                             <td>3</td>
                             <td>
-                              1=Very Dissatisfied2=Dissatisfied3=Moderately
-                              Satisfied4=Satisfied5=Very SatisfiedN/A = Not
+                              1=Very Dissatisfied <br> 2=Dissatisfied <br> 3=Moderately
+                              Satisfied <br> 4=Satisfied <br> 5=Very Satisfied <br> N/A = Not
                               Applicable, as I have never used/participated
                             </td>
                           </tr>
@@ -1558,127 +1629,15 @@
     <script src="../../app-assets/js/scripts/forms/form-select2.js"></script>
     <script src="../../assets/js/scripts.js"></script>
 
+    <!-- END: Page JS-->
+
     <script>
       $(document).ready(function () {
-        let surveyInfoChartEl = document.querySelector(
-          "#chartSurvey-all-students"
-        );
-
-        var surveyInfoChartConfig = {
-          chart: {
-            height: 300,
-            type: "donut",
-          },
-          legend: {
-            show: true,
-            position: "right",
-            offsetY: 90,
-            fontSize: "16px",
-            // to make it appear 2 times, top is value, bottom is percentage
-            // the 190 is from the total, *100 to make it percentage cuz brain dead, think kenot
-            formatter: function (seriesName, opts) {
-              return [
-                " " + seriesName,
-                " - ",
-                opts.w.globals.series[opts.seriesIndex] +
-                  "<br>" +
-                  "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
-                  seriesName,
-                " - ",
-                parseFloat(
-                  (opts.w.globals.series[opts.seriesIndex] / 190) * 100
-                ).toFixed(1),
-                "%",
-              ];
-            },
-          },
-          dataLabels: {
-            enabled: true,
-            formatter: function (val, opts) {
-              return `${opts.w.globals.series[opts.seriesIndex]} (${parseFloat(
-                (opts.w.globals.series[opts.seriesIndex] / 190) * 100
-              ).toFixed(1)}%)`;
-            },
-            style: {
-              fontSize: "1.1rem",
-            },
-          },
-          labels: ["Answered", "Answering & Not Answered"],
-          series: [116, 74],
-          colors: ["#6600cc", "#ff0066"],
-          plotOptions: {
-            pie: {
-              donut: {
-                size: "55%",
-                labels: {
-                  show: true,
-                  name: {
-                    fontSize: "2rem",
-                    fontFamily: "Montserrat",
-                  },
-                  total: {
-                    show: true,
-                    fontSize: "1.5rem",
-                    label: "Total Survey",
-                    formatter: function (w) {
-                      return "190";
-                    },
-                  },
-                },
-              },
-            },
-          },
-          responsive: [
-            {
-              breakpoint: 992,
-              options: {
-                chart: {
-                  height: 380,
-                },
-              },
-            },
-            {
-              breakpoint: 576,
-              options: {
-                chart: {
-                  height: 320,
-                },
-                plotOptions: {
-                  pie: {
-                    donut: {
-                      labels: {
-                        show: true,
-                        name: {
-                          fontSize: "1.5rem",
-                        },
-                        value: {
-                          fontSize: "1rem",
-                        },
-                        total: {
-                          fontSize: "1.5rem",
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          ],
-        };
-
-        if (
-          typeof surveyInfoChartEl !== undefined &&
-          surveyInfoChartEl !== null
-        ) {
-          var compDonutChart = new ApexCharts(
-            surveyInfoChartEl,
-            surveyInfoChartConfig
-          );
-          compDonutChart.render();
-        }
+        $(".datatable2").DataTable({
+          ordering: false,
+        });
       });
     </script>
-    <!-- END: Page JS-->
   </body>
   <!-- END: Body-->
 </html>
