@@ -110,6 +110,22 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
     <!-- END: Custom CSS-->
+
+    <style>
+      .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a,
+      .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a,
+      .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+    </style>
   </head>
 
   <body
@@ -157,6 +173,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- SSS Logo -->
+        <ul class="nav navbar-nav align-items-center ml-auto">
+          <li class="nav-item mr-4">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/taylors logo-01.jpg"
+              alt="SSS"
+              width="120"
+            />
+          </li>
+
+          <li class="nav-item">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/sss-logo.png"
+              alt="SSS"
+              width="94"
+            />
+          </li>
+        </ul>
+
         <ul class="nav navbar-nav align-items-center ml-auto">
           <li class="nav-item dropdown dropdown-user">
             <a
@@ -545,7 +583,7 @@
               </li>
 
               <!-- Charts & Graphs – Satisfaction -->
-              <li>
+              <!-- <li>
                 <a
                   class="d-flex align-items-center"
                   href="chart-and-graphs-satisfaction.html"
@@ -558,7 +596,7 @@
                     >Charts & Graphs – Satisfaction</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item">
@@ -578,7 +616,9 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a class="d-flex align-items-center" href="../reports/all-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -626,7 +666,9 @@
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -651,7 +693,7 @@
                   ></a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a class="d-flex align-items-center" href="../reports/all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
@@ -659,7 +701,7 @@
                     >All Data Download</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
         </ul>
@@ -668,19 +710,32 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div
+          class="content-header row"
+          style="background-image: linear-gradient(#762aaf 5%, #9a57cd)"
+        >
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">Tables</h2>
-                <div class="breadcrumb-wrapper">
+                <h2
+                  class="
+                    content-header-title
+                    float-left
+                    mb-0
+                    text-white
+                    font-weight-bold
+                  "
+                >
+                  Tables
+                </h2>
+                <div class="breadcrumb-wrapper text-white">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#">Real-time Reporting</a>
+                      <a href="#" class="text-white">Real-time Reporting</a>
                     </li>
                     <li class="breadcrumb-item">Tables</li>
                   </ol>
@@ -690,7 +745,7 @@
           </div>
         </div>
 
-        <div class="content-body">
+        <div class="content-body mt-2">
           <section id="basic-datatable">
             <div class="row">
               <div class="col-12">
@@ -745,32 +800,32 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr class="text-dark">
                             <td>Taylor's University (TU)</td>
                             <td style="color: green">200</td>
-                            <td>50</td>
-                            <td>1,000</td>
-                            <td>1,250</td>
-                            <td>16%</td>
+                            <td class="text-dark">50</td>
+                            <td class="text-dark">1,000</td>
+                            <td class="text-dark">1,250</td>
+                            <td class="text-dark">16%</td>
                           </tr>
 
-                          <tr>
+                          <tr class="text-dark">
                             <td>Taylor's College (TC)</td>
                             <td style="color: green">100</td>
-                            <td>30</td>
-                            <td>500</td>
-                            <td>630</td>
-                            <td>16%</td>
+                            <td class="text-dark">30</td>
+                            <td class="text-dark">500</td>
+                            <td class="text-dark">630</td>
+                            <td class="text-dark">16%</td>
                           </tr>
                         </tbody>
-                        <tfoot>
+                        <tfoot class="text-dark">
                           <tr style="font-weight: bold">
                             <td>Total</td>
                             <td style="color: green">300</td>
-                            <td>80</td>
-                            <td>1,500</td>
-                            <td>1,880</td>
-                            <td>16%</td>
+                            <td class="text-dark">80</td>
+                            <td class="text-dark">1,500</td>
+                            <td class="text-dark">1,880</td>
+                            <td class="text-dark">16%</td>
                           </tr>
                         </tfoot>
                       </table>
@@ -834,25 +889,25 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr style="background-color: #4eca4e; color: black">
-                            <td>Taylor's University (TU)</td>
-                            <td>200</td>
-                            <td>50</td>
-                            <td>1,000</td>
-                            <td>1,250</td>
-                            <td>16%</td>
+                          <tr style="background-color: #E8D8F4; color: black">
+                            <td class="text-dark">Taylor's University (TU)</td>
+                            <td class="text-dark">200</td>
+                            <td class="text-dark">50</td>
+                            <td class="text-dark">1,000</td>
+                            <td class="text-dark">1,250</td>
+                            <td class="text-dark">16%</td>
                           </tr>
 
                           <tr>
-                            <td>Diploma</td>
-                            <td>100</td>
-                            <td>10</td>
-                            <td>250</td>
-                            <td>360</td>
-                            <td>28%</td>
+                            <td class="text-dark">Diploma</td>
+                            <td class="text-dark">100</td>
+                            <td class="text-dark">10</td>
+                            <td class="text-dark">250</td>
+                            <td class="text-dark">360</td>
+                            <td class="text-dark">28%</td>
                           </tr>
 
-                          <tr>
+                          <tr class="text-dark">
                             <td>Bachelor</td>
                             <td>50</td>
                             <td>20</td>
@@ -861,7 +916,7 @@
                             <td>9%</td>
                           </tr>
 
-                          <tr>
+                          <tr class="text-dark">
                             <td>PG</td>
                             <td>50</td>
                             <td>20</td>
@@ -870,7 +925,7 @@
                             <td>16%</td>
                           </tr>
 
-                          <tr style="background-color: #4eca4e; color: black">
+                          <tr style="background-color: #E8D8F4; color: black">
                             <td>Taylor's College (TC)</td>
                             <td>100</td>
                             <td>30</td>
@@ -879,7 +934,7 @@
                             <td>16%</td>
                           </tr>
 
-                          <tr>
+                          <tr class="text-dark">
                             <td>Pre-U</td>
                             <td>40</td>
                             <td>10</td>
@@ -888,7 +943,7 @@
                             <td>11%</td>
                           </tr>
 
-                          <tr>
+                          <tr class="text-dark">
                             <td>Foundation</td>
                             <td>30</td>
                             <td>10</td>
@@ -897,7 +952,7 @@
                             <td>21%</td>
                           </tr>
 
-                          <tr>
+                          <tr class="text-dark">
                             <td>Diploma</td>
                             <td>30</td>
                             <td>10</td>
@@ -910,8 +965,8 @@
                           <tr
                             style="
                               font-weight: bold;
-                              background-color: green;
-                              color: white;
+                              background-color: #B685DB;
+                              color: black;
                             "
                           >
                             <td>Total</td>
@@ -1003,7 +1058,7 @@
                             >
                               01/09/2020
                             </td>
-                            <td>55</td>
+                            <td class="text-dark">55</td>
                           </tr>
 
                           <tr>
@@ -1016,7 +1071,7 @@
                             >
                               02/09/2022
                             </td>
-                            <td>30</td>
+                            <td class="text-dark">30</td>
                           </tr>
                           <tr>
                             <td
@@ -1028,7 +1083,7 @@
                             >
                               03/09/2022
                             </td>
-                            <td>30</td>
+                            <td class="text-dark">30</td>
                           </tr>
                           <tr>
                             <td
@@ -1040,7 +1095,7 @@
                             >
                               04/09/2022
                             </td>
-                            <td>100</td>
+                            <td class="text-dark">100</td>
                           </tr>
                           <tr>
                             <td
@@ -1052,7 +1107,7 @@
                             >
                               05/09/2022
                             </td>
-                            <td>200</td>
+                            <td class="text-dark">200</td>
                           </tr>
                         </tbody>
                         <tfoot>
@@ -1066,7 +1121,7 @@
                             >
                               YTD
                             </td>
-                            <td>415</td>
+                            <td class="text-dark">415</td>
                           </tr>
                         </tfoot>
                       </table>
@@ -1128,11 +1183,16 @@
                       <div class="d-flex">
                         <div class="col-sm-12 col-md-8 mr-auto">
                           <div class="form-group row mb-1">
-                            <label for="response-rate-faculty" class="col-form-label col-sm-3"
+                            <label
+                              for="response-rate-faculty"
+                              class="col-form-label col-sm-3"
                               >Faculty</label
                             >
                             <div class="col-sm-9">
-                              <select class="select2 form-control" id="response-rate-faculty">
+                              <select
+                                class="select2 form-control"
+                                id="response-rate-faculty"
+                              >
                                 <option selected>Show All</option>
                                 <option>
                                   Faculty of Innovation and Technology
@@ -1142,11 +1202,16 @@
                             </div>
                           </div>
                           <div class="form-group row mb-0">
-                            <label for="response-rate-school" class="col-form-label col-sm-3"
+                            <label
+                              for="response-rate-school"
+                              class="col-form-label col-sm-3"
                               >School</label
                             >
                             <div class="col-sm-9">
-                              <select class="select2 form-control" id="response-rate-school">
+                              <select
+                                class="select2 form-control"
+                                id="response-rate-school"
+                              >
                                 <option selected>Show All</option>
                                 <option>
                                   Computer Science and Engineering
@@ -1189,7 +1254,7 @@
                             <th style="color: green">% Response Rate</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-dark">
                           <tr>
                             <td style="font-weight: bold">FBL</td>
                             <td></td>
@@ -1523,7 +1588,7 @@
                           </tr>
                         </thead>
 
-                        <tbody>
+                        <tbody class="text-dark">
                           <tr>
                             <td>B1</td>
                             <td>
@@ -1537,10 +1602,13 @@
                             <td>50</td>
                             <td>3</td>
                             <td>
-                              1=Very Dissatisfied <br>
-                              2=Dissatisfied <br> 3=Moderately
-                              Satisfied <br> 4=Satisfied <br> 5=Very Satisfied <br> N/A = Not
-                              Applicable, as I have never used/participated
+                              1=Very Dissatisfied <br />
+                              2=Dissatisfied <br />
+                              3=Moderately Satisfied <br />
+                              4=Satisfied <br />
+                              5=Very Satisfied <br />
+                              N/A = Not Applicable, as I have never
+                              used/participated
                             </td>
                           </tr>
 
@@ -1558,9 +1626,13 @@
                             <td>50</td>
                             <td>3</td>
                             <td>
-                              1=Very Dissatisfied <br> 2=Dissatisfied <br> 3=Moderately
-                              Satisfied <br> 4=Satisfied <br> 5=Very Satisfied <br> N/A = Not
-                              Applicable, as I have never used/participated
+                              1=Very Dissatisfied <br />
+                              2=Dissatisfied <br />
+                              3=Moderately Satisfied <br />
+                              4=Satisfied <br />
+                              5=Very Satisfied <br />
+                              N/A = Not Applicable, as I have never
+                              used/participated
                             </td>
                           </tr>
                         </tbody>

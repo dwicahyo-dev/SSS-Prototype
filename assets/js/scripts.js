@@ -61,9 +61,9 @@
       donut: {
         // series1: '#3939ac',
         // series2: '#7979d2'
-        series1: '#007500',
-        series2: '#0000FF',
-        series3: '#FF0000'
+        series1: '#C5E0B4',
+        series2: '#9DC3E6',
+        series3: '#FF9999'
       },
       area: {
         series3: '#ff0066',
@@ -96,16 +96,38 @@
         // to make it appear 2 times, top is value, bottom is percentage
         // the 190 is from the total, *100 to make it percentage cuz brain dead, think kenot
         formatter: function(seriesName, opts) {
-          return [" " + seriesName, " - ", opts.w.globals.series[opts.seriesIndex] + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + seriesName, " - ", parseFloat(opts.w.globals.series[opts.seriesIndex]/190*100).toFixed(1), "%"]
+          return [" " + seriesName, " - ", opts.w.globals.series[opts.seriesIndex] + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + seriesName, " - ", parseFloat(opts.w.globals.series[opts.seriesIndex]/220*100).toFixed(1), "%"]
         }
       },
       dataLabels: {
         style: {
-          fontSize: '1.1rem'
+          fontSize: '1rem',
+          fontFamily: 'Helvetica, Arial, sans-serif',
+          fontWeight: '300'
         },
         formatter: function (val, opts) {
           return opts.w.globals.series[opts.seriesIndex];
         },
+        background: {
+          enabled: true,
+          foreColor: '#000000',
+          borderColor: '#000000',
+        },
+        dropShadow: {
+          enabled: false
+        }
+      },
+      tooltip: {
+        y: {
+          formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+            return `${parseFloat(value / 220 * 100).toFixed(1)}%`;
+          },
+          title: {
+            formatter: function (seriesName) {
+              return seriesName + " : ";
+            }
+          }
+        }
       },
       labels: ['Answered', 'Answering', 'Not Answered'],
       series: [116, 74, 30],
@@ -222,7 +244,7 @@
 				data: [84, 64, 58, 73, 79]
 			}],
       tooltip: {
-        enabled: true,
+        enabled: false,
         y: {
           formatter: function(val, opt) {
   					return parseFloat(val) / 100.0 * 16700.0; //Assuming total students for every yr is 16700
@@ -428,10 +450,16 @@
 					// }
 				}
 			},
+      tooltip: {
+        enabled: false
+      },
 			dataLabels: {
 				enabled: true,
         formatter: function(value, { seriesIndex, dataPointIndex, w }) {
           return `${w.globals.series[seriesIndex][dataPointIndex]} (${value.toFixed(0)}%)`
+        },
+        style: {
+          colors: ['#000000']
         }
 			},
 			legend: {
@@ -506,11 +534,17 @@
           barHeight: '40%'
 				}
 			},
+      tooltip: {
+        enabled: false
+      },
 			dataLabels: {
 				enabled: true,
         formatter: function(value, { seriesIndex, dataPointIndex, w }) {
           return `${w.globals.series[seriesIndex][dataPointIndex]} (${value.toFixed(0)}%)`
           // return `${w.globals.labels[dataPointIndex]} : ${w.globals.series[seriesIndex][dataPointIndex]} (${value.toFixed(0)}%)`;
+        },
+        style: {
+          colors: ['#000000']
         }
 			},
 			legend: {

@@ -110,6 +110,22 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
     <!-- END: Custom CSS-->
+
+    <style>
+      .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a,
+      .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a,
+      .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+    </style>
   </head>
 
   <body
@@ -157,6 +173,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- SSS Logo -->
+        <ul class="nav navbar-nav align-items-center ml-auto">
+          <li class="nav-item mr-4">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/taylors logo-01.jpg"
+              alt="SSS"
+              width="120"
+            />
+          </li>
+
+          <li class="nav-item">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/sss-logo.png"
+              alt="SSS"
+              width="94"
+            />
+          </li>
+        </ul>
+
         <ul class="nav navbar-nav align-items-center ml-auto">
           <li class="nav-item dropdown dropdown-user">
             <a
@@ -543,22 +581,6 @@
                   ></a
                 >
               </li>
-
-              <!-- Charts & Graphs – Satisfaction -->
-              <li>
-                <a
-                  class="d-flex align-items-center"
-                  href="chart-and-graphs-satisfaction.html"
-                  ><span
-                    class="menu-item text-truncate ml-2 pl-75"
-                    data-i18n="Menu Name"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Charts & Graphs – Satisfaction"
-                    >Charts & Graphs – Satisfaction</span
-                  ></a
-                >
-              </li>
             </ul>
           </li>
           <li class="nav-item">
@@ -578,7 +600,9 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a class="d-flex align-items-center" href="../reports/all-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -626,7 +650,9 @@
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="../reports/ch-and-g-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -651,7 +677,7 @@
                   ></a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a class="d-flex align-items-center" href="../reports/all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
@@ -659,7 +685,7 @@
                     >All Data Download</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
         </ul>
@@ -668,21 +694,32 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div
+          class="content-header row"
+          style="background-image: linear-gradient(#762aaf 5%, #9a57cd)"
+        >
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">
+                <h2
+                  class="
+                    content-header-title
+                    float-left
+                    mb-0
+                    text-white
+                    font-weight-bold
+                  "
+                >
                   Answered Survey
                 </h2>
-                <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-wrapper text-white">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#">Real-time Reporting</a>
+                      <a href="#" class="text-white">Real-time Reporting</a>
                     </li>
                     <li class="breadcrumb-item">Answered Survey</li>
                   </ol>
@@ -692,7 +729,7 @@
           </div>
         </div>
 
-        <div class="content-body">
+        <div class="content-body mt-2">
           <section id="basic-datatable">
             <div class="row">
               <div class="col-12">
@@ -827,51 +864,71 @@
                       <h5 class="ml-75 mb-0">List</h5>
                     </div>
                   </div>
-                  <div class="card-body">
+                  <div class="card-body table-responsive">
                     <table class="datatable table">
                       <thead>
                         <tr>
                           <th>#</th>
+                          <th>Submission Date</th>
                           <th>Survey ID</th>
                           <th>Student ID</th>
-                          <th>Student Name</th>
+                          <th>Name</th>
                           <th>IC / Passport Number</th>
+                          <th>Mobile No.</th>
+                          <th>Personal Email</th>
                           <th>Taylor's Email</th>
+                          <th>CMS Email</th>
+                          <th>Faculty</th>
+                          <th>School</th>
+                          <th>Programme</th>
                           <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1</td>
+                          <td>09-01-2021</td>
                           <td>SSS_2021_00011</td>
                           <td>W000119</td>
-                          <td>Ahmad Ilyas</td>
-                          <td>T9748761</td>
-                          <td>ahmadilyas@sd.taylors.edu.my</td>
+                          <td>Mary Ann</td>
+                          <td>000111-14-0000</td>
+                          <td>+6031208312</td>
+                          <td>marryann@personal.com</td>
+                          <td>marryann@taylors.edu.my</td>
+                          <td>marryann@cms.edu.my</td>
+                          <td>Faculty of Innovation and Technology</td>
+                          <td>Computer Science and Engineering</td>
+                          <td>Bachelor of Business (Honours)</td>
                           <td class="text-center">
-                            <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
+                            <a
+                              href="view-survey.html"
+                              type="button"
+                              class="btn btn-primary"
+                              ><i data-feather="eye" class="mr-50"></i>View</a
+                            >
                           </td>
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>SSS_2021_00012</td>
-                          <td>W000214</td>
-                          <td>Mary Ann</td>
-                          <td>000111-10-0000</td>
-                          <td>maryann@sd.taylors.edu.my</td>
-                          <td class="text-center">
-                            <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>SSS_2021_00013</td>
-                          <td>W000300</td>
+                          <td>09-01-2021</td>
+                          <td>SSS_2021_00011</td>
+                          <td>W000200</td>
                           <td>Asad Taufiq</td>
-                          <td>402895465</td>
-                          <td>asadtaufiq@sd.taylors.edu.my</td>
+                          <td>000111-14-2121</td>
+                          <td>+60310293</td>
+                          <td>asadtaufiq@personal.com</td>
+                          <td>asadtaufiq@taylors.edu.my</td>
+                          <td>asadtaufiq@cms.edu.my</td>
+                          <td>Faculty of Innovation and Technology</td>
+                          <td>Computer Science and Engineering</td>
+                          <td>Bachelor of Business (Honours)</td>
                           <td class="text-center">
-                            <a href="view-survey.html" type="button" class="btn btn-primary"><i data-feather='eye' class="mr-50"></i>View</a>
+                            <a
+                              href="view-survey.html"
+                              type="button"
+                              class="btn btn-primary"
+                              ><i data-feather="eye" class="mr-50"></i>View</a
+                            >
                           </td>
                         </tr>
                       </tbody>

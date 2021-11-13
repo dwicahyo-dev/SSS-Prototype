@@ -57,6 +57,18 @@
 <!-- BEGIN: Custom CSS-->
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 <!-- END: Custom CSS-->
+
+<style>
+    .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a,
+    .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+      background: #762aaf;
+    }
+
+    .main-menu.menu-dark .navigation > li.active > a,
+    .main-menu.menu-dark .navigation > li ul .active {
+      background: #762aaf;
+    }
+  </style>
 </head>
 
   <body
@@ -107,6 +119,15 @@
 
         <!-- SSS Logo -->
         <ul class="nav navbar-nav align-items-center ml-auto">
+            <li class="nav-item mr-4">
+              <img
+                class="brand-logo img-fluid"
+                src="../assets/images/taylors logo-01.jpg"
+                alt="SSS"
+                width="120"
+              />
+            </li>
+  
             <li class="nav-item">
               <img
                 class="brand-logo img-fluid"
@@ -436,28 +457,28 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div class="content-header row" style="background-image: linear-gradient(#762aaf 5%, #9a57cd)">
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">Survey</h2>
+                <h2 class="float-left mb-0 font-weight-bold text-white">Survey</h2>
                 <div class="breadcrumb-wrapper"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="content-body">
+        <div class="content-body mt-2">
           <div class="d-flex justify-content-center">
             <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
               <section class="modern-horizontal-wizard">
                 <div class="bs-stepper wizard-modern survey-formWiz">
                     <!-- steps / survey parts-->
-                    <div class="bs-stepper-header pt-0 pb-1">
+                    <div class="bs-stepper-header pt-0 pb-2 pt-2" style="background-color: white !important; border-radius: 13px;">
                         <div class="step" data-target="#part-a">
                             <button type="button" class="step-trigger">
                                 <span class="bs-stepper-box">A</span>
@@ -545,7 +566,7 @@
                     </div>
                     <!-- end steps / survey parts-->
                     <!-- survey questions -->
-                    <div class="bs-stepper-content">
+                    <div class="bs-stepper-content mt-2">
                         <form id="studentSurveyForm" novalidate action="" method="post">
                             <!-- part a -->
                             <div id="part-a" class="content">
@@ -557,8 +578,8 @@
                                         <div class="form-group col-md-12">
                                             <div class="form-group">
                                                 <div class="table-responsive">
-                                                    <table class="table table-bordered fixed">
-                                                        <!-- <thead class="text-center">
+                                                    <table class="table table-bordered fixed table-striped">
+                                                        <thead class="text-center">
                                                             <tr class="pb-25">
                                                                 <th width="30%"></th>
                                                                 <th class="px-0 pb-25 text-dark bg-danger bg-lighten-4 no-border">Very Dissatisfied</th>
@@ -566,7 +587,7 @@
                                                                 <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                                 <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                                 <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                                <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                             </tr>
                                                             <tr class="pb-50 pt-0">
                                                                 <th style="border-top: none;"></th>
@@ -575,57 +596,17 @@
                                                                 <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                                 <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                                 <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                                <th class="px-1 pb-50 pt-0 text-dark bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">
+                                                                    N/A
+                                                                </th>
                                                             </tr>
-                                                        </thead> -->
-                                                        <tbody>
+                                                        </thead>
+                                                        <tbody class="text-dark">
                                                             <tr>
                                                                 <td class="px-1">
                                                                     1. Your experience developing skills through a club or society.
                                                                 </td>
                                                                 <td>
-                                                                    <div class="form-check form-check-warning table-form-check">
-                                                                        <input type="radio" name="sat1" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-warning font-weight-bold">NA</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-danger table-form-check">
-                                                                        <input type="radio" name="sat1" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Very Dissatisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-danger table-form-check">
-                                                                        <input type="radio" name="sat1" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Dissatisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-info table-form-check">
-                                                                        <input type="radio" name="sat1" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Moderately Satisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-info table-form-check">
-                                                                        <input type="radio" name="sat1" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Satisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-success table-form-check">
-                                                                        <input type="radio" name="sat1" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-success font-weight-bold">Very Satisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <!-- <td>
                                                                     <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat1" class="form-check-input">
                                                                     </div>
@@ -654,140 +635,104 @@
                                                                     <div class="form-check form-check-warning table-form-check">
                                                                         <input type="radio" name="sat1" class="form-check-input">
                                                                     </div>
-                                                                </td> -->
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="px-1 text-justify">2. The variety of clubs and societies made available for you to join.</td>
                                                                 <td>
-                                                                    <div class="form-check form-check-warning table-form-check">
+                                                                    <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat2" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-warning font-weight-bold">NA</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat2" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Very Dissatisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-danger table-form-check">
-                                                                        <input type="radio" name="sat2" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Dissatisfied</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-info table-form-check">
                                                                         <input type="radio" name="sat2" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Moderately Satisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-info table-form-check">
-                                                                        <input type="radio" name="sat2" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Satisfied</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-success table-form-check">
                                                                         <input type="radio" name="sat2" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-success font-weight-bold">Very Satisfied</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check form-check-success table-form-check">
+                                                                        <input type="radio" name="sat2" class="form-check-input">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check form-check-warning table-form-check">
+                                                                        <input type="radio" name="sat2" class="form-check-input">
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="px-1 text-justify">3. The quality of the facilities for the Sports Complex.</td>
                                                                 <td>
-                                                                    <div class="form-check form-check-warning table-form-check">
+                                                                    <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat3" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-warning font-weight-bold">NA</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat3" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Very Dissatisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-danger table-form-check">
-                                                                        <input type="radio" name="sat3" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Dissatisfied</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-info table-form-check">
                                                                         <input type="radio" name="sat3" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Moderately Satisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-info table-form-check">
-                                                                        <input type="radio" name="sat3" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Satisfied</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-success table-form-check">
                                                                         <input type="radio" name="sat3" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-success font-weight-bold">Very Satisfied</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check form-check-success table-form-check">
+                                                                        <input type="radio" name="sat3" class="form-check-input">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check form-check-warning table-form-check">
+                                                                        <input type="radio" name="sat3" class="form-check-input">
                                                                     </div>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="px-1 text-justify">4. The overall facilities and services in UniGym.</td>
                                                                 <td>
-                                                                    <div class="form-check form-check-warning table-form-check">
+                                                                    <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat4" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-warning font-weight-bold">NA</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-danger table-form-check">
                                                                         <input type="radio" name="sat4" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Very Dissatisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-danger table-form-check">
-                                                                        <input type="radio" name="sat4" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-danger font-weight-bold">Dissatisfied</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-info table-form-check">
                                                                         <input type="radio" name="sat4" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Moderately Satisfied</span>
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-check form-check-info table-form-check">
-                                                                        <input type="radio" name="sat4" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-dark font-weight-bold">Satisfied</span>
                                                                     </div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="form-check form-check-success table-form-check">
                                                                         <input type="radio" name="sat4" class="form-check-input">
-                                                                        <br>
-                                                                        <span class="text-success font-weight-bold">Very Satisfied</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check form-check-success table-form-check">
+                                                                        <input type="radio" name="sat4" class="form-check-input">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="form-check form-check-warning table-form-check">
+                                                                        <input type="radio" name="sat4" class="form-check-input">
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -825,7 +770,7 @@
                                         <div class="form-group col-md-12">
                                             <div class="form-group">
                                                 <div class="table-responsive">
-                                                    <table class="table table-bordered fixed">
+                                                    <table class="table table-bordered fixed table-striped">
                                                         <thead class="text-center">
                                                             <tr class="pb-25">
                                                                 <th width="30%"></th>
@@ -834,7 +779,7 @@
                                                                 <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Agree</th>
                                                                 <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Agree</th>
                                                                 <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Strongly Agree</th>
-                                                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                                                                <th class="px-1 pb-25 text-dark bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                                                             </tr>
                                                             <tr class="pb-50 pt-0">
                                                                 <th style="border-top: none;"></th>
@@ -843,10 +788,10 @@
                                                                 <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                                 <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                                 <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                                <th class="px-1 pb-50 pt-0 text-dark bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody class="text-dark">
                                                             <tr>
                                                                 <td class="px-1 text-justify">1. TIMeS learning management system has increased my opportunity to access and use module materials more effectively.</td>
                                                                 <td>
@@ -1045,7 +990,7 @@
                                     <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
                                         <div class="form-group col-md-12">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered fixed">
+                                                <table class="table table-bordered fixed table-striped">
                                                     <thead>
                                                         <tr>
                                                             <th colspan="8">a. Campus Central</th>
@@ -1057,7 +1002,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr class="pb-50 pt-0 text-center">
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1066,10 +1011,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1">1. The response time of Campus Central.</td>
                                                             <td>
@@ -1182,12 +1127,12 @@
                                                             <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Very Aware</th>
                                                         </tr> -->
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. During emotionally distressed period, I know who and where should I go to for counselling support within the campus.</td>
                                                             <td>
                                                                 <div class="form-check form-check-warning table-form-check">
-                                                                    <input type="radio" name="aw1" class="form-check-input">
+                                                                    <input type="radio" name="aw2" class="form-check-input">
                                                                     <span class="text-warning font-weight-bold">NA</span>
                                                                 </div>
                                                             </td>
@@ -1235,7 +1180,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Agree</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Agree</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Strongly Agree</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr>
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1244,10 +1189,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">2. Attending a counselling session is not a shameful action but a helpful tool to get by difficult period as a student.</td>
                                                             <td>
@@ -1290,7 +1235,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr>
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1299,10 +1244,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">3. I am satisfied with the counselling services provided by CCS counsellor during my course of study.</td>
                                                             <td>
@@ -1350,7 +1295,7 @@
                                                             <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Very Aware</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. How aware are you of Career Services’ (CSC) range of support services and career events? (To name a few examples, Career Fair, SEEDS Portal, Internship Support, etc.)</td>
                                                             <td colspan="2">
@@ -1378,7 +1323,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Rarely use</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Occasionally use</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Frequently use</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr>
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1387,10 +1332,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">2. If you are aware of CSC’s events and services, how often/frequent do you use our services/participate in our events?</td>
                                                             <td>
@@ -1433,7 +1378,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr>
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1442,10 +1387,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">3. If you have used our support services before/participated in our career events, how satisfied are you with the services/events rendered?</td>
                                                             <td>
@@ -1493,7 +1438,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr class="text-center">
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1502,10 +1447,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. How satisfied are you with Taylor’s Pay payment channel?</td>
                                                             <td>
@@ -1545,7 +1490,7 @@
                                                     <th colspan="3" class="px-0 text-dark bg-success bg-lighten-4 no-border">Yes</th>
                                                     <th colspan="3" class="px-1 text-dark bg-danger bg-lighten-4 no-border">No</th>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">2. Would you be open for a direct debit payment option for your convenience and time-saving?</td>
                                                             <td colspan="3">
@@ -1568,7 +1513,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr>
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1577,10 +1522,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">3. The time between issuance of invoice and fees payment deadline.</td>
                                                             <td>
@@ -1745,7 +1690,7 @@
                                     <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
                                         <div class="form-group col-md-12">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered fixed">
+                                                <table class="table table-bordered fixed table-striped">
                                                     <thead >
                                                         <tr>
                                                             <th colspan="8">a. Library</th>
@@ -1757,7 +1702,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr class="text-center">
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1766,10 +1711,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. Overall satisfaction towards physical library (library facilities, library services)</td>
                                                             <td>
@@ -1882,7 +1827,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr class="text-center">
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -1891,10 +1836,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1">1. ICT Service Desk Support</td>
                                                             <td>
@@ -2007,7 +1952,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr class="text-center">
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -2016,10 +1961,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. The upkeep & cleanliness of Campus</td>
                                                             <td>
@@ -2150,7 +2095,7 @@
                                     <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
                                         <div class="form-group col-md-12">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered fixed">
+                                                <table class="table table-bordered fixed table-striped">
                                                     <thead >
                                                         <tr>
                                                             <th colspan="8">a. Student Exchange & Mobility</th>
@@ -2162,7 +2107,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Agree</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Agree</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Strongly Agree</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr class="text-center">
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -2171,10 +2116,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. Smooth application process through Global Mobility</td>
                                                             <td>
@@ -2288,7 +2233,7 @@
                                                             <th colspan="2" class="px-1 text-dark bg-success bg-lighten-4 no-border">More than 5 times</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">1. How many times have you contacted/used University Placement Services (emails / calls / visits / talks / fairs / virtual platforms, etc)?</td>
                                                             <td>
@@ -2321,7 +2266,7 @@
                                                             <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                             <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                             <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                            <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                            <th class="px-1 pb-25 text-dark bg-lighten-4 no-border">Not Applicable</th>
                                                         </tr>
                                                         <tr>
                                                             <th colspan="2" style="border-top: none;"></th>
@@ -2330,10 +2275,10 @@
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                             <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                             <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                            <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                            <th class="px-1 pb-50 pt-0 text-dark bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">2. On average, how satisfied are you with the advice and assistance provided at University Placement Services (UPS)? </td>
                                                             <td>
@@ -2372,9 +2317,9 @@
                                                     <th colspan="2"></th>
                                                     <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Yes</th>
                                                     <th colspan="2" class="px-1 text-dark bg-danger bg-lighten-4 no-border">No</th>
-                                                    <th colspan="2" class="px-0 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                    <th colspan="2" class="px-0 text-dark bg-lighten-4 no-border">Not Applicable</th>
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody class="text-dark">
                                                         <tr>
                                                             <td colspan="2" class="px-1 text-justify">3. If you have utilised UPS services, will you recommend UPS to others?</td>
                                                             <td colspan="2">
@@ -2418,169 +2363,129 @@
                             <!-- end part e -->
                             <!-- part f -->
                             <div id="part-f" class="content">
-                                <fieldset>
+                                <fieldset class="text-dark">
                                     <div class="content-header">
                                         <h4 class="mb-2"><b>Part F: Education Progression</b></h4>
                                     </div>
-                                    <div class="row mb-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
-                                        <div class="form-group col-md-12">
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <p class="mb-1 text-justify"><b>1. From a scale of 0-10, how would you rate your experience with our Education counsellor(s)? The counsellor(s) was courteous, professional and able to satisfactorily answer my questions </b><br>
-                                                            <i>(Education counsellor is the personnel who provides assistance and guidance to student before enrolment, in making the right choices of programme/ course, after completing  high school.)</i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-6 table-responsive">
-                                                        <table class="table table-borderless">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="text-dark font-weight-bold">
-                                                                            Highly Unlikely
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="form-check table-form-check">
-                                                                            <input type="radio" name="sat-4-1" class="form-check-input">
-                                                                            <br>
-                                                                            <span>1</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="form-check table-form-check">
-                                                                            <input type="radio" name="sat-4-1" class="form-check-input">
-                                                                            <br>
-                                                                            <span>2</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="form-check table-form-check">
-                                                                            <input type="radio" name="sat-4-1" class="form-check-input">
-                                                                            <br>
-                                                                            <span>3</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="form-check table-form-check">
-                                                                            <input type="radio" name="sat-4-1" class="form-check-input">
-                                                                            <br>
-                                                                            <span>4</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="form-check table-form-check">
-                                                                            <input type="radio" name="sat-4-1" class="form-check-input">
-                                                                            <br>
-                                                                            <span>5</span>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="text-success font-weight-bold">
-                                                                            Very Likely
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
+                                    <div class="mb-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1 text-justify text-dark"><b>1. From a scale of 0-10, how would you rate your experience with our Education counsellor(s)? The counsellor(s) was courteous, professional and able to satisfactorily answer my questions </b><br>
+                                                    <i>(Education counsellor is the personnel who provides assistance and guidance to student before enrolment, in making the right choices of programme/ course, after completing  high school.)</i>
+                                                </p>
+                                            </div>
 
-                                                        </table>
-                                                        
-                                                        <!-- <div class="row text-center" style="line-height: 2rem;">
-                                                            <div class="col-6 pr-0">
-                                                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Strongly Disagree</b></span></div>
-                                                            </div>
-                                                            <div class="col-6 pl-0">
-                                                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Strongly Agree</b></span></div>
-                                                            </div>
+                                            <div class="col-12">
+                                                <div class="table-responsive">
+                                                    <div class="row text-center" style="line-height: 2rem;">
+                                                        <div class="col-6 pr-0">
+                                                            <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
                                                         </div>
-                                                        <br>
-                                                        <div class="d-flex justify-content-center">
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-outline-danger round">0</button>
-                                                                <button type="button" class="btn btn-outline-danger round">1</button>
-                                                                <button type="button" class="btn btn-outline-danger round">2</button>
-                                                                <button type="button" class="btn btn-outline-danger round">3</button>
-                                                                <button type="button" class="btn btn-outline-danger round">4</button>
-                                                                <button type="button" class="btn btn-outline-danger round">5</button>
-                                                                <button type="button" class="btn btn-outline-danger round">6</button>
-                                                                <button type="button" class="btn btn-outline-danger round">7</button>
-                                                                <button type="button" class="btn btn-outline-danger round">8</button>
-                                                                <button type="button" class="btn btn-outline-danger round">9</button>
-                                                                <button type="button" class="btn btn-outline-danger round">10</button>
-                                                            </div>
-                                                        </div> -->
-                                                    </div>
-                                                </div>
-    
-                                                <div class="row pb-25">
-                                                    <div class="col-6">
-                                                        <p class="mb-1 text-justify"><b>2. On a scale from 0 to 10, how likely are you to recommend Taylor's to your friends and family? What is the primary reason for your score?</b></p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="row text-center" style="line-height: 2rem;">
-                                                            <div class="col-6 pr-0">
-                                                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
-                                                            </div>
-                                                            <div class="col-6 pl-0">
-                                                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
-                                                            </div>
+                                                        <div class="col-6 pl-0">
+                                                            <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
                                                         </div>
-                                                        <br>
-                                                        <div class="d-flex justify-content-center">
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-outline-danger round">0</button>
-                                                                <button type="button" class="btn btn-outline-danger round">1</button>
-                                                                <button type="button" class="btn btn-outline-danger round">2</button>
-                                                                <button type="button" class="btn btn-outline-danger round">3</button>
-                                                                <button type="button" class="btn btn-outline-danger round">4</button>
-                                                                <button type="button" class="btn btn-outline-danger round">5</button>
-                                                                <button type="button" class="btn btn-outline-danger round">6</button>
-                                                                <button type="button" class="btn btn-outline-danger round">7</button>
-                                                                <button type="button" class="btn btn-outline-danger round">8</button>
-                                                                <button type="button" class="btn btn-outline-danger round">9</button>
-                                                                <button type="button" class="btn btn-outline-danger round">10</button>
-                                                            </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="btn-group" role="group">
+                                                            <button type="button" class="btn btn-outline-danger round">0</button>
+                                                            <button type="button" class="btn btn-outline-danger round">1</button>
+                                                            <button type="button" class="btn btn-outline-danger round">2</button>
+                                                            <button type="button" class="btn btn-outline-danger round">3</button>
+                                                            <button type="button" class="btn btn-outline-danger round">4</button>
+                                                            <button type="button" class="btn btn-outline-danger round">5</button>
+                                                            <button type="button" class="btn btn-outline-danger round">6</button>
+                                                            <button type="button" class="btn btn-outline-danger round">7</button>
+                                                            <button type="button" class="btn btn-outline-danger round">8</button>
+                                                            <button type="button" class="btn btn-outline-danger round">9</button>
+                                                            <button type="button" class="btn btn-outline-danger round">10</button>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 px-0 pb-2">
-                                                    <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
-                                                </div>
-    
-                                                <div class="row pb-25">
-                                                    <div class="col-6">
-                                                        <p class="mb-1 text-justify"><b>3. On a scale of 0 to 10, how likely are you to continue studying at Taylor's for your tertiary education (e.g. from Foundation to Degree, from Degree to Master, from Master to PhD)? What is the primary reason for your score?</b></p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="row text-center" style="line-height: 2rem;">
-                                                            <div class="col-6 pr-0">
-                                                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
-                                                            </div>
-                                                            <div class="col-6 pl-0">
-                                                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
-                                                            </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-12">
+                                                <p class="mb-1 text-justify"><b>2. On a scale from 0 to 10, how likely are you to recommend Taylor's to your friends and family? What is the primary reason for your score?</b></p>
+                                            </div>
+                                            
+                                            <div class="col-12">
+                                                <div class="table-responsive">
+                                                    <div class="row text-center" style="line-height: 2rem;">
+                                                        <div class="col-6 pr-0">
+                                                            <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
                                                         </div>
-                                                        <br>
-                                                        <div class="d-flex justify-content-center">
-                                                            <div class="btn-group" role="group">
-                                                                <button type="button" class="btn btn-outline-danger round">0</button>
-                                                                <button type="button" class="btn btn-outline-danger round">1</button>
-                                                                <button type="button" class="btn btn-outline-danger round">2</button>
-                                                                <button type="button" class="btn btn-outline-danger round">3</button>
-                                                                <button type="button" class="btn btn-outline-danger round">4</button>
-                                                                <button type="button" class="btn btn-outline-danger round">5</button>
-                                                                <button type="button" class="btn btn-outline-danger round">6</button>
-                                                                <button type="button" class="btn btn-outline-danger round">7</button>
-                                                                <button type="button" class="btn btn-outline-danger round">8</button>
-                                                                <button type="button" class="btn btn-outline-danger round">9</button>
-                                                                <button type="button" class="btn btn-outline-danger round">10</button>
-                                                            </div>
+                                                        <div class="col-6 pl-0">
+                                                            <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
                                                         </div>
                                                     </div>
+                                                    <br>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="btn-group" role="group">
+                                                            <button type="button" class="btn btn-outline-danger round">0</button>
+                                                            <button type="button" class="btn btn-outline-danger round">1</button>
+                                                            <button type="button" class="btn btn-outline-danger round">2</button>
+                                                            <button type="button" class="btn btn-outline-danger round">3</button>
+                                                            <button type="button" class="btn btn-outline-danger round">4</button>
+                                                            <button type="button" class="btn btn-outline-danger round">5</button>
+                                                            <button type="button" class="btn btn-outline-danger round">6</button>
+                                                            <button type="button" class="btn btn-outline-danger round">7</button>
+                                                            <button type="button" class="btn btn-outline-danger round">8</button>
+                                                            <button type="button" class="btn btn-outline-danger round">9</button>
+                                                            <button type="button" class="btn btn-outline-danger round">10</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-12 px-0 pb-25">
-                                                    <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-12">
+                                                <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-12">
+                                                <p class="mb-1 text-justify"><b>3. On a scale of 0 to 10, how likely are you to continue studying at Taylor's for your tertiary education (e.g. from Foundation to Degree, from Degree to Master, from Master to PhD)? What is the primary reason for your score?</b></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-2">
+                                            <div class="col-12">
+                                                <div class="table-responsive">
+                                                    <div class="row text-center" style="line-height: 2rem;">
+                                                        <div class="col-6 pr-0">
+                                                            <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="btn-group" role="group">
+                                                            <button type="button" class="btn btn-outline-danger round">0</button>
+                                                            <button type="button" class="btn btn-outline-danger round">1</button>
+                                                            <button type="button" class="btn btn-outline-danger round">2</button>
+                                                            <button type="button" class="btn btn-outline-danger round">3</button>
+                                                            <button type="button" class="btn btn-outline-danger round">4</button>
+                                                            <button type="button" class="btn btn-outline-danger round">5</button>
+                                                            <button type="button" class="btn btn-outline-danger round">6</button>
+                                                            <button type="button" class="btn btn-outline-danger round">7</button>
+                                                            <button type="button" class="btn btn-outline-danger round">8</button>
+                                                            <button type="button" class="btn btn-outline-danger round">9</button>
+                                                            <button type="button" class="btn btn-outline-danger round">10</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3 mt-2">
+                                            <div class="col-12">
+                                                <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -2610,7 +2515,7 @@
                                         <div class="form-group col-md-12">
                                             <div class="form-group">
                                                 <div class="table-responsive">
-                                                    <table class="table table-bordered fixed">
+                                                    <table class="table table-bordered fixed table-striped">
                                                         <thead class="text-center">
                                                             <tr class="pb-25">
                                                                 <th width="30%"></th>
@@ -2619,7 +2524,7 @@
                                                                 <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                                                                 <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                                                                 <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                                                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                                                                <th class="px-1 pb-25 text-dark bg-lighten-4 no-border">Not Applicable</th>
                                                             </tr>
                                                             <tr class="pb-50 pt-0">
                                                                 <th style="border-top: none;"></th>
@@ -2628,10 +2533,10 @@
                                                                 <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                                                 <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                                                 <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                                                <th class="px-1 pb-50 pt-0 text-dark bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody class="text-dark">
                                                             <tr>
                                                                 <td class="px-1">1. International Student insurance support</td>
                                                                 <td>
@@ -2861,7 +2766,7 @@
                                         <h4 class="mb-2"><b>Part H: Referral / Incentive Scheme</b></h4>
                                     </div>
                                     <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
-                                        <div class="col-12 text-justify">
+                                        <div class="col-12 text-justify text-dark">
                                             <p>Incentive Scheme is a process of student informing other students to answer the survey, and in return, the other students will be able to select the one informing under a “Referral” below.<br><br>Each time a student name is selected under referral, it will contribute as point which will be accumulated within a survey timeframe. Winners will be selected at the end of the survey timeframe and Taylor's will distribute gifts to winners. All points will be refreshed each survey year.<br><br>If you do not wish to participate on the Incentive Scheme, you may choose "Not Applicable" from the dropdown.</p>
                                             <div class="mb-50">
                                                 <small><i data-feather='alert-triangle' class="text-danger mr-50"></i>You only can select <b>ONE referral name</b>. Once this survey is submitted, it <b>cannot be changed</b> in the future.</small>

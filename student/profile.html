@@ -116,6 +116,18 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 
     <!-- END: Custom CSS-->
+
+    <style>
+      .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a,
+      .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a,
+      .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+    </style>
   </head>
 
   <body
@@ -166,6 +178,15 @@
 
         <!-- SSS Logo -->
         <ul class="nav navbar-nav align-items-center ml-auto">
+          <li class="nav-item mr-4">
+            <img
+              class="brand-logo img-fluid"
+              src="../assets/images/taylors logo-01.jpg"
+              alt="SSS"
+              width="120"
+            />
+          </li>
+
           <li class="nav-item">
             <img
               class="brand-logo img-fluid"
@@ -487,22 +508,22 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div class="content-header row" style="background-image: linear-gradient(#762aaf 5%, #9a57cd)">
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">Profile</h2>
+                <h2 class="float-left mb-0 font-weight-bold text-white">Profile</h2>
                 <div class="breadcrumb-wrapper"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="content-body">
+        <div class="content-body mt-2">
           <section id="profile-info">
             <div class="row match-height">
               <!-- right profile info section -->
@@ -522,7 +543,7 @@
                             <div class="col-sm-9">
                               <div class="input-group">
                                 <div class="input-group-prepend">
-                                  <span class="input-group-text"
+                                  <span class="input-group-text text-dark"
                                     ><i data-feather="user"></i
                                   ></span>
                                 </div>
@@ -533,7 +554,7 @@
                                   name="fname-icon"
                                   value="Mary Ann"
                                   placeholder="Full Name"
-                                  disabled
+                                  style="background-color: #F3F5F5 !important; opacity: 1 !important; color: black;"
                                 />
                               </div>
                             </div>
@@ -547,7 +568,7 @@
                             <div class="col-sm-9">
                               <div class="input-group">
                                 <div class="input-group-prepend">
-                                  <span class="input-group-text"
+                                  <span class="input-group-text text-dark"
                                     ><i data-feather="trello"></i
                                   ></span>
                                 </div>
@@ -558,7 +579,7 @@
                                   name="student_id"
                                   value="W000119"
                                   placeholder="Student ID"
-                                  disabled
+                                  style="background-color: #F3F5F5 !important; opacity: 1 !important; color: black;"
                                 />
                               </div>
                             </div>
@@ -574,15 +595,15 @@
                             <div class="col-sm-9">
                               <div class="input-group is-invalid">
                                 <div class="input-group-prepend">
-                                  <span class="input-group-text"
+                                  <span class="input-group-text text-dark"
                                     ><i data-feather="smartphone"></i
                                   ></span>
                                 </div>
                                 <input
                                   type="tel"
                                   id="contact-icon"
-                                  class="form-control is-invalid"
-                                  style="background-color: #ffb2b2"
+                                  class="form-control is-invalid text-dark"
+                                  style="background-color: #f1dfe2"
                                   name="contact-icon"
                                   value="011-1234567"
                                   placeholder="Mobile Number"
@@ -608,15 +629,15 @@
                             <div class="col-sm-9">
                               <div class="input-group is-invalid">
                                 <div class="input-group-prepend">
-                                  <span class="input-group-text"
+                                  <span class="input-group-text text-dark"
                                     ><i data-feather="mail"></i
                                   ></span>
                                 </div>
                                 <input
                                   type="email"
                                   id="personal_email"
-                                  class="form-control is-invalid"
-                                  style="background-color: #ffb2b2"
+                                  class="form-control is-invalid text-dark"
+                                  style="background-color: #f1dfe2"
                                   name="personal_email"
                                   value="marya_nn@gmail.com"
                                   placeholder="Personal Email"
@@ -635,7 +656,7 @@
                     </form>
 
                     <div class="float-left mt-4">
-                      <p class="my-50">
+                      <p class="my-50 h4">
                         <i
                           data-feather="alert-circle"
                           class="text-danger mr-50"

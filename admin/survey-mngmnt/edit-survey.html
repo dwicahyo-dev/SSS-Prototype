@@ -36,6 +36,18 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
 <!-- END: Custom CSS-->
 
+<style>
+  .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a,
+  .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+    background: #762aaf;
+  }
+
+  .main-menu.menu-dark .navigation > li.active > a,
+  .main-menu.menu-dark .navigation > li ul .active {
+    background: #762aaf;
+  }
+</style>
+
 </head>
 
 <body class="vertical-layout vertical-menu-modern menu-expanded pace-done footer-static navbar-sticky" data-open="click" data-menu="vertical-menu-modern" data-col="">
@@ -54,8 +66,30 @@
         </li>
       </ul>
     </div>
+
+    <!-- SSS Logo -->
     <ul class="nav navbar-nav align-items-center ml-auto">
-      <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+      <li class="nav-item mr-4">
+        <img
+          class="brand-logo img-fluid"
+          src="../../assets/images/taylors logo-01.jpg"
+          alt="SSS"
+          width="120"
+        />
+      </li>
+
+      <li class="nav-item">
+        <img
+          class="brand-logo img-fluid"
+          src="../../assets/images/sss-logo.png"
+          alt="SSS"
+          width="94"
+        />
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav align-items-center ml-auto">
+      <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li> -->
       <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg"
               alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
@@ -275,22 +309,6 @@
               ></a
             >
           </li>
-          
-          <!-- Charts & Graphs – Satisfaction -->
-          <li>
-            <a
-              class="d-flex align-items-center"
-              href="../realtime-reporting/chart-and-graphs-satisfaction.html"
-              ><span
-                class="menu-item text-truncate ml-2 pl-75"
-                data-i18n="Menu Name"
-                data-toggle="tooltip"
-                data-placement="right"
-                title="Charts & Graphs – Satisfaction"
-                >Charts & Graphs – Satisfaction</span
-              ></a
-            >
-          </li>
         </ul>
       </li>
       <li class="nav-item">
@@ -379,15 +397,6 @@
               ></a
             >
           </li>
-          <li>
-            <a class="d-flex align-items-center" href="../reports/all-data.html"
-              ><span
-                class="menu-item text-truncate ml-2 pl-75"
-                data-i18n="Menu Name"
-                >All Data Download</span
-              ></a
-            >
-          </li>
         </ul>
       </li>
     </ul>
@@ -396,18 +405,18 @@
 <!-- END: Main Menu-->
 
 <!-- BEGIN: Content-->
-<div class="app-content content">
+<div class="app-content content" style="background-color: #d1b2e8">
   <div class="content-overlay"></div>
   <div class="header-navbar-shadow"></div>
   <div class="content-wrapper">
-    <div class="content-header row">
-      <div class="content-header-left col-12 mb-2">
+    <div class="content-header row" style="background-image: linear-gradient(#762aaf 5%, #9a57cd)">
+      <div class="content-header-left col-12 mb-2 mt-2">
         <div class="row breadcrumbs-top">
           <div class="col-12">
-            <h2 class="content-header-title float-left mb-0">Edit Survey</h2>
+            <h2 class="content-header-title float-left mb-0 text-white font-weight-bold">Edit Survey</h2>
             <div class="breadcrumb-wrapper">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="survey-mngmnt.html">Survey Management</a></li>
+              <ol class="breadcrumb text-white">
+                <li class="breadcrumb-item"><a href="survey-mngmnt.html" class="text-white">Survey Management</a></li>
                 <li class="breadcrumb-item">Edit</li>
               </ol>
             </div>
@@ -416,11 +425,11 @@
       </div>
     </div>
 
-    <div class="content-body">
+    <div class="content-body mt-2">
       <section class="modern-horizontal-wizard">
         <div class="bs-stepper wizard-modern survey-formWizEdit">
           <!-- steps / survey parts-->
-          <div class="bs-stepper-header pt-0 pb-1">
+          <div class="bs-stepper-header pb-1 pt-2" style="background-color: white !important; border-radius: 13px;">
             <div class="step" data-target="#part-a">
               <button type="button" class="step-trigger">
                 <span class="bs-stepper-box">A</span>
@@ -508,7 +517,7 @@
           </div>
           <!-- end steps / survey parts-->
           <!-- survey questions -->
-          <div class="bs-stepper-content">
+          <div class="bs-stepper-content mt-2">
             <form id="editSurveyForm" novalidate action=""  method="post">
             <!-- part a -->
               <div id="part-a" class="content">
@@ -520,7 +529,7 @@
                     <div class="form-group col-md-12">
                       <div class="form-group">
                         <div class="table-responsive">
-                          <table class="table table-bordered fixed">
+                          <table class="table table-bordered fixed table-striped">
                             <thead class="text-center">
                               <tr class="pb-25">
                                 <th width="30%"></th>
@@ -529,7 +538,7 @@
                                 <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                                 <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                                 <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                                <th class="px-25 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                                <th class="px-25 pb-25 text-dark  bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                               </tr>
                               <tr class="pb-50 pt-0">
                                 <th style="border-top: none;"></th>
@@ -538,7 +547,7 @@
                                 <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                 <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                 <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                <th class="px-25 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                <th class="px-25 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -713,7 +722,7 @@
                     <div class="form-group col-md-12">
                       <div class="form-group">
                         <div class="table-responsive">
-                          <table class="table table-bordered fixed">
+                          <table class="table table-bordered fixed table-striped">
                             <thead class="text-center">
                               <tr class="pb-25">
                                 <th width="30%"></th>
@@ -722,7 +731,7 @@
                                 <th class="px-50 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Agree</th>
                                 <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Agree</th>
                                 <th class="px-50 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Strongly Agree</th>
-                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                                <th class="px-1 pb-25 text-dark bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                               </tr>
                               <tr class="pb-50 pt-0">
                                 <th style="border-top: none;"></th>
@@ -731,7 +740,7 @@
                                 <th class="px-50 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                 <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                 <th class="px-50 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -939,7 +948,7 @@
                   <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
                     <div class="form-group col-md-12">
                       <div class="table-responsive">
-                        <table class="table table-bordered fixed">
+                        <table class="table table-bordered fixed table-striped">
                           <thead>
                             <tr>
                               <th colspan="8">a. Campus Central</th>
@@ -951,7 +960,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                             </tr>
                             <tr class="pb-50 pt-0 text-center">
                               <th colspan="2" style="border-top: none;"></th>
@@ -960,7 +969,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1106,7 +1115,7 @@
                               <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Agree</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Agree</th>
                               <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Strongly Agree</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr>
                               <th colspan="2" style="border-top: none;"></th>
@@ -1115,7 +1124,7 @@
                               <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1161,7 +1170,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                             </tr>
                             <tr class="pb-50 pt-0">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1170,7 +1179,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1248,7 +1257,7 @@
                               <th class="px-0 pb-25 text-dark bg-info bg-soften-4 no-border">Rarely use</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Occasionally use</th>
                               <th class="px-0 pb-25 text-dark bg-success bg-lighten-4 no-border">Frequently use</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr>
                               <th colspan="2" style="border-top: none;"></th>
@@ -1257,7 +1266,7 @@
                               <th class="px-0 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-0 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1303,7 +1312,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                             </tr>
                             <tr class="pb-50 pt-0">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1312,7 +1321,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1362,7 +1371,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                             </tr>
                             <tr class="pb-50 pt-0 text-center">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1371,7 +1380,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1437,7 +1446,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                             </tr>
                             <tr class="pb-50 pt-0">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1446,7 +1455,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1615,7 +1624,7 @@
                   <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
                     <div class="form-group col-md-12">
                       <div class="table-responsive">
-                        <table class="table table-bordered fixed">
+                        <table class="table table-bordered fixed table-striped">
                           <thead>
                             <tr>
                               <th colspan="8">a. Library</th>
@@ -1627,7 +1636,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr class="text-center">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1636,7 +1645,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1752,7 +1761,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr class="text-center">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1761,7 +1770,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -1877,7 +1886,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr class="text-center">
                               <th colspan="2" style="border-top: none;"></th>
@@ -1886,7 +1895,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -2022,7 +2031,7 @@
                   <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
                     <div class="form-group col-md-12">
                       <div class="table-responsive">
-                        <table class="table table-bordered fixed">
+                        <table class="table table-bordered fixed table-striped">
                           <thead>
                             <tr>
                               <th colspan="8">a. Student Exchange & Mobility</th>
@@ -2034,7 +2043,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Agree</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Agree</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Strongly Agree</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr class="text-center">
                               <th colspan="2" style="border-top: none;"></th>
@@ -2043,7 +2052,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -2154,7 +2163,7 @@
                             </tr>
                             <tr class="text-center">
                               <th colspan="2" ></th>
-                              <th class="px-0 text-dark bg-warning bg-lighten-4 no-border" style="border-right: none !important;">0 time</th>
+                              <th class="px-0 text-dark  bg-lighten-4 no-border" style="border-right: none !important;">0 time</th>
                               <th class="px-1 text-dark bg-danger bg-lighten-4 no-border">1-2 times</th>
                               <th colspan="2" class="px-0 text-dark bg-info bg-soften-4 no-border">3-5 times</th>
                               <th colspan="2" class="px-1 text-dark bg-success bg-lighten-4 no-border">More than 5 times</th>
@@ -2193,7 +2202,7 @@
                               <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border">Moderately Satisfied</th>
                               <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border">Satisfied</th>
                               <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border">Very Satisfied</th>
-                              <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                              <th class="px-1 pb-25 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                             </tr>
                             <tr>
                               <th colspan="2" style="border-top: none;"></th>
@@ -2202,7 +2211,7 @@
                               <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                               <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                               <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                              <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                              <th class="px-1 pb-50 pt-0 text-dark  bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -2244,7 +2253,7 @@
                             <th colspan="2" ></th>
                             <th colspan="2" class="px-0 text-dark bg-success bg-lighten-4 no-border">Yes</th>
                             <th colspan="2" class="px-1 text-dark bg-danger bg-lighten-4 no-border">No</th>
-                            <th colspan="2" class="px-0 text-dark bg-warning bg-lighten-4 no-border">Not Applicable</th>
+                            <th colspan="2" class="px-0 text-dark  bg-lighten-4 no-border">Not Applicable</th>
                           </thead>
                           <tbody>
                             <tr>
@@ -2295,114 +2304,129 @@
                   <div class="content-header">
                     <h4 class="mb-2"><b>Part F: Education Progression</b></h4>
                   </div>
-                  <div class="row mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
-                    <div class="form-group col-md-12">
-                      <div class="form-group">
-                        <div class="row">
-                          <div class="col-6">
-                            1.<textarea class="form-control mb-2" rows="5">From a scale of 0-10, how would you rate your experience with our Education counsellor(s)? The counsellor(s) was courteous, professional and able to satisfactorily answer my questions.
-(Education counsellor is the personnel who provides assistance and guidance to student before enrolment, in making the right choices of programme/ course, after completing  high school.)
-                            </textarea>
-                          </div>
-                          <div class="col-6">
-                            <div class="row text-center" style="line-height: 2rem;">
-                              <div class="col-6 pr-0">
-                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Strongly Disagree</b></span></div>
-                              </div>
-                              <div class="col-6 pl-0">
-                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Strongly Agree</b></span></div>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="d-flex justify-content-center">
-                              <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-outline-danger round">0</button>
-                                <button type="button" class="btn btn-outline-danger round">1</button>
-                                <button type="button" class="btn btn-outline-danger round">2</button>
-                                <button type="button" class="btn btn-outline-danger round">3</button>
-                                <button type="button" class="btn btn-outline-danger round">4</button>
-                                <button type="button" class="btn btn-outline-danger round">5</button>
-                                <button type="button" class="btn btn-outline-danger round">6</button>
-                                <button type="button" class="btn btn-outline-danger round">7</button>
-                                <button type="button" class="btn btn-outline-danger round">8</button>
-                                <button type="button" class="btn btn-outline-danger round">9</button>
-                                <button type="button" class="btn btn-outline-danger round">10</button>
-                            </div>
-                          </div>
-                        </div>
+                  <div class="mb-1 mt-1" style="border-bottom: 1px solid rgb(233, 233, 233);">
+                    <div class="row">
+                      <div class="col-12">
+                        <p>1. </p>
+                        <textarea class="form-control mb-2" rows="5">From a scale of 0-10, how would you rate your experience with our Education counsellor(s)? The counsellor(s) was courteous, professional and able to satisfactorily answer my questions.(Education counsellor is the personnel who provides assistance and guidance to student before enrolment, in making the right choices of programme/ course, after completing  high school.)</textarea>
                       </div>
 
-                        <div class="row pb-25">
-                          <div class="col-6">
-                            2.<textarea class="form-control mb-2 text-justify" rows="5">On a scale from 0 to 10, how likely are you to recommend Taylor's to your friends and family? What is the primary reason for your score?</textarea>
+                      <div class="col-12">
+                          <div class="table-responsive">
+                              <div class="row text-center" style="line-height: 2rem;">
+                                  <div class="col-6 pr-0">
+                                      <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
+                                  </div>
+                                  <div class="col-6 pl-0">
+                                      <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="d-flex justify-content-center">
+                                  <div class="btn-group" role="group">
+                                      <button type="button" class="btn btn-outline-danger round">0</button>
+                                      <button type="button" class="btn btn-outline-danger round">1</button>
+                                      <button type="button" class="btn btn-outline-danger round">2</button>
+                                      <button type="button" class="btn btn-outline-danger round">3</button>
+                                      <button type="button" class="btn btn-outline-danger round">4</button>
+                                      <button type="button" class="btn btn-outline-danger round">5</button>
+                                      <button type="button" class="btn btn-outline-danger round">6</button>
+                                      <button type="button" class="btn btn-outline-danger round">7</button>
+                                      <button type="button" class="btn btn-outline-danger round">8</button>
+                                      <button type="button" class="btn btn-outline-danger round">9</button>
+                                      <button type="button" class="btn btn-outline-danger round">10</button>
+                                  </div>
+                              </div>
                           </div>
-                          <div class="col-6">
-                            <div class="row text-center" style="line-height: 2rem;">
-                              <div class="col-6 pr-0">
-                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
-                              </div>
-                              <div class="col-6 pl-0">
-                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="d-flex justify-content-center">
-                              <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-outline-danger round">0</button>
-                                <button type="button" class="btn btn-outline-danger round">1</button>
-                                <button type="button" class="btn btn-outline-danger round">2</button>
-                                <button type="button" class="btn btn-outline-danger round">3</button>
-                                <button type="button" class="btn btn-outline-danger round">4</button>
-                                <button type="button" class="btn btn-outline-danger round">5</button>
-                                <button type="button" class="btn btn-outline-danger round">6</button>
-                                <button type="button" class="btn btn-outline-danger round">7</button>
-                                <button type="button" class="btn btn-outline-danger round">8</button>
-                                <button type="button" class="btn btn-outline-danger round">9</button>
-                                <button type="button" class="btn btn-outline-danger round">10</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 px-0 pb-2">
-                          <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
-                        </div>
-
-                        <div class="row pb-25">
-                          <div class="col-6">
-                            3.<textarea class="form-control mb-1 text-justify" rows="5">On a scale of 0 to 10, how likely are you to continue studying at Taylor's for your tertiary education (e.g. from Foundation to Degree, from Degree to Master, from Master to PhD)? What is the primary reason for your score?</textarea>
-                          </div>
-                          <div class="col-6">
-                            <div class="row text-center" style="line-height: 2rem;">
-                              <div class="col-6 pr-0">
-                                <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
-                              </div>
-                              <div class="col-6 pl-0">
-                                <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="d-flex justify-content-center">
-                              <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-outline-danger round">0</button>
-                                <button type="button" class="btn btn-outline-danger round">1</button>
-                                <button type="button" class="btn btn-outline-danger round">2</button>
-                                <button type="button" class="btn btn-outline-danger round">3</button>
-                                <button type="button" class="btn btn-outline-danger round">4</button>
-                                <button type="button" class="btn btn-outline-danger round">5</button>
-                                <button type="button" class="btn btn-outline-danger round">6</button>
-                                <button type="button" class="btn btn-outline-danger round">7</button>
-                                <button type="button" class="btn btn-outline-danger round">8</button>
-                                <button type="button" class="btn btn-outline-danger round">9</button>
-                                <button type="button" class="btn btn-outline-danger round">10</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 px-0 pb-25">
-                          <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
-                        </div>
                       </div>
-                    </div>
+                  </div>
+
+                  <div class="row mt-2">
+                      <div class="col-12">
+                        <p>2.</p>
+                        <textarea class="form-control mb-2 text-justify" rows="5">On a scale from 0 to 10, how likely are you to recommend Taylor's to your friends and family? What is the primary reason for your score?</textarea>
+                      </div>
+                      
+                      <div class="col-12">
+                          <div class="table-responsive">
+                              <div class="row text-center" style="line-height: 2rem;">
+                                  <div class="col-6 pr-0">
+                                      <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
+                                  </div>
+                                  <div class="col-6 pl-0">
+                                      <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="d-flex justify-content-center">
+                                  <div class="btn-group" role="group">
+                                      <button type="button" class="btn btn-outline-danger round">0</button>
+                                      <button type="button" class="btn btn-outline-danger round">1</button>
+                                      <button type="button" class="btn btn-outline-danger round">2</button>
+                                      <button type="button" class="btn btn-outline-danger round">3</button>
+                                      <button type="button" class="btn btn-outline-danger round">4</button>
+                                      <button type="button" class="btn btn-outline-danger round">5</button>
+                                      <button type="button" class="btn btn-outline-danger round">6</button>
+                                      <button type="button" class="btn btn-outline-danger round">7</button>
+                                      <button type="button" class="btn btn-outline-danger round">8</button>
+                                      <button type="button" class="btn btn-outline-danger round">9</button>
+                                      <button type="button" class="btn btn-outline-danger round">10</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row mt-2">
+                      <div class="col-12">
+                          <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
+                      </div>
+                  </div>
+
+                  <div class="row mt-2">
+                      <div class="col-12">
+                        <p>3. </p>
+                        <textarea class="form-control mb-1 text-justify" rows="5">On a scale of 0 to 10, how likely are you to continue studying at Taylor's for your tertiary education (e.g. from Foundation to Degree, from Degree to Master, from Master to PhD)? What is the primary reason for your score?</textarea>
+                      </div>
+                  </div>
+
+                  <div class="row mt-2">
+                      <div class="col-12">
+                          <div class="table-responsive">
+                              <div class="row text-center" style="line-height: 2rem;">
+                                  <div class="col-6 pr-0">
+                                      <div class="text-dark bg-danger bg-lighten-4 no-border"><span><b>Very Unlikely</b></span></div>
+                                  </div>
+                                  <div class="col-6 pl-0">
+                                      <div class="text-dark bg-success bg-lighten-4 no-border"><span><b>Very Likely</b></span></div>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="d-flex justify-content-center">
+                                  <div class="btn-group" role="group">
+                                      <button type="button" class="btn btn-outline-danger round">0</button>
+                                      <button type="button" class="btn btn-outline-danger round">1</button>
+                                      <button type="button" class="btn btn-outline-danger round">2</button>
+                                      <button type="button" class="btn btn-outline-danger round">3</button>
+                                      <button type="button" class="btn btn-outline-danger round">4</button>
+                                      <button type="button" class="btn btn-outline-danger round">5</button>
+                                      <button type="button" class="btn btn-outline-danger round">6</button>
+                                      <button type="button" class="btn btn-outline-danger round">7</button>
+                                      <button type="button" class="btn btn-outline-danger round">8</button>
+                                      <button type="button" class="btn btn-outline-danger round">9</button>
+                                      <button type="button" class="btn btn-outline-danger round">10</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row mb-3 mt-2">
+                      <div class="col-12">
+                          <textarea rows="2" class="form-control" id="" placeholder="The reason is..."></textarea>
+                      </div>
+                  </div>
+
                   </div>
                   <div class="d-flex justify-content-between">
                     <button type="button" name="previous" class="btn btn-outline-secondary btn-prev waves-effect float-left"><i data-feather="arrow-left"></i> Previous</button>
@@ -2430,7 +2454,7 @@
                     <div class="form-group col-md-12">
                       <div class="form-group">
                         <div class="table-responsive">
-                          <table class="table table-bordered fixed">
+                          <table class="table table-bordered fixed table-striped">
                             <thead class="text-center">
                               <tr class="pb-25">
                                 <th width="30%"></th>
@@ -2439,7 +2463,7 @@
                                 <th class="px-25 pb-25 text-dark bg-info bg-soften-4 no-border" style="border-top: 1px solid #ebe9f1">Moderately Satisfied</th>
                                 <th class="px-1 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Satisfied</th>
                                 <th class="px-25 pb-25 text-dark bg-success bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Very Satisfied</th>
-                                <th class="px-1 pb-25 text-dark bg-warning bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
+                                <th class="px-1 pb-25 text-dark bg-lighten-4 no-border" style="border-top: 1px solid #ebe9f1">Not Applicable</th>
                               </tr>
                               <tr class="pb-50 pt-0">
                                 <th style="border-top: none;"></th>
@@ -2448,7 +2472,7 @@
                                 <th class="px-25 pb-50 pt-0 text-dark bg-info bg-soften-4 no-border">3</th>
                                 <th class="px-1 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">4</th>
                                 <th class="px-25 pb-50 pt-0 text-dark bg-success bg-lighten-4 no-border">5</th>
-                                <th class="px-1 pb-50 pt-0 text-dark bg-warning bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
+                                <th class="px-1 pb-50 pt-0 text-dark bg-lighten-4 no-border" data-toggle="tooltip" data-placement="top" title="Not Applicable, as I have never used/participate">N/A</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -2709,20 +2733,20 @@ If you do not wish to participate on the Incentive Scheme, you may choose "Not A
                       <!-- t&c checkbox -->
                       <!-- <div class="d-flex justify-content-center mb-2"> -->
                       <div class="my-1">
-                        <div class="custom-control custom-control-danger custom-checkbox">
-                          <input type="checkbox" class="form-check-input" id="confirm-tc"/>
-                          <label class="custom-control-label" for="confirm-tc"> I understand about the Incentive Scheme Terms and Condition.</label>
-                        </div>
+                        <div class="custom-control custom-control-primary custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="confirm-tc" />
+                          <label class="custom-control-label" for="confirm-tc">I understand about the Incentive Scheme Terms and Condition.</label>
+                      </div>
                       </div>
                       <!-- </div> -->
                       <!-- end t&c checkbox -->
                       <!-- confirm submit checkbox -->
                       <!-- <div class="d-flex justify-content-center mb-2"> -->
                       <div class="mb-2">
-                        <div class="custom-control custom-control-danger custom-checkbox">
-                          <input type="checkbox" class="form-check-input" id="confirm-submit"/>
+                        <div class="custom-control custom-control-primary custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="confirm-submit" />
                           <label class="custom-control-label" for="confirm-submit">I am ready to submit the form.</label>
-                        </div>
+                      </div>
                       </div>
                       <!-- </div> -->
                       <!-- end confirm submit checkbox -->
@@ -2758,6 +2782,12 @@ If you do not wish to participate on the Incentive Scheme, you may choose "Not A
 </footer>
 <button class="btn btn-danger btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
+<style>
+  .main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+    background: #762aaf;
+  }
+</style>
+
 <style>
   .feather-18 {
     width: 18px;

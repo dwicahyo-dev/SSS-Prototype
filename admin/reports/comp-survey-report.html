@@ -105,6 +105,22 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
     <!-- END: Custom CSS-->
+
+    <style>
+      .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a,
+      .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a,
+      .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+    </style>
   </head>
 
   <body
@@ -152,6 +168,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- SSS Logo -->
+        <ul class="nav navbar-nav align-items-center ml-auto">
+          <li class="nav-item mr-4">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/taylors logo-01.jpg"
+              alt="SSS"
+              width="120"
+            />
+          </li>
+
+          <li class="nav-item">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/sss-logo.png"
+              alt="SSS"
+              width="94"
+            />
+          </li>
+        </ul>
+
         <ul class="nav navbar-nav align-items-center ml-auto">
           <li class="nav-item dropdown dropdown-user">
             <a
@@ -546,7 +584,7 @@
               </li>
 
               <!-- Charts & Graphs – Satisfaction -->
-              <li>
+              <!-- <li>
                 <a
                   class="d-flex align-items-center"
                   href="../realtime-reporting/chart-and-graphs-satisfaction.html"
@@ -559,7 +597,7 @@
                     >Charts & Graphs – Satisfaction</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item">
@@ -652,7 +690,7 @@
                   ></a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a class="d-flex align-items-center" href="all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
@@ -660,7 +698,7 @@
                     >All Data Download</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
         </ul>
@@ -669,20 +707,20 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div class="content-header row" style="background-image: linear-gradient(#762aaf 5%, #9a57cd)">
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">
+                <h2 class="content-header-title float-left mb-0 text-white font-weight-bold">
                   Answered Survey
                 </h2>
-                <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-wrapper text-white">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Report</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-white">Report</a></li>
                     <li class="breadcrumb-item">Answered Survey</li>
                   </ol>
                 </div>
@@ -691,7 +729,7 @@
           </div>
         </div>
 
-        <div class="content-body">
+        <div class="content-body mt-2">
           <section id="basic-datatable">
             <div class="row">
               <div class="col-12">

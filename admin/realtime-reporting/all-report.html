@@ -110,6 +110,21 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
     <!-- END: Custom CSS-->
+
+    <style>
+      .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a, .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+
+      .main-menu.menu-dark .navigation > li.open:not(.menu-item-closing) > a, .main-menu.menu-dark .navigation > li.sidebar-group-active > a {
+        background: #762aaf;
+      }
+    </style>
+
   </head>
 
   <body
@@ -157,6 +172,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- SSS Logo -->
+        <ul class="nav navbar-nav align-items-center ml-auto">
+          <li class="nav-item mr-4">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/taylors logo-01.jpg"
+              alt="SSS"
+              width="120"
+            />
+          </li>
+
+          <li class="nav-item">
+            <img
+              class="brand-logo img-fluid"
+              src="../../assets/images/sss-logo.png"
+              alt="SSS"
+              width="94"
+            />
+          </li>
+        </ul>
+
         <ul class="nav navbar-nav align-items-center ml-auto">
           <li class="nav-item dropdown dropdown-user">
             <a
@@ -545,7 +582,7 @@
               </li>
 
               <!-- Charts & Graphs – Satisfaction -->
-              <li>
+              <!-- <li>
                 <a
                   class="d-flex align-items-center"
                   href="chart-and-graphs-satisfaction.html"
@@ -558,7 +595,7 @@
                     >Charts & Graphs – Satisfaction</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item">
@@ -655,7 +692,7 @@
                   ></a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a
                   class="d-flex align-items-center"
                   href="../reports/all-data.html"
@@ -665,7 +702,7 @@
                     >All Data Download</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
         </ul>
@@ -674,21 +711,32 @@
     <!-- END: Main Menu-->
 
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div
+          class="content-header row"
+          style="background-image: linear-gradient(#762aaf 5%, #9a57cd)"
+        >
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">
+                <h2
+                  class="
+                    content-header-title
+                    float-left
+                    mb-0
+                    text-white
+                    font-weight-bold
+                  "
+                >
                   All Students
                 </h2>
-                <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-wrapper text-white">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="#">Real-time Reporting</a>
+                      <a class="text-white" href="#">Real-time Reporting</a>
                     </li>
                     <li class="breadcrumb-item">All Students</li>
                   </ol>
@@ -698,37 +746,8 @@
           </div>
         </div>
 
-        <div class="content-body">
+        <div class="content-body mt-2">
           <section id="basic-datatable">
-            <!-- <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header pb-0">
-                    <div class="flex-column align-items-start">
-                      <h4 class="card-title mb-50">Survey Status</h4>
-                      <p>Updated at &nbsp;<b>09 / 10 / 2021 15:43</b></p>
-                    </div>
-                    <div class="heading-elements">
-                      <ul class="list-inline mr-75 mb-2">
-                        <li>
-                          <a data-action="reload"
-                            ><i data-feather="rotate-cw"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="d-flex justify-content-center">
-                      <div class="col-xs-12 col-md-10 col-lg-10">
-                        <div id="chartSurvey"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
             <div class="row">
               <div class="col-12">
                 <!-- filter -->
@@ -819,119 +838,97 @@
                         <thead>
                           <tr>
                             <th>#</th>
+                            <th>Survey Status</th>
+                            <th>Submission Date</th>
+                            <th>Survey ID</th>
                             <th>Student ID</th>
                             <th>Name</th>
                             <th>IC / Passport Number</th>
-                            <th>Nationality</th>
-                            <th>Level of Study</th>
-                            <th>Faculty Name</th>
-                            <th>School Code</th>
-                            <th>Course Description</th>
-                            <th>Current Semester</th>
+                            <th>Mobile No.</th>
+                            <th>Personal Email</th>
                             <th>Taylor's Email</th>
                             <th>CMS Email</th>
                             <th>Local / International</th>
-                            <th>TU / TC</th>
-                            <th>Survey Status</th>
+                            <th>Nationality</th>
+                            <th>TU/ TC</th>
+                            <th>Level Of Study</th>
+                            <th>Faculty</th>
+                            <th>School</th>
+                            <th>Programme</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>W000119</td>
-                            <td>Mary Ann</td>
-                            <td>000111-14-0000</td>
-                            <td>Malaysian</td>
-                            <td class="text-center">2</td>
-                            <td>Computer Science and Engineering</td>
-                            <td>TAF0002</td>
-                            <td>
-                              Moveth from from winged for, image fifth. Winged
-                              whales, shall.
-                            </td>
-                            <td class="text-center">3</td>
-                            <td>maryann@sd.taylors.edu.my</td>
-                            <td>maryann@sd.cms.edu.my</td>
-                            <td>International</td>
-                            <td>University</td>
                             <td class="text-center">
                               <div class="badge badge-light-success">
                                 Completed
                               </div>
                             </td>
+                            <td>09-01-2021</td>
+                            <td>SSS_2021_00011</td>
+                            <td>W000119</td>
+                            <td>Mary Ann</td>
+                            <td>000111-14-0000</td>
+                            <td>+6031208312</td>
+                            <td>marryann@personal.com</td>
+                            <td>marryann@taylors.edu.my</td>
+                            <td>marryann@cms.edu.my</td>
+                            <td>Local</td>
+                            <td>Malaysian</td>
+                            <td>International</td>
+                            <td>Bachelor</td>
+                            <td>Faculty of Innovation and Technology</td>
+                            <td>Computer Science and Engineering</td>
+                            <td>Bachelor of Business (Honours)</td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>W000214</td>
-                            <td>John Brian</td>
-                            <td>402895465</td>
-                            <td>Non-Malaysian</td>
-                            <td class="text-center">2</td>
-                            <td>Education</td>
-                            <td>TAE0002</td>
-                            <td>
-                              Moveth from from winged for, image fifth. Winged
-                              whales, shall.
-                            </td>
-                            <td class="text-center">4</td>
-                            <td>johnbrian@sd.taylors.edu.my</td>
-                            <td>johnbrian@sd.cms.edu.my</td>
-                            <td>International</td>
-                            <td>University</td>
-                            <td class="text-center">
-                              <div class="badge badge-light-warning">
-                                Uninitiated
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>E000114</td>
-                            <td>Kylie Zheng</td>
-                            <td>000111-10-0000</td>
-                            <td>Malaysian</td>
-                            <td class="text-center">2</td>
-                            <td>Liberal Arts and Sciences</td>
-                            <td>LAR3003</td>
-                            <td>
-                              Moveth from from winged for, image fifth. Winged
-                              whales, shall.
-                            </td>
-                            <td class="text-center">4</td>
-                            <td>kyliezheng@sd.taylors.edu.my</td>
-                            <td>kyliezheng@sd.cms.edu.my</td>
-                            <td>International</td>
-                            <td>University</td>
-                            <td class="text-center">
-                              <div class="badge badge-light-warning">
-                                Uninitiated
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>S000197</td>
-                            <td>Ravi Durand</td>
-                            <td>T9748761</td>
-                            <td>Non-Malaysian</td>
-                            <td class="text-center">3</td>
-                            <td>Media and Communication</td>
-                            <td>MOS1003</td>
-                            <td>
-                              Moveth from from winged for, image fifth. Winged
-                              whales, shall.
-                            </td>
-                            <td class="text-center">3</td>
-
-                            <td>ravidurand@sd.taylors.edu.my</td>
-                            <td>ravidurand@sd.cms.edu.my</td>
-                            <td>International</td>
-                            <td>University</td>
                             <td class="text-center">
                               <div class="badge badge-light-danger">
                                 Incomplete
                               </div>
                             </td>
+                            <td>09-01-2021</td>
+                            <td>SSS_2021_00011</td>
+                            <td>W0001190</td>
+                            <td>Ravi Durand</td>
+                            <td>000111-14-21009</td>
+                            <td>+603122848</td>
+                            <td>ravidurand@personal.com</td>
+                            <td>ravidurand@taylors.edu.my</td>
+                            <td>ravidurand@cms.edu.my</td>
+                            <td>Local</td>
+                            <td>Malaysian</td>
+                            <td>International</td>
+                            <td>Bachelor</td>
+                            <td>Faculty of Innovation and Technology</td>
+                            <td>Computer Science and Engineering</td>
+                            <td>Bachelor of Business (Honours)	</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="text-center">
+                              <div class="badge badge-light-warning">
+                                Uninitiated
+                              </div>
+                            </td>
+                            <td>09-01-2021</td>
+                            <td>SSS_2021_00011</td>
+                            <td>W0002190</td>
+                            <td>Kylie Zheng</td>
+                            <td>000111-10-0000</td>
+                            <td>+6031724672</td>
+                            <td>kyliezheng@personal.com</td>
+                            <td>kyliezheng@taylors.edu.my</td>
+                            <td>kyliezheng@cms.edu.my</td>
+                            <td>Local</td>
+                            <td>Malaysian</td>
+                            <td>International</td>
+                            <td>Bachelor</td>
+                            <td>Faculty of Innovation and Technology</td>
+                            <td>Computer Science and Engineering</td>
+                            <td>Bachelor of Business (Honours)	</td>
                           </tr>
                         </tbody>
                       </table>

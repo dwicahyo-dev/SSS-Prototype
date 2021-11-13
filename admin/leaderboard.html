@@ -114,6 +114,13 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
     <!-- END: Custom CSS-->
+
+    <style>
+      .main-menu.menu-dark .navigation > li.active > a, .main-menu.menu-dark .navigation > li ul .active {
+        background: #762aaf;
+      }
+    </style>
+
   </head>
   <body
     class="
@@ -160,6 +167,28 @@
             </li>
           </ul>
         </div>
+
+        <!-- SSS Logo -->
+        <ul class="nav navbar-nav align-items-center ml-auto">
+          <li class="nav-item mr-4">
+            <img
+              class="brand-logo img-fluid"
+              src="../assets/images/taylors logo-01.jpg"
+              alt="SSS"
+              width="120"
+            />
+          </li>
+
+          <li class="nav-item">
+            <img
+              class="brand-logo img-fluid"
+              src="../assets/images/sss-logo.png"
+              alt="SSS"
+              width="94"
+            />
+          </li>
+        </ul>
+
         <ul class="nav navbar-nav align-items-center ml-auto">
           <li class="nav-item dropdown dropdown-user">
             <a
@@ -554,7 +583,7 @@
               </li>
 
               <!-- Charts & Graphs – Satisfaction -->
-              <li>
+              <!-- <li>
                 <a
                   class="d-flex align-items-center"
                   href="realtime-reporting/chart-and-graphs-satisfaction.html"
@@ -567,7 +596,7 @@
                     >Charts & Graphs – Satisfaction</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item active">
@@ -587,7 +616,9 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a class="d-flex align-items-center" href="../admin/reports/all-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../admin/reports/all-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -635,7 +666,9 @@
                 >
               </li>
               <li>
-                <a class="d-flex align-items-center" href="../admin/reports/ch-and-g-report.html"
+                <a
+                  class="d-flex align-items-center"
+                  href="../admin/reports/ch-and-g-report.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
                     data-i18n="Menu Name"
@@ -660,7 +693,7 @@
                   ></a
                 >
               </li>
-              <li>
+              <!-- <li>
                 <a class="d-flex align-items-center" href="../admin/reports/all-data.html"
                   ><span
                     class="menu-item text-truncate ml-2 pl-75"
@@ -668,7 +701,7 @@
                     >All Data Download</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </li>
         </ul>
@@ -676,15 +709,18 @@
     </div>
     <!-- END: Main Menu-->
     <!-- BEGIN: Content-->
-    <div class="app-content content">
+    <div class="app-content content" style="background-color: #d1b2e8">
       <div class="content-overlay"></div>
       <div class="header-navbar-shadow"></div>
       <div class="content-wrapper">
-        <div class="content-header row">
-          <div class="content-header-left col-12 mb-2">
+        <div
+          class="content-header row"
+          style="background-image: linear-gradient(#762aaf 5%, #9a57cd)"
+        >
+          <div class="content-header-left col-12 mb-2 mt-2">
             <div class="row breadcrumbs-top">
               <div class="col-12">
-                <h2 class="content-header-title float-left mb-0">
+                <h2 class="float-left mb-0 text-white font-weight-bold">
                   Leaderboard
                 </h2>
               </div>
@@ -692,91 +728,12 @@
           </div>
         </div>
 
-        <div class="content-body">
-          <!-- <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body">
-              <p class="text-right"><i data-feather='alert-circle' class="text-danger mr-50"></i>Only Completed Surveys are listed</p>
-              <div class="d-flex justify-content-center">
-                <div class="col-10 m-0 p-0">
-                  <div class="table-responsive">
-                    <table class="table nowrap">
-                      <tbody>
-                        <tr class="table-borderless">
-                          <td class="pr-0"></td>
-                          <td class="px-0"><b>Rank</b></td>
-                          <td class="pr-0"><b>Student ID</b></td>
-                          <td class="pr-0"><b>Name</b></td>
-                          <td><b>Points</b></td>
-                          <td class="pl-0"><b>School</b></td>
-                          <td class="px-0"><b>Date submitted</b></td>
-                        </tr>
-                        <tr>
-                          <td class="pr-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-20 feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                          </td>
-                          <td class="px-0">1</td>
-                          <td class="pr-0">E000257</td>
-                          <td class="pr-0">Melissa</td>
-                          <td>231</td>
-                          <td class="pl-0">Hospitality, Tourism & Events</td>
-                          <td class="pl-0">15/07/2021</td>
-                        </tr>
-                        <tr>
-                          <td class="pr-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-20 feather-award text-secondary"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                          </td>
-                          <td class="px-0">2</td>
-                          <td class="pr-0">W000214</td>
-                          <td class="pr-0">John Brian</td>
-                          <td>215</td>
-                          <td class="pl-0">Education</td>
-                          <td class="pl-0">15/07/2021</td>
-                        </tr>
-                        <tr>
-                          <td class="pr-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CD7F32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-20 feather-award text-secondary"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                          </td>
-                          <td class="px-0">3</td>
-                          <td class="pr-0">E000114</td>
-                          <td class="pr-0">Kylie Zheng</td>
-                          <td>202</td>
-                          <td class="pl-0">Liberal Arts and Sciences</td>
-                          <td class="pl-0">15/07/2021</td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td class="px-0">4</td>
-                          <td class="pr-0">S000197</td>
-                          <td class="pr-0">Ravi Durand</td>
-                          <td>187</td>
-                          <td class="pl-0">Media and Communication</td>
-                          <td class="pl-0">15/07/2021</td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td class="px-0">5</td>
-                          <td class="pr-0">W000261</td>
-                          <td class="pr-0">Gertrud Mohammad</td>
-                          <td>167</td>
-                          <td class="pl-0">Media and Communication</td>
-                          <td class="pl-0">15/07/2021</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+        <div class="content-body mt-3">
           <div class="d-flex justify-content-center">
             <div class="col-xs-12 col-md-8 col-lg-7 p-0">
               <!-- alert -->
-              <div class="alert alert-warning" role="alert">
-                <div class="alert-body">
+              <div class="alert alert-light" role="alert">
+                <div class="alert-body text-warning">
                   <i data-feather="alert-circle" class="mr-75"></i>Only
                   Completed Surveys are listed
                 </div>
